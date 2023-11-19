@@ -1,0 +1,94 @@
+.price-block {
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: clamp(30px, 2.08vw, 40px);
+
+        @media (max-width: 991px) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &__box {
+        border-radius: 30px;
+        overflow: hidden;
+        background: $color_dark_blue;
+        padding: clamp(30px, 3.64vw, 70px) clamp(30px, 3.64vw, 70px) 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: clamp(20px, 2.08vw, 40px);
+        position: relative;
+
+        @media (max-width: 991px) {
+            border-radius: 0;
+            background: none;
+            padding: 0;
+        }
+    }
+
+    &__title {
+        margin: 0;
+        z-index: 2;
+    }
+
+    &__price {
+        font-size: clamp(24px, 2.29vw, 44px);
+        font-weight: 500;
+        margin: 0;
+        z-index: 2;
+
+        &._blue {
+            color: $color_blue;
+        }
+
+        &._yellow {
+            color: $color_yellow;
+        }
+
+        &._green {
+            color: $color_green;
+        }
+    }
+
+    &__text {
+        margin: 0;
+        z-index: 2;
+    }
+
+    & .btn {
+        z-index: 2;
+    }
+
+    &__wave {
+        position: absolute;
+        width: 25vw;
+        height: auto;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+
+        @media (max-width: 991px) {
+            display: none;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: clamp(20px, 2.08vw, 40px);
+    }
+
+    &__subtitle {
+        font-weight: 500;
+        font-size: clamp(24px, 2.29vw, 44px);
+    }
+
+    & .box-swiper {
+        @media (max-width: 991px) {
+            width: calc(100% + clamp(16px, 4.17vw, 80px) * 2);
+        }
+    }
+}

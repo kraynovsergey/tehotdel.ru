@@ -1,0 +1,78 @@
+.calculator {
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: clamp(30px, 2.08vw, 40px);
+        align-items: center;
+        position: relative;
+        z-index: 2;
+
+        @media (max-width: 991px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__h1 {
+        margin-bottom: clamp(30px, 3.12vw, 60px);
+
+        & br {
+            @media (min-width: 992px) {
+                display: none;
+            }
+        }
+    }
+
+    &__waves-wrap {
+        position: relative;
+        z-index: 1;
+
+        @media (max-width: 991px) {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 35vw;
+        }
+    }
+
+    &__waves {
+        margin-right: calc(clamp(16px, 4.17vw, 80px) * -1);
+        position: relative;
+        transform: translateX(25%);
+    }
+
+    &__wave {
+        width: 100%;
+        height: auto;
+
+        &._gradient {
+            position: absolute;
+            width: 100%;
+            top: 0;
+            right: 0;
+            z-index: 2;
+            animation: wave_gradient 5s ease-in-out infinite;
+        }
+    }
+
+    & .form {
+        @media (max-width: 991px) and (min-width: 576px) {
+            width: 75%;
+        }
+    }
+
+    &__circle {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 16vw;
+        height: auto;
+
+        @media (max-width: 991px) {
+            right: 0;
+            left: unset;
+            transform: scale(-1, 1);
+            width: 40vw;
+        }
+    }
+}

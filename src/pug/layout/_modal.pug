@@ -1,0 +1,154 @@
+.modal.scroll._hidden(id="modal-order" data-lenis-prevent)
+    .container.modal__container
+        .section__header
+            h2.section__title Давайте работать вместе
+            button.modal__close.btn-reset(type="button" data-modal-close)
+
+        form.form.modal__form
+            input(type="hidden" name="target" data-form-field-target)
+            .form__fields
+                fieldset.form__fieldset
+                    label.form__label.text-small.text-gray(for="order-name") Имя
+                    input.form__input(type="text" name="name" placeholder="Ваше имя" id="order-name" data-input)
+
+                fieldset.form__fieldset
+                    label.form__label.text-small.text-gray(for="order-phone") Телефон
+                    input.form__input(type="tel" name="phone" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" id="order-phone" data-tel data-input)
+
+                fieldset.form__fieldset._full
+                    label.form__label.text-small.text-gray(for="order-message") Проект
+                    input.form__input(type="text" name="text" placeholder="Опишите ваш проект (необязательно)" id="order-message" data-input)
+
+            button.form__submit.btn.btn-reset._red(type="submit") Отправить заявку
+                svg(width="31" height="8")
+                    use(xlink:href="@img/icons/icons.svg#arrow-right")
+
+            .form__checkbox
+                input.form__checkbox-input(type="checkbox" name="policy" id="order-policy" data-policy required)
+                label.form__checkbox-label(for="order-policy")
+                    span.form__checkbox-check
+                    span Оставляя заявку, вы даёте согласие на <a href="#" target="_blank">обработку ваших персональных данных</a>, а также подтверждаете, что вам исполнилось 18 лет
+
+        svg.order__wave(width="834" height="726")
+            use(xlink:href="@img/icons/icons.svg#order-wave")
+    
+        img.modal__circle(src="@img/modal-circle.svg" width="540" height="406")
+
+.modal.scroll._hidden(id="modal-thankyou" data-lenis-prevent)
+    .container.modal__container
+        .section__header
+            h2.section__title Спасибо!
+            button.modal__close.btn-reset(type="button" data-modal-close)
+
+        p.h3 Ваша заявка была успешно отправлена. В ближайшее время мы с вами свяжемся
+
+        svg.order__wave(width="834" height="726")
+            use(xlink:href="@img/icons/icons.svg#order-wave")
+    
+        img.modal__circle(src="@img/modal-circle.svg" width="540" height="406")
+
+.modal.scroll._hidden(id="modal-services" data-lenis-prevent)
+    .container.modal__container
+        .section__header
+            h2.section__title Услуги
+            button.modal__close.btn-reset(type="button" data-modal-close)
+
+        ul.modal__list.list-reset
+            li
+                a._active(href="#") Комплексный маркетинг
+            li
+                a(href="#") Контекстная реклама
+            li
+                a(href="#") Разработка сайтов
+            li
+                a(href="#") Продвижение в соц. сетях
+            li
+                a(href="#") SEO-продвижение
+            li
+                a(href="#") Разработка логотипов
+            li
+                a(href="#") Аудит сайтов
+            li
+                a(href="#") Работа с оплатой за лиды
+
+        img.modal__circle(src="@img/modal-circle.svg" width="540" height="406")
+
+.modal.scroll._hidden(id="modal-about" data-lenis-prevent)
+    .container.modal__container
+        .section__header
+            h2.section__title О компании
+            button.modal__close.btn-reset(type="button" data-modal-close)
+
+        ul.modal__list.list-reset
+            li
+                a(href="#" target="_blank") Презентация PDF
+            li
+                a._active(href="#") Карьера
+            li
+                a(href="#") О нас
+            li
+                a(href="#") Контакты
+            li
+                a(href="#") Награды
+            li
+                a(href="#") Отзывы
+
+        svg.modal__about-wave(width="446" height="296")
+            use(xlink:href="@img/icons/icons.svg#about-wave")
+
+        img.modal__circle(src="@img/modal-circle.svg" width="540" height="406")
+
+.modal.mobile-nav.scroll._hidden(id="modal-nav" data-lenis-prevent)
+    .container.modal__container.mobile-nav__container
+        ul.mobile-nav__list.list-reset
+            li.mobile-nav__list-item
+                a.mobile-nav__list-link(href="#" data-mobile-nav-link) Услуги
+                    svg.mobile-nav__list-arrow(width="22" height="23")
+                        use(xlink:href="@img/icons/icons.svg#arrow-down")
+                ul.mobile-nav__sublist.list-reset
+                    li.mobile-nav__sublist-item
+                        a.mobile-nav__sublist-link(href="#") Комплексный маркетинг
+                    li.mobile-nav__sublist-item
+                        a.mobile-nav__sublist-link(href="#") Разработка сайтов
+                    li.mobile-nav__sublist-item
+                        a.mobile-nav__sublist-link(href="#") SEO-продвижение
+                    li.mobile-nav__sublist-item
+                        a.mobile-nav__sublist-link(href="#") Аудит сайтов
+                    li.mobile-nav__sublist-item
+                        a.mobile-nav__sublist-link(href="#") Контекстная реклама
+                    li.mobile-nav__sublist-item
+                        a.mobile-nav__sublist-link(href="#") Продвижение в соц. сетях
+                    li.mobile-nav__sublist-item
+                        a.mobile-nav__sublist-link(href="#") Разработка логотипов
+                    li.mobile-nav__sublist-item
+                        a.mobile-nav__sublist-link(href="#") Работа с оплатой за лиды
+            li.mobile-nav__list-item
+                a.mobile-nav__list-link(href="#") Портфолио
+            li.mobile-nav__list-item
+                a.mobile-nav__list-link(href="#") Калькулятор продвижения
+            li.mobile-nav__list-item
+                a.mobile-nav__list-link(href="#") Кейсы
+            li.mobile-nav__list-item
+                a.mobile-nav__list-link(href="#" data-mobile-nav-link) О компании
+                    svg.mobile-nav__list-arrow(width="22" height="23")
+                        use(xlink:href="@img/icons/icons.svg#arrow-down")
+                ul.mobile-nav__sublist.list-reset
+                    li.mobile-nav__sublist-item
+                        a.mobile-nav__sublist-link(href="#" target="_blank") Презентация PDF
+                    li.mobile-nav__sublist-item
+                        a.mobile-nav__sublist-link(href="#") О нас
+                    li.mobile-nav__sublist-item
+                        a.mobile-nav__sublist-link(href="#") Награды
+                    li.mobile-nav__sublist-item
+                        a.mobile-nav__sublist-link(href="#") Отзывы
+                    li.mobile-nav__sublist-item
+                        a.mobile-nav__sublist-link(href="#") Карьера
+                    li.mobile-nav__sublist-item
+                        a.mobile-nav__sublist-link(href="#") Контакты
+
+        .mobile-nav__btns
+            button.btn._red-bordered.btn-reset(type="button" data-modal="#modal-order") Обсудить проект
+            a.btn._red-bordered.btn-reset(href="tel:+78463796226") +7 846 379-62-26
+
+
+        

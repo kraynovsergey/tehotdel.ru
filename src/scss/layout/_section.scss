@@ -1,0 +1,123 @@
+.section {
+    padding: clamp(40px, 4.17vw, 80px) 0;
+    overflow: hidden;
+    position: relative;
+
+    &._pb0 {
+        padding-bottom: 0 !important;
+    }
+
+    &._pt0 {
+        padding-top: 0 !important;
+    }
+
+    &._black {
+        background: $color_black;
+        color: $color_white;
+    }
+
+    &._white {
+        background: $color_white;
+        color: $color_black;
+    }
+
+    &._radius {
+        border-radius: clamp(30px, 3.12vw, 60px);
+    }
+
+    &._radius-bottom {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    &._small-radius {
+        border-radius: 30px;
+    }
+
+    &._small-padding {
+        padding: clamp(25px, 2.08vw, 40px) 0;
+    }
+
+    &._no-ovh {
+        overflow: unset;
+    }
+
+    &._full-mobile {
+        @media (max-width: 575px) {
+            margin: 0 calc(clamp(16px, 4.17vw, 80px) * -1);
+        }
+    }
+
+    &__title {
+        margin: 0 0 clamp(26px, 2.6vw, 50px);
+        gap: clamp(10px, 1.04vw, 20px);
+        
+        &::before {
+            content: '— ';
+            color: $color_red;
+        }
+
+        &._blue {
+            & span,
+            &::before {
+                color: $color_blue;
+            }
+        }
+
+        &._yellow {
+            & span,
+            &::before {
+                color: $color_yellow;
+            }
+        }
+
+        &._green {
+            & span,
+            &::before  {
+                color: $color_green;
+            }
+        }
+
+        &._violet {
+            & span,
+            &::before {
+                color: $color_violet;
+            }
+        }
+
+        &._ultra-violet {
+            & span,
+            &::before {
+                color: $color_ultra_violet;
+            }
+        }
+
+        &._pink {
+            & span,
+            &::before {
+                color: $color_pink;
+            }
+        }
+
+        &._orange {
+            & span,
+            &::before {
+                color: $color_orange;
+            }
+        }
+    }
+
+    &__header {
+        @media (min-width: 992px) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+            margin-bottom: clamp(40px, 3.12vw, 60px);
+    
+            & .section__title {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

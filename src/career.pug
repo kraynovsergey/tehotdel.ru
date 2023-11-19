@@ -1,0 +1,43 @@
+extends base
+
+block color
+    - var body_classes = ''
+
+block meta
+    - var seotitle = 'Карьера'
+    - var seodescription = ''
+    - var seokeywords = ''
+
+block main
+    main.main._inner
+        section.section._small-padding
+            .container
+                ul.breadcrumbs.list-reset.text-gray(data-aos="fade-up")
+                    li.breadcrumbs__item
+                        a.breadcrumbs__link(href="#") Главная
+                    li.breadcrumbs__item
+                        a.breadcrumbs__link(href="#") О компании
+                    li.breadcrumbs__item Карьера
+
+        section
+            .container
+                h1.h2.section__title(data-aos="fade-up") Карьера
+                
+                .career__items(data-aos="fade-up")
+                    article.career__item.box._transparent._hover
+                        h2.career__title.box__title Программист MODX
+                        p.box__text г. Самара, график 5/2
+                        .box__grow
+                            a.box__btn.btn.btn-reset._red-bordered.link._full(href="#") Подробнее
+                                svg(width="31" height="8")
+                                    use(xlink:href="@img/icons/icons.svg#arrow-right")
+
+                    article.career__item.box._transparent._hover
+                        h2.career__title.box__title Менеджер по работе с клиентами
+                        p.box__text г. Самара, график 5/2
+                        .box__grow
+                            a.box__btn.btn.btn-reset._red-bordered.link._full(href="#") Подробнее
+                                svg(width="31" height="8")
+                                    use(xlink:href="@img/icons/icons.svg#arrow-right")
+
+                

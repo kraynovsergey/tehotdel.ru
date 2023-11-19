@@ -1,0 +1,48 @@
+.tabs {
+    &__btns {
+        align-items: center;
+        gap: clamp(20px, 1.56vw, 30px);
+        margin-bottom: clamp(20px, 4.03vw, 40px);
+        display: flex;
+        overflow-x: auto;
+        margin-left: calc(clamp(16px, 4.17vw, 80px) * -1);
+        margin-right: calc(clamp(16px, 4.17vw, 80px) * -1);
+        padding: 0 clamp(16px, 4.17vw, 80px);
+    }
+
+    &__btn {
+        border: 1px solid  currentColor;
+        background: transparent !important;
+        white-space: nowrap;
+
+        &._active {
+            color: $color_white !important;
+        }
+
+        &._pink {
+            color: $color_pink;
+            
+            &._active {
+                background: $color_pink !important;
+                border: 1px solid $color_pink;
+            }
+        }
+        
+        &._red {
+            color: $color_red;
+
+            &._active {
+                background: $color_red !important;
+                border: 1px solid $color_red;
+            }
+        }
+    }
+
+    &__content {
+        display: none;
+
+        &._active {
+            display: block;
+        }
+    }
+}

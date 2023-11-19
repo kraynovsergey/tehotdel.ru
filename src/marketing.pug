@@ -1,0 +1,344 @@
+extends base
+
+block color
+    - var body_classes = '_black'
+
+block meta
+    - var seotitle = 'Комплексный маркетинг'
+    - var seodescription = ''
+    - var seokeywords = ''
+
+block main
+    main.main
+        section.section._pt0._pb0._black._radius._radius-bottom
+            section.section._small-padding._pb0
+                .container
+                    ul.breadcrumbs.list-reset.text-gray(data-aos="fade-up")
+                        li.breadcrumbs__item
+                            a.breadcrumbs__link(href="#") Главная
+                        li.breadcrumbs__item
+                            a.breadcrumbs__link(href="#") Услуги
+                        li.breadcrumbs__item Комплексный маркетинг
+
+            section.section.service-intro._pt0._no-ovh
+                .container.service-intro__container
+                    .service-intro__content(data-aos="fade-up")
+                        h1.service-intro__title Комплексный маркетинг
+                        .service-intro__subtitle.text
+                            p Каждый месяц мы анализируем ваш сайт и подключаем эффективные услуги под ваши цели и возможности. Если сайта нет — сделаем!
+                        button.service-intro__btn.btn.btn-reset._lime(type="button" data-modal="#modal-order") Обсудить проект
+                            svg(width="31" height="8")
+                                use(xlink:href="@img/icons/icons.svg#arrow-right")
+
+                    .service-intro__waves-wrap
+                        .service-intro__waves
+                            img.service-intro__wave(src="@img/marketing-wave.svg" alt="" width="790" height="532")
+                            img.service-intro__wave._gradient(src="@img/marketing-wave-gradient.svg" alt="" width="790" height="532")
+
+                img.service-intro__circle._left(src="@img/intro-circle-lime-left.svg" alt="" width="578" height="1115")
+                img.service-intro__circle._right(src="@img/intro-circle-lime-right.svg" alt="" width="691" height="1115")
+
+            section.section.service-steps._orange._pt0
+                .container.service-steps__container
+                    .service-steps__left
+                        h2.section__title._orange(data-aos="fade-up") В комплексный интернет-маркетинг входит
+
+                    .service-steps__items(data-aos="fade-up")
+                        .service-steps__line(data-steps-line)
+                            .service-steps__line-wrap(data-steps-animation)
+                                .service-steps__line(data-steps-animation-target)
+
+                        article.service-steps__item
+                            .service-steps__circle(data-steps-line-first) 01
+                                .service-steps__circle-wrap(data-steps-animation)
+                                    .service-steps__circle(data-steps-animation-target) 01
+                            .service-steps__box.box._dark-blue
+                                h3.service-steps__title Сайт (отдел разработки)
+                                .service-steps__text.text-small
+                                    p Если у вас нет сайта - сделаем. Если сайт есть - доработаем.
+                                    p Исследование / Прототип / Дизайн / Анимация / Интеграция / Оптимизация / Адаптивная верстка / Программирование
+                                .service-steps__box-wrap(data-steps-animation)
+                                    .service-steps__box.box._dark-blue(data-steps-animation-target)
+                                        h3.service-steps__title Сайт (отдел разработки)
+                                        .service-steps__text.text-small
+                                            p Если у вас нет сайта - сделаем. Если сайт есть - доработаем.
+                                            p Исследование / Прототип / Дизайн / Анимация / Интеграция / Оптимизация / Адаптивная верстка / Программирование
+
+                        article.service-steps__item
+                            .service-steps__circle 02
+                                .service-steps__circle-wrap(data-steps-animation)
+                                    .service-steps__circle(data-steps-animation-target) 02
+                            .service-steps__box.box._dark-blue
+                                h3.service-steps__title Продвижение (проект-менеджер, UX-дизайнер, SEO-специалист)
+                                .service-steps__text.text-small
+                                    p Используем все сразу или подбираем оптимальные инструменты для увеличения посещаемости и конверсии.
+                                    p Контекстная реклама / SEO / Оптимизация / Обслуживание / Аналитика / Таргетированная реклама
+                                .service-steps__box-wrap(data-steps-animation)
+                                    .service-steps__box.box._dark-blue(data-steps-animation-target)
+                                        h3.service-steps__title Продвижение (проект-менеджер, UX-дизайнер, SEO-специалист)
+                                        .service-steps__text.text-small
+                                            p Используем все сразу или подбираем оптимальные инструменты для увеличения посещаемости и конверсии.
+                                            p Контекстная реклама / SEO / Оптимизация / Обслуживание / Аналитика / Таргетированная реклама
+
+                        article.service-steps__item
+                            .service-steps__circle 03
+                                .service-steps__circle-wrap(data-steps-animation)
+                                    .service-steps__circle(data-steps-animation-target) 03
+                            .service-steps__box.box._dark-blue
+                                h3.service-steps__title Аналитика (проект-менеджер, аналитик, UX/UI-дизайнер, SEO-специалист)
+                                .service-steps__text.text-small
+                                    p Мониторим результаты, вносим изменения и тестируем снова. Каждый месяц отправляем подробный отчет.
+                                    p A-B тестирование / Настройка счетчиков / Конкурентный анализ / Отчетность / Анализ юзабилити сайта / Обслуживание / Сервисы обратного звонка
+                                .service-steps__box-wrap(data-steps-animation)
+                                    .service-steps__box.box._dark-blue(data-steps-animation-target)
+                                        h3.service-steps__title Аналитика (проект-менеджер, аналитик, UX/UI-дизайнер, SEO-специалист)
+                                        .service-steps__text.text-small
+                                            p Мониторим результаты, вносим изменения и тестируем снова. Каждый месяц отправляем подробный отчет.
+                                            p A-B тестирование / Настройка счетчиков / Конкурентный анализ / Отчетность / Анализ юзабилити сайта / Обслуживание / Сервисы обратного звонка
+
+                        article.service-steps__item
+                            .service-steps__circle(data-steps-line-last) 04
+                                .service-steps__circle-wrap(data-steps-animation)
+                                    .service-steps__circle(data-steps-animation-target) 04
+                            .service-steps__box.box._dark-blue
+                                h3.service-steps__title Бренд (проект-менеджер, интернет-маркетолог, копирайтер, дизайнер)
+                                .service-steps__text.text-small
+                                    p Изучаем ваш бизнес, формируем УТП, выделяем преимущества. 
+                                    p Сегментируем целевую аудиторию, выбираем способ взаимодействия на каждый сегмент и повышаем узнаваемость бренда.
+                                .service-steps__box-wrap(data-steps-animation)
+                                    .service-steps__box.box._dark-blue(data-steps-animation-target)
+                                        h3.service-steps__title Бренд (проект-менеджер, интернет-маркетолог, копирайтер, дизайнер)
+                                        .service-steps__text.text-small
+                                            p Изучаем ваш бизнес, формируем УТП, выделяем преимущества. 
+                                            p Сегментируем целевую аудиторию, выбираем способ взаимодействия на каждый сегмент и повышаем узнаваемость бренда.
+
+                    .swiper.service-steps__swiper._full-tablet(data-swiper-boxes data-aos="fade-up")
+                        .swiper-wrapper
+                            .swiper-slide
+                                .service-steps__box.box._dark-blue._active
+                                    .service-steps__circle 01
+                                    h3.service-steps__title Сайт (отдел разработки)
+                                    .service-steps__text.text-small
+                                        p Если у вас нет сайта - сделаем. Если сайт есть - доработаем.
+                                        p Исследование / Прототип / Дизайн / Анимация / Интеграция / Оптимизация / Адаптивная верстка / Программирование
+                            .swiper-slide
+                                .service-steps__box.box._dark-blue._active
+                                    .service-steps__circle 02
+                                    h3.service-steps__title Продвижение (проект-менеджер, UX-дизайнер, SEO-специалист)
+                                    .service-steps__text.text-small
+                                        p Используем все сразу или подбираем оптимальные инструменты для увеличения посещаемости и конверсии.
+                                        p Контекстная реклама / SEO / Оптимизация / Обслуживание / Аналитика / Таргетированная реклама
+                            .swiper-slide 
+                                .service-steps__box.box._dark-blue._active
+                                    .service-steps__circle 03
+                                    h3.service-steps__title Аналитика (проект-менеджер, аналитик, UX/UI-дизайнер, SEO-специалист)
+                                    .service-steps__text.text-small
+                                        p Мониторим результаты, вносим изменения и тестируем снова. Каждый месяц отправляем подробный отчет.
+                                        p A-B тестирование / Настройка счетчиков / Конкурентный анализ / Отчетность / Анализ юзабилити сайта / Обслуживание / Сервисы обратного звонка
+                            .swiper-slide 
+                                .service-steps__box.box._dark-blue._active
+                                    .service-steps__circle 04
+                                    h3.service-steps__title Бренд (проект-менеджер, интернет-маркетолог, копирайтер, дизайнер)
+                                    .service-steps__text.text-small
+                                        p Изучаем ваш бизнес, формируем УТП, выделяем преимущества. 
+                                        p Сегментируем целевую аудиторию, выбираем способ взаимодействия на каждый сегмент и повышаем узнаваемость бренда.
+
+            section.section._pt0
+                .container
+                    h2.section__title._orange(data-aos="fade-up") Путь компании от сайта к бренду
+
+                    .range__wrap(data-aos="fade-up")
+                        .range__init(data-range data-range-max="4")
+
+                        .range__line(data-range-line="2" style="left: calc(33.33% - 2px)")
+                        .range__line(data-range-line="3" style="left: calc(66.66% - 2px)")
+
+                        .range._cols4.text-small
+                            .range__step._active(data-range-item="1")
+                                .range__text Нужен сайт
+
+                            .range__step(data-range-item="2")
+                                .range__text Сайт есть, нужен трафик
+
+                            .range__step(data-range-item="3")
+                                .range__text Есть трафик, нужны заявки
+                        
+                            .range__step(data-range-item="4")
+                                .range__text Есть заявки, хочу больше
+
+                    section.section.range__box-wrap._pb0(data-aos="fade-up")
+                        .range__box._cols4._active(data-range-box="1")
+                            .box._dark-blue
+                                h3.box__title._big._yellow Исследование
+                                .box__text.text-small.text
+                                    p Изучим ваш бизнес и целевую аудиторию. Проведем анализ сайтов конкурентов.
+                            .box._dark-blue
+                                h3.box__title._big._yellow Прототип
+                                .box__text.text-small.text
+                                    p Продумаем логику, навигацию и функционал. Покажем схематичный эскиз сайта.
+                            .box._dark-blue
+                                h3.box__title._big._yellow Дизайн-макет
+                                .box__text.text-small.text
+                                    p Визуальная концепция по утвержденному прототипу. Все страницы плюс анимация, если она есть.
+                            .box._dark-blue
+                                h3.box__title._big._yellow Код и релиз
+                                .box__text.text-small.text
+                                    p Кроссбраузерная адаптивная верстка. Программирование функционала, внедрение CMS, интеграция внешних сервисов. Оптимизация и тестирование. Наполнение по желанию.
+
+                        .range__box._cols3(data-range-box="2")
+                            .box._dark-blue
+                                h3.box__title._big._yellow Аудит
+                                .box__text.text-small.text
+                                    p Аудит сайта, определение точек воздействия, составление плана работ.
+                            .box._dark-blue
+                                h3.box__title._big._yellow Подготовка
+                                .box__text.text-small.text
+                                    p Доработка юзабилити сайта, оптимизация, наполнение.
+                            .box._dark-blue
+                                h3.box__title._big._yellow Реклама
+                                .box__text.text-small.text
+                                    p SEO-продвижение, контекстная реклама, SMM. Используем всё сразу или подбираем оптимальные инструменты.
+
+                        .range__box._cols3(data-range-box="3")
+                            .box._dark-blue
+                                h3.box__title._big._yellow Аналитика
+                                .box__text.text-small.text
+                                    p Ставим счетчики, смотрим метрику, ищем причину отсутствия заявок.
+                            .box._dark-blue
+                                h3.box__title._big._yellow Корректировки
+                                .box__text.text-small.text
+                                    p Вносим изменения на сайт с учетом полученных данных. Корректируем рекламную компанию.
+                            .box._dark-blue
+                                h3.box__title._big._yellow Отчетность
+                                .box__text.text-small.text
+                                    p Показываем результаты прогресса перед каждым новым витком изменений.
+
+                        .range__box._cols2(data-range-box="4")
+                            .box._dark-blue
+                                h3.box__title._big._yellow Клиенты конкурентов
+                                .box__text.text-small.text
+                                    p Выявляем косвенные запросы целевой аудитории, которая доверяет другому бренду.
+                            .box._dark-blue
+                                h3.box__title._big._yellow Околоцелевые запросы
+                                .box__text.text-small.text
+                                    p Сегментируем целевую аудиторию конкурентов, выявляем точки воздействия на нее, подключаем околоцелевые запросы.
+
+                    section.range__swiper(data-aos="fade-up")
+                        .swiper.box-swiper._full-tablet(data-swiper-boxes)
+                            .swiper-wrapper
+                                .swiper-slide
+                                    .service-steps__box.range__mobile-slide.box._dark-blue._active
+                                        h2.range__mobile-title._yellow Нужен сайт
+
+                                        .range__mobile-box
+                                            h3.service-steps__title.box__title._yellow Исследование
+                                            .service-steps__text.text-small
+                                                p Изучим ваш бизнес и целевую аудиторию. Проведем анализ сайтов конкурентов.
+
+                                        .range__mobile-box
+                                            h3.service-steps__title.box__title._yellow Прототип
+                                            .service-steps__text.text-small
+                                                p Продумаем логику, навигацию и функционал. Покажем схематичный эскиз сайта.
+
+                                        .range__mobile-box
+                                            h3.service-steps__title.box__title._yellow Дизайн-макет
+                                            .service-steps__text.text-small
+                                                p Визуальная концепция по утвержденному прототипу. Все страницы плюс анимация, если она есть.
+
+                                        .range__mobile-box
+                                            h3.service-steps__title.box__title._yellow Код и релиз
+                                            .service-steps__text.text-small
+                                                p Кроссбраузерная адаптивная верстка. Программирование функционала, внедрение CMS, интеграция внешних сервисов. Оптимизация и тестирование. Наполнение по желанию
+
+                                .swiper-slide
+                                    .service-steps__box.range__mobile-slide.box._dark-blue._active
+                                        h2.range__mobile-title._yellow Сайт есть, нужен трафик
+
+                                        .range__mobile-box
+                                            h3.service-steps__title.box__title._yellow Аудит
+                                            .service-steps__text.text-small
+                                                p Аудит сайта, определение точек воздействия, составление плана работ.
+
+                                        .range__mobile-box
+                                            h3.service-steps__title.box__title._yellow Подготовка
+                                            .service-steps__text.text-small
+                                                p Доработка юзабилити сайта, оптимизация, наполнение.
+
+                                        .range__mobile-box
+                                            h3.service-steps__title.box__title._yellow Реклама
+                                            .service-steps__text.text-small
+                                                p Доработка юзабилити сайта, оптимизация, наполнение.
+
+                                .swiper-slide
+                                    .service-steps__box.range__mobile-slide.box._dark-blue._active
+                                        h2.range__mobile-title._yellow Есть трафик, нужны заявки
+
+                                        .range__mobile-box
+                                            h3.service-steps__title.box__title._yellow Аналитика
+                                            .service-steps__text.text-small
+                                                p Ставим счетчики, смотрим метрику, ищем причину отсутствия заявок.
+
+                                        .range__mobile-box
+                                            h3.service-steps__title.box__title._yellow Корректировки
+                                            .service-steps__text.text-small
+                                                p Вносим изменения на сайт с учетом полученных данных. Корректируем рекламную компанию.
+
+                                        .range__mobile-box
+                                            h3.service-steps__title.box__title._yellow Отчетность
+                                            .service-steps__text.text-small
+                                                p Показываем результаты прогресса перед каждым новым витком изменений.
+
+                                .swiper-slide
+                                    .service-steps__box.range__mobile-slide.box._dark-blue._active
+                                        h2.range__mobile-title._yellow Есть заявки, хочу больше
+
+                                        .range__mobile-box
+                                            h3.service-steps__title.box__title._yellow Клиенты конкурентов
+                                            .service-steps__text.text-small
+                                                p Выявляем косвенные запросы целевой аудитории, которая доверяет другому бренду.
+
+                                        .range__mobile-box
+                                            h3.service-steps__title.box__title._yellow Околоцелевые запросы
+                                            .service-steps__text.text-small
+                                                p Сегментируем целевую аудиторию конкурентов, выявляем точки воздействия на нее, подключаем околоцелевые запросы.
+
+        section.section._pb0
+            .container
+                h2.section__title(data-aos="fade-up") Преимущества комплексного интернет-маркетинга
+
+                .swiper.box-swiper._full-tablet(data-swiper-boxes)
+                    .swiper-wrapper
+                        .swiper-slide(data-aos="fade-up" data-aos-delay="50")
+                            +seo-pluses('seo-pluses-1', 
+                                'Так выгоднее',
+                                'За фиксированный бюджет в месяц вы получаете не одну услугу, а целый комплекс услуг и полноценный IT - отдел за зарплату маркетолога.',
+                                '_red')
+                        .swiper-slide(data-aos="fade-up" data-aos-delay="100")
+                            +seo-pluses('seo-pluses-2', 
+                                'Подумаем за вас',
+                                'Мы держим руку на пульсе вашего сайта, постоянно проводим аналитику и выбираем оптимальные инструменты, не раздувая бюджет.',
+                                '_black')
+                        .swiper-slide(data-aos="fade-up" data-aos-delay="150")
+                            +seo-pluses('seo-pluses-3', 
+                                'Подробная отчетность',
+                                'Подробная отчетность Каждый месяц у вас на почте будет лежать подробный отчет о том, что сделано, какие результаты достигнуты и что в планах.',
+                                '_red')
+                        .swiper-slide(data-aos="fade-up" data-aos-delay="200")
+                            +seo-pluses('seo-pluses-4', 
+                                'Функционально',
+                                'Запуск более действенного инструмента происходит мгновенно. Пока другие согласовывают подключение новых услуг и пересчитывают смету, у вас всё уже работает.',
+                                '_black')
+
+        section.section._pb0
+            .container
+                h2.section__title(data-aos="fade-up") А также каждую услугу можно заказать отдельно:
+
+                .swiper.box-swiper._full-tablet._hover(data-swiper-boxes)
+                    .swiper-wrapper
+                        .swiper-slide(data-aos="fade-up" data-aos-delay="50")
+                            +service-item('service-2', 'Разработка сайтов', 'Создаём сайты под любые задачи. От быстрых лендингов до сложного e-commerce')
+                        .swiper-slide(data-aos="fade-up" data-aos-delay="100")
+                            +service-item('service-3', 'SEO-продвижение', 'Привлекаем максимум органического трафика. Параллельно работаем над юзабилити сайта')
+                        .swiper-slide(data-aos="fade-up" data-aos-delay="150")
+                            +service-item('service-5', 'Контекстная реклама', 'Добываем качественный рекламный трафик. Увеличиваем количество заявок')
+

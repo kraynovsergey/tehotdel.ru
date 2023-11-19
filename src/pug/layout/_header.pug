@@ -1,0 +1,35 @@
+header.header(class=header_classes data-header)
+    .container.header__container
+        a.header__logo(href="#")
+            svg.header__logo-icon(width="160" height="20")
+                use(xlink:href="@img/icons/icons.svg#logo")
+            span.header__logo-slogan(data-typed) <span>{samara}</span>
+
+        nav.header__nav
+            ul.header__list.list-reset
+                li.header__list-item
+                    a.header__list-link(href="#" data-modal="#modal-services") Услуги
+                        svg.header__list-arrow(width="22" height="23")
+                            use(xlink:href="@img/icons/icons.svg#arrow-down")
+                li.header__list-item
+                    a.header__list-link._active(href="#") Портфолио
+                li.header__list-item
+                    a.header__list-link(href="#") Калькулятор продвижения
+                li.header__list-item
+                    a.header__list-link(href="#") Кейсы
+                li.header__list-item
+                    a.header__list-link(href="#" data-modal="#modal-about") О компании
+                        svg.header__list-arrow(width="22" height="23")
+                            use(xlink:href="@img/icons/icons.svg#arrow-down")
+
+        .header__btns
+            button.btn._black-bordered.btn-reset._small.header__btn(type="button" data-modal="#modal-order") Обсудить проект
+            a.btn._black-bordered.btn-reset._small.header__btn(href="tel:+78463796226") +7 846 379-62-26
+
+        button.header__burger.btn-reset(type="button" data-burger)
+            span
+            span 
+            span
+
+        
+

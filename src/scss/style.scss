@@ -1,0 +1,54 @@
+/* VENDORS */
+@import "../../node_modules/aos/dist/aos.css";
+@import "../../node_modules/swiper/swiper.css";
+@import "../../node_modules/@fancyapps/ui/dist/fancybox/fancybox.css";
+@import "../../node_modules/range-slider-input/dist/style.css";
+
+/* CORE */
+@import "core/_variables";
+@import "core/_default";
+@import "core/_grid";
+
+/* COMPONENTS */
+@import "components/_typography";
+@import "components/_btn";
+@import "components/_link";
+@import "components/_picture";
+@import "components/_scroll";
+@import "components/_list";
+@import "components/_box";
+@import "components/_swiper";
+@import "components/_tabs";
+
+/* LAYOUT */
+@import "layout/_header";
+@import "layout/_footer";
+@import "layout/_section";
+@import "layout/_intro";
+@import "layout/_box-swiper";
+@import "layout/_home-pluses";
+@import "layout/_clients";
+@import "layout/_awards";
+@import "layout/_reviews";
+@import "layout/_cases";
+@import "layout/_main";
+@import "layout/_modal";
+@import "layout/_form";
+@import "layout/_order";
+@import "layout/_mobile-nav";
+@import "layout/_breadcrumbs";
+@import "layout/_service-intro";
+@import "layout/_service-steps";
+@import "layout/_service-cases";
+@import "layout/_seo-categories";
+@import "layout/_price-block";
+@import "layout/_service-banners";
+@import "layout/_range";
+@import "layout/_portfolio";
+@import "layout/_smm";
+@import "layout/_price-table";
+@import "layout/_case-page";
+@import "layout/_career";
+@import "layout/_contacts";
+@import "layout/_calculator";
+@import "layout/_leads";

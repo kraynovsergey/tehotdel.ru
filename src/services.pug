@@ -1,0 +1,23 @@
+extends base
+
+block color
+    - var body_classes = ''
+
+block meta
+    - var seotitle = 'Услуги'
+    - var seodescription = ''
+    - var seokeywords = ''
+
+block main
+    main.main._inner
+        section.section._small-padding
+            .container
+                ul.breadcrumbs.list-reset.text-gray(data-aos="fade-up")
+                    li.breadcrumbs__item
+                        a.breadcrumbs__link(href="#") Главная
+                    li.breadcrumbs__item Услуги
+
+        section
+            .container
+                h1.h2.section__title(data-aos="fade-up") Услуги
+                include pug/layout/_services

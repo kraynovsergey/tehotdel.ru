@@ -1,0 +1,24 @@
+.order {
+    &__wave {
+        position: absolute;
+        right: 0;
+        bottom: clamp(30px, 3.12vw, 60px);
+        color: #ADBBD7;
+        width: 43vw;
+        height: auto;
+
+        @media (max-width: 991px) {
+            display: none;
+        }
+    }
+}
+
+body {
+    &._black {
+        & .order {
+            &__wave {
+                color: #861429;
+            }
+        }
+    }
+}

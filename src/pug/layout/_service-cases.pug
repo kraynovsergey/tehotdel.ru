@@ -1,0 +1,50 @@
+h2.section__title._blue(data-aos="fade-up") Кейсы
+
+mixin service-cases-item(icon, title, category, text, title1, title2, title3, title4)
+    article.service-cases__item(data-aos="fade-up")
+        .service-cases__content
+            img.service-cases__icon(src="@img/tmp/"+icon alt="" width="40" height="40")
+            h3.service-cases__title=title
+            p.service-cases__text._blue=category
+            p.service-cases__text=text
+
+        .service-cases__statistics
+            .service-cases__statistic
+                .service-cases__statistic-title=title1
+                    span=title2
+                .service-cases__statistic-line(data-aos="fade-right")
+                    img(src="@img/service-case-line.svg" alt="")
+                    .service-cases__statistic-gradient(style="width: 50%")
+
+            .service-cases__statistic
+                .service-cases__statistic-title=title3
+                    span=title4
+                .service-cases__statistic-line(data-aos="fade-right")
+                    img(src="@img/service-case-line.svg" alt="")
+                    .service-cases__statistic-gradient(style="width: 70%")
+
+.service-cases
+    +service-cases-item('sputnik-germes.svg', 
+        'sputnik-germes.ru', 
+        'Туристическая компания', 
+        'Реанимировали старый сайт, настроили SEO, увеличили конверсию',
+        'Прирост трафика',
+        '+ 370%',
+        'Прирост заявок',
+        '+ 444%')
+    +service-cases-item('biodent-shop.svg',
+        'biodent-shop.ru',
+        'Материалы для стоматологии',
+        'Ежедневный комплекс работ по поисковой оптимизации и увеличению конверсии на протяжении нескольких лет',
+        'Прирост трафика с поиска',
+        '+ 275%',
+        'Увеличение заказов с сайта',
+        'в 5 раз!')
+    +service-cases-item('ven-tu.svg',
+        'ven-tu.ru',
+        'Климатическое и отопительное оборудование',
+        'Вывели сайт из-под санкций Google и увеличили конверсию',
+        'Прирост поискового трафика Google',
+        'в 10 раз!',
+        'Увеличение числа заявок и звонков с сайта',
+        'в 4 раза!')

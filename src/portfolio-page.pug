@@ -1,0 +1,37 @@
+extends base
+
+block color
+    - var body_classes = ''
+
+block meta
+    - var seotitle = 'H2O: профессиональная уборка помещений в Самаре'
+    - var seodescription = ''
+    - var seokeywords = ''
+
+block main
+    main.main._inner.no-lenis
+        section.section._small-padding
+            .container
+                ul.breadcrumbs.list-reset.text-gray(data-aos="fade-up")
+                    li.breadcrumbs__item
+                        a.breadcrumbs__link(href="#") Главная
+                    li.breadcrumbs__item
+                        a.breadcrumbs__link(href="#") Портфолио
+                    li.breadcrumbs__item H2O: профессиональная уборка помещений в Самаре
+
+        section
+            .container
+                h1.h2.section__title(data-aos="fade-up") H2O: профессиональная уборка помещений в Самаре
+                
+                .section._small-padding._pt0(data-aos="fade-up")
+                    .btn__wrap
+                        a.btn.btn-reset._red(href="#" target="_blank" rel="nofollow") Перейти на сайт
+                            svg(width="31" height="8")
+                                use(xlink:href="@img/icons/icons.svg#arrow-right")
+
+                picture.picture.portfolio-page__picture
+                    source(type="image/webp" srcset="@img/tmp/portfolio-page@2x.webp 2x, @img/tmp/portfolio-page.webp 1x")
+                    img(srcset="@img/tmp/portfolio-page@2x.jpg 2x, @img/tmp/portfolio-page.jpg 1x" alt="" width="1760" height="2098" loading="lazy")
+
+        
+                

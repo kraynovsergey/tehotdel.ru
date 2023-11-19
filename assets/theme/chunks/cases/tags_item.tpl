@@ -1,0 +1,1 @@
+<button class="btn btn-reset tabs__btn _red {$idx == 0 ? '_active' : ''}" type="button" data-tab="{$idx}">#{$tag}</button>

@@ -1,0 +1,117 @@
+extends base
+
+block color
+    - var body_classes = '_black'
+
+block meta
+    - var seotitle = 'Калькулятор продвижения'
+    - var seodescription = ''
+    - var seokeywords = ''
+
+block main
+    main.main
+        section.section.calculator._pt0._pb0._black._radius._radius-bottom
+            section.section._small-padding
+                .container
+                    ul.breadcrumbs.list-reset.text-gray(data-aos="fade-up")
+                        li.breadcrumbs__item
+                            a.breadcrumbs__link(href="#") Главная
+                        li.breadcrumbs__item Калькулятор продвижения
+
+            section.section._pt0._no-ovh
+                .container.calculator__container
+                    .calculator__content
+                        h1.h2.calculator__h1(data-aos="fade-up") Калькулятор <br>продвижения
+
+                        form.form(data-aos="fade-up")
+                            .form__fields
+                                fieldset.form__fieldset
+                                    label.form__label.text-small._orange(for="calculator-website") Ссылка на ваш сайт
+                                    input.form__input(type="text" name="website" placeholder="Например, tehotdel.ru" id="calculator-website" data-input)
+
+                                fieldset.form__fieldset
+                                    label.form__label.text-small._orange(for="calculator-region") Регион продвижения
+                                    input.form__input(type="text" name="region" placeholder="Например, Москва" id="calculator-region" data-input)
+
+                                fieldset.form__fieldset
+                                    label.form__label.text-small._orange(for="calculator-phone") Телефон
+                                    input.form__input(type="tel" name="phone" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" id="calculator-phone" data-tel data-input)
+
+                                fieldset.form__fieldset
+                                    label.form__label.text-small._orange(for="calculator-where") Где продвигаем
+                                    input.form__input(type="text" name="where" placeholder="Например, Яндекс" id="calculator-where" data-input)
+
+                            button.form__submit.btn.btn-reset._ultra-violet(type="submit") Отправить заявку
+                                svg(width="31" height="8")
+                                    use(xlink:href="@img/icons/icons.svg#arrow-right")
+
+                            .form__checkbox
+                                input.form__checkbox-input(type="checkbox" name="policy" id="career-policy" data-policy required)
+                                label.form__checkbox-label(for="career-policy")
+                                    span.form__checkbox-check
+                                    span Оставляя заявку, вы даёте согласие на <a href="#" target="_blank">обработку ваших персональных данных</a>, а также подтверждаете, что вам исполнилось 18 лет
+
+                    .calculator__waves-wrap
+                        .calculator__waves
+                            img.calculator__wave(src="@img/calculator-wave.svg" alt="" width="854" height="697")
+                            img.calculator__wave._gradient(src="@img/calculator-wave-gradient.svg" alt="" width="854" height="697")
+
+                img.calculator__circle(src="@img/calculator-circle.svg" width="303" height="807")
+                img.service-intro__circle._right._calculator(src="@img/calculator-circle-right.svg" alt="" width="691" height="1115")
+
+            section.section.service-steps._pt0
+                .container
+                    h2.section__title._orange(data-aos="fade-up") Вы получите
+
+                    .swiper.box-swiper._full-tablet(data-swiper-boxes)
+                        .swiper-wrapper._cols3
+                            .swiper-slide(data-aos="fade-up" data-aos-delay="50")
+                                article.box._calculator
+                                    svg.box__icon._ultra-violet(width="60" height="60")
+                                        use(xlink:href="@img/icons/icons.svg#seo-pluses-1")
+                                    h3.box__title._big Персонального менеджера
+
+                            .swiper-slide(data-aos="fade-up" data-aos-delay="50")
+                                article.box._calculator
+                                    svg.box__icon._orange(width="60" height="60")
+                                        use(xlink:href="@img/icons/icons.svg#seo-pluses-2")
+                                    h3.box__title._big Бесплатный первичный аудит сайта
+
+                            .swiper-slide(data-aos="fade-up" data-aos-delay="50")
+                                article.box._calculator
+                                    svg.box__icon._ultra-violet(width="60" height="60")
+                                        use(xlink:href="@img/icons/icons.svg#seo-pluses-3")
+                                    h3.box__title._big Быстрый расчет стоимости продвижения сайта
+
+        section.section._pb0
+            .container
+                h2.section__title(data-aos="fade-up") Услуги
+
+                .swiper.box-swiper._full-tablet._hover(data-swiper-boxes)
+                    .swiper-wrapper
+                        .swiper-slide(data-aos="fade-up" data-aos-delay="50")
+                            +service-item('service-2', 'Разработка сайтов', 'Создаём сайты под любые задачи. От быстрых лендингов до сложного e-commerce')
+                        .swiper-slide(data-aos="fade-up" data-aos-delay="100")
+                            +service-item('service-5', 'Контекстная реклама', 'Добываем качественный рекламный трафик. Увеличиваем количество заявок')
+                        .swiper-slide(data-aos="fade-up" data-aos-delay="150")
+                            +service-item('service-3', 'SEO-продвижение', 'Привлекаем максимум органического трафика. Параллельно работаем над юзабилити сайта')
+                        .swiper-slide(data-aos="fade-up" data-aos-delay="200")
+                            +service-item('service-1', 'Комплексный маркетинг', 'Используем принцип омниканальности. Погружаемся в ваш бизнес на всех уровнях маркетинговой воронки')
+
+        section.section._pb0
+            .container
+                h2.section__title(data-aos="fade-up") Сферы продвижения
+
+                section.section.seo-categories._small-radius._black._full-mobile(data-aos="fade-up")
+                    .container
+                        ul.seo-categories__list.list-reset
+                            li
+                                a(href="#") Cтроительство
+                            li
+                                a(href="#") Промышленность
+                            li
+                                a(href="#") Порталы
+                            li
+                                a(href="#") Интернет-магазины
+
+                    img.seo-categories__wave(src="@img/seo-wave-categories.svg" alt="" width="797" height="645")

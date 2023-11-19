@@ -1,0 +1,294 @@
+extends base
+
+block color
+    - var body_classes = '_black'
+
+block meta
+    - var seotitle = 'Разработка логотипов'
+    - var seodescription = ''
+    - var seokeywords = ''
+
+block main
+    main.main
+        section.section._pt0._pb0._black._radius._radius-bottom
+            section.section._small-padding._pb0
+                .container
+                    ul.breadcrumbs.list-reset.text-gray(data-aos="fade-up")
+                        li.breadcrumbs__item
+                            a.breadcrumbs__link(href="#") Главная
+                        li.breadcrumbs__item
+                            a.breadcrumbs__link(href="#") Услуги
+                        li.breadcrumbs__item Разработка логотипов
+
+            section.section.service-intro._pt0._no-ovh
+                .container.service-intro__container
+                    .service-intro__content(data-aos="fade-up")
+                        h1.service-intro__title Разработка логотипов
+                        .service-intro__subtitle.text
+                            p Отражаем индивидуальность бренда в логотипе.
+                            p Делаем уникальный дизайн, который привлекает внимание и повышает узнаваемость.
+                        button.service-intro__btn.btn.btn-reset._violet(type="button" data-modal="#modal-order") Обсудить проект
+                            svg(width="31" height="8")
+                                use(xlink:href="@img/icons/icons.svg#arrow-right")
+
+                    .service-intro__waves-wrap
+                        .service-intro__waves
+                            img.service-intro__wave(src="@img/logo-development-wave.svg" alt="" width="790" height="532")
+                            img.service-intro__wave._gradient(src="@img/logo-development-wave-gradient.svg" alt="" width="790" height="532")
+
+                img.service-intro__circle._left(src="@img/intro-circle-violet-left.svg" alt="" width="578" height="1115")
+                img.service-intro__circle._right(src="@img/intro-circle-violet-right.svg" alt="" width="691" height="1115")
+
+            section.section.service-steps._violet._pt0
+                .container.service-steps__container
+                    .service-steps__left
+                        h2.section__title._violet(data-aos="fade-up") Разработка логотипа <br>за <span>6 шагов</span>
+
+                    .service-steps__items(data-aos="fade-up")
+                        .service-steps__line(data-steps-line)
+                            .service-steps__line-wrap(data-steps-animation)
+                                .service-steps__line(data-steps-animation-target)
+
+                        article.service-steps__item
+                            .service-steps__circle(data-steps-line-first) 01
+                                .service-steps__circle-wrap(data-steps-animation)
+                                    .service-steps__circle(data-steps-animation-target) 01
+                            .service-steps__box.box._dark-blue
+                                h3.service-steps__title Обсуждение проекта
+                                .service-steps__text.text-small
+                                    p С вами свяжется менеджер студии, чтобы обсудить детали заказа и условия договора. По итогам встречи вы получите коммерческое предложение на разработку фирменного стиля и логотипа.
+                                .service-steps__box-wrap(data-steps-animation)
+                                    .service-steps__box.box._dark-blue(data-steps-animation-target)
+                                        h3.service-steps__title Обсуждение проекта
+                                        .service-steps__text.text-small
+                                            p С вами свяжется менеджер студии, чтобы обсудить детали заказа и условия договора. По итогам встречи вы получите коммерческое предложение на разработку фирменного стиля и логотипа.
+
+                        article.service-steps__item
+                            .service-steps__circle 02
+                                .service-steps__circle-wrap(data-steps-animation)
+                                    .service-steps__circle(data-steps-animation-target) 02
+                            .service-steps__box.box._dark-blue
+                                h3.service-steps__title Оформление документов
+                                .service-steps__text.text-small
+                                    p Вы получаете коммерческое предложение, подтверждаете его. Затем получаете договор, внимательно читаете и подписываете со своей стороны. Затем вносите 50% предоплаты по выставленному счёту.
+                                .service-steps__box-wrap(data-steps-animation)
+                                    .service-steps__box.box._dark-blue(data-steps-animation-target)
+                                        h3.service-steps__title Оформление документов
+                                        .service-steps__text.text-small
+                                            p Вы получаете коммерческое предложение, подтверждаете его. Затем получаете договор, внимательно читаете и подписываете со своей стороны. Затем вносите 50% предоплаты по выставленному счёту.
+
+                        article.service-steps__item
+                            .service-steps__circle 03
+                                .service-steps__circle-wrap(data-steps-animation)
+                                    .service-steps__circle(data-steps-animation-target) 03
+                            .service-steps__box.box._dark-blue
+                                h3.service-steps__title Брифинг
+                                .service-steps__text.text-small
+                                    p Дополнительный брифинг поможет лучше понять ваш бизнес, цели и ресурсы, которые есть для реализации, а также обсудить ваши идеи по дизайну.
+                                .service-steps__box-wrap(data-steps-animation)
+                                    .service-steps__box.box._dark-blue(data-steps-animation-target)
+                                        h3.service-steps__title Брифинг
+                                        .service-steps__text.text-small
+                                            p Дополнительный брифинг поможет лучше понять ваш бизнес, цели и ресурсы, которые есть для реализации, а также обсудить ваши идеи по дизайну.
+
+                        article.service-steps__item
+                            .service-steps__circle 04
+                                .service-steps__circle-wrap(data-steps-animation)
+                                    .service-steps__circle(data-steps-animation-target) 04
+                            .service-steps__box.box._dark-blue
+                                h3.service-steps__title Варианты
+                                .service-steps__text.text-small
+                                    p В течение 10 рабочих дней вы получаете первые варианты дизайна с презентацией по каждому из них.
+                                .service-steps__box-wrap(data-steps-animation)
+                                    .service-steps__box.box._dark-blue(data-steps-animation-target)
+                                        h3.service-steps__title Варианты
+                                        .service-steps__text.text-small
+                                            p В течение 10 рабочих дней вы получаете первые варианты дизайна с презентацией по каждому из них.
+
+                        article.service-steps__item
+                            .service-steps__circle 05
+                                .service-steps__circle-wrap(data-steps-animation)
+                                    .service-steps__circle(data-steps-animation-target) 05
+                            .service-steps__box.box._dark-blue
+                                h3.service-steps__title Обсуждение и правки
+                                .service-steps__text.text-small
+                                    p Мы обсуждаем и согласовываем с вами правки либо разрабатываем дополнительные варианты, если это необходимо.
+                                .service-steps__box-wrap(data-steps-animation)
+                                    .service-steps__box.box._dark-blue(data-steps-animation-target)
+                                        h3.service-steps__title Обсуждение и правки
+                                        .service-steps__text.text-small
+                                            p Мы обсуждаем и согласовываем с вами правки либо разрабатываем дополнительные варианты, если это необходимо.
+
+                        article.service-steps__item
+                            .service-steps__circle(data-steps-line-last) 06
+                                .service-steps__circle-wrap(data-steps-animation)
+                                    .service-steps__circle(data-steps-animation-target) 06
+                            .service-steps__box.box._dark-blue
+                                h3.service-steps__title Передача
+                                .service-steps__text.text-small
+                                    p После согласования и внесения второй части оплаты вы получаете ссылку на удалённый сервер, где хранится вся выполненная нами работа по вашему проекту.
+                                .service-steps__box-wrap(data-steps-animation)
+                                    .service-steps__box.box._dark-blue(data-steps-animation-target)
+                                        h3.service-steps__title Передача
+                                        .service-steps__text.text-small
+                                            p После согласования и внесения второй части оплаты вы получаете ссылку на удалённый сервер, где хранится вся выполненная нами работа по вашему проекту.
+
+                    .swiper.service-steps__swiper._full-tablet(data-swiper-boxes data-aos="fade-up")
+                        .swiper-wrapper
+                            .swiper-slide
+                                .service-steps__box.box._dark-blue._active
+                                    .service-steps__circle 01
+                                    h3.service-steps__title Обсуждение проекта
+                                    .service-steps__text.text-small
+                                        p С вами свяжется менеджер студии, чтобы обсудить детали заказа и условия договора. По итогам встречи вы получите коммерческое предложение на разработку фирменного стиля и логотипа.
+                            .swiper-slide
+                                .service-steps__box.box._dark-blue._active
+                                    .service-steps__circle 02
+                                    h3.service-steps__title Оформление документов
+                                    .service-steps__text.text-small
+                                        p Вы получаете коммерческое предложение, подтверждаете его. Затем получаете договор, внимательно читаете и подписываете со своей стороны. Затем вносите 50% предоплаты по выставленному счёту.
+                            .swiper-slide 
+                                .service-steps__box.box._dark-blue._active
+                                    .service-steps__circle 03
+                                    h3.service-steps__title Брифинг
+                                    .service-steps__text.text-small
+                                        p Дополнительный брифинг поможет лучше понять ваш бизнес, цели и ресурсы, которые есть для реализации, а также обсудить ваши идеи по дизайну.
+                            .swiper-slide 
+                                .service-steps__box.box._dark-blue._active
+                                    .service-steps__circle 04
+                                    h3.service-steps__title Варианты
+                                    .service-steps__text.text-small
+                                        p В течение 10 рабочих дней вы получаете первые варианты дизайна с презентацией по каждому из них.
+                            .swiper-slide 
+                                .service-steps__box.box._dark-blue._active
+                                    .service-steps__circle 05
+                                    h3.service-steps__title Обсуждение и правки
+                                    .service-steps__text.text-small
+                                        p Мы обсуждаем и согласовываем с вами правки либо разрабатываем дополнительные варианты, если это необходимо.
+                            .swiper-slide 
+                                .service-steps__box.box._dark-blue._active
+                                    .service-steps__circle 06
+                                    h3.service-steps__title Передача
+                                    .service-steps__text.text-small
+                                        p После согласования и внесения второй части оплаты вы получаете ссылку на удалённый сервер, где хранится вся выполненная нами работа по вашему проекту.
+
+            section.section._pt0
+                .container
+                    h2.section__title._violet(data-aos="fade-up") Логотип обеспечивает компании
+
+                    .swiper.box-swiper._full-tablet(data-swiper-boxes)
+                        .swiper-wrapper._cols3
+                            .swiper-slide(data-aos="fade-up" data-aos-delay="50")
+                                article.box._violet-bordered
+                                    svg.box__icon._red(width="60" height="60")
+                                        use(xlink:href="@img/icons/icons.svg#seo-pluses-1")
+                                    h3.box__title._big Обретение идентичности
+                                    p.box__text.text-small Логотип — уникальное сочетание графики и текста, которое презентует ваш бизнес.
+
+                            .swiper-slide(data-aos="fade-up" data-aos-delay="100")
+                                article.box._violet-bordered
+                                    svg.box__icon._violet(width="60" height="60")
+                                        use(xlink:href="@img/icons/icons.svg#seo-pluses-2")
+                                    h3.box__title._big Повышение узнаваемости
+                                    p.box__text.text-small Размещение логотипа на сайте, документах и в рекламе помогает стать популярным среди своей целевой аудитории.
+
+                            .swiper-slide(data-aos="fade-up" data-aos-delay="150")
+                                article.box._violet-bordered
+                                    svg.box__icon._red(width="60" height="60")
+                                        use(xlink:href="@img/icons/icons.svg#seo-pluses-3")
+                                    h3.box__title._big Лояльность клиентов
+                                    p.box__text.text-small Уникальный логотип позволяет выстроить эффективную коммуникацию с потребителями бренда.
+
+            section.section._pt0
+                .container
+                    h2.section__title._violet(data-aos="fade-up") Тарифы
+
+                    .swiper.box-swiper._full-tablet._hover(data-swiper-boxes)
+                        .swiper-wrapper._cols3
+                            .swiper-slide(data-aos="fade-up" data-aos-delay="50")
+                                article.box._violet-bordered._hover
+                                    h3.box__title._big Логотип по эскизу
+                                    p.box__title._big._violet 32 000 ₽
+                                    ul.box__list.text-small.list-reset
+                                        li 1 вариант логотипа
+                                        li 2 правки логотипа
+                                        li 2 раб. дня на разработку
+                                        li Файлы для веб и печати (.eps, .pdf, .png, .jpg)
+                                        li Фавикон
+                                        li Стоимость разработки логотипа 32 000 ₽
+                                        li Стоимость дополнительных правок 2 000 ₽ / час
+                                        li Подходит если у вас есть идея или эскиз
+                                    .box__grow
+                                        button.btn.btn-reset._violet-bordered._hidden-svg-mobile(type="button" data-modal="#modal-order" data-form-field="Логотип по эскизу") Оставить заявку
+                                            svg(width="31" height="8")
+                                                use(xlink:href="@img/icons/icons.svg#arrow-right")
+
+                            .swiper-slide(data-aos="fade-up" data-aos-delay="100")
+                                article.box._violet-bordered._hover
+                                    h3.box__title._big 3 логотипа с выбором
+                                    p.box__title._big._violet 40 000 ₽
+                                    ul.box__list.text-small.list-reset
+                                        li 3 уникальных варианта логотипа
+                                        li Презентация концепций логотипа
+                                        li 2 правки логотипа
+                                        li Файлы для веб и печати (.eps, .pdf, .png, .jpg)
+                                        li Фавикон
+                                        li Стоимость разработки всех логотипов 40 000 ₽
+                                        li Стоимость дополнительных правок 2 000 ₽ / час
+                                    .box__grow
+                                        button.btn.btn-reset._violet-bordered._hidden-svg-mobile(type="button" data-modal="#modal-order" data-form-field="3 логотипа с выбором") Оставить заявку
+                                            svg(width="31" height="8")
+                                                use(xlink:href="@img/icons/icons.svg#arrow-right")
+
+                            .swiper-slide(data-aos="fade-up" data-aos-delay="150")
+                                article.box._violet-bordered._hover
+                                    h3.box__title._big 5 логотипов с выбором
+                                    p.box__title._big._violet 50 000 ₽
+                                    ul.box__list.text-small.list-reset
+                                        li 5 уникальных вариантов логотипа
+                                        li Презентация концепций логотипа
+                                        li 2 правки логотипа
+                                        li Файлы для веб и печати (.eps, .pdf, .png, .jpg)
+                                        li Фавикон
+                                        li Стоимость разработки всех логотипов 50 000 ₽
+                                        li Стоимость дополнительных правок 2 000 ₽ / час
+                                    .box__grow
+                                        button.btn.btn-reset._violet-bordered._hidden-svg-mobile(type="button" data-modal="#modal-order" data-form-field="5 логотипов с выбором") Оставить заявку
+                                            svg(width="31" height="8")
+                                                use(xlink:href="@img/icons/icons.svg#arrow-right")
+
+                            .swiper-slide(data-aos="fade-up" data-aos-delay="200")
+                                article.box._violet-bordered._hover
+                                    h3.box__title._big Логотипы и брендбук
+                                    p.box__title._big._violet 60 000 ₽
+                                    ul.box__list.text-small.list-reset
+                                        li 5 вариантов логотипа
+                                        li 2 правки логотипа
+                                        li Разработка брендбука
+                                        li Фирменные цвета и шрифты
+                                        li Фирменный стиль
+                                        li Правила использования
+                                        li 5 фирменных носителей, например: визитка, бланк, папка, блокнот, конверт
+                                        li Фавикон
+                                        li Стоимость разработки логотипов 60 000 ₽
+                                        li Стоимость дополнительных правок логотипа 2 000 ₽ / час
+                                    .box__grow
+                                        button.btn.btn-reset._violet-bordered._hidden-svg-mobile(type="button" data-modal="#modal-order" data-form-field="Логотипы и брендбук") Оставить заявку
+                                            svg(width="31" height="8")
+                                                use(xlink:href="@img/icons/icons.svg#arrow-right")
+
+        section.section._pb0
+            .container
+                h2.section__title(data-aos="fade-up") Портфолио
+
+                .portfolio__items
+                    +portfolio-item('Экспресс-тесты производства SD BIOSENSOR', 'portfolio-item-1')
+                    +portfolio-item('Спортивный клуб художественной гимнастики «Без границ»', 'portfolio-item-2')
+                    +portfolio-item('ТАНИТ: студия искусственного камня', 'portfolio-item-3')
+                    +portfolio-item('ТАНИТ: студия искусственного камня', 'portfolio-item-3')
+                    +portfolio-item('Спортивный клуб художественной гимнастики «Без границ»', 'portfolio-item-2')
+                    +portfolio-item('Экспресс-тесты производства SD BIOSENSOR', 'portfolio-item-1')
+                    +portfolio-item('Экспресс-тесты производства SD BIOSENSOR', 'portfolio-item-1')
+                    +portfolio-item('Спортивный клуб художественной гимнастики «Без границ»', 'portfolio-item-2')
+                    +portfolio-item('ТАНИТ: студия искусственного камня', 'portfolio-item-3')
+                    +portfolio-item('ТАНИТ: студия искусственного камня', 'portfolio-item-3')

@@ -1,0 +1,63 @@
+.swiper {
+    &._full-tablet {
+        @media (max-width: 991px) {
+            margin: 0 calc(clamp(16px, 4.17vw, 80px) * -1);
+            padding: 0 clamp(16px, 4.17vw, 80px);
+        }
+    }
+
+    &._hover {
+        @media (min-width: 992px) {
+            padding-top: 10px;
+            margin-top: -10px;
+        }
+    }
+
+    & .swiper-slide {
+        height: unset;
+    }
+
+    &__navigations {
+        display: flex;
+        align-items: center;
+        gap: clamp(30px, 2.08vw, 40px);
+    }
+
+    &__navigation {
+        color: $color_gray;
+        transition: .5s ease-in-out;
+
+        &:disabled {
+            opacity: .2;
+            cursor: not-allowed;
+        }
+
+        &:hover {
+            color: $color_red;
+        }
+
+        &._next {
+            & svg {
+                transform: rotate(180deg);
+            }
+        }
+
+        & svg {
+            width: clamp(60px, 5.78vw, 111px);
+            height: auto;
+        }
+
+        &._green {
+            color: $color_green;
+
+            &:hover {
+                color: $color_red;
+            }
+
+            &:disabled {
+                color: $color_gray;
+                opacity: 1;
+            }
+        }
+    }
+}

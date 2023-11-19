@@ -1,0 +1,75 @@
+extends base
+
+block color
+    - var body_classes = ''
+
+block meta
+    - var seotitle = 'Карьера'
+    - var seodescription = ''
+    - var seokeywords = ''
+
+block main
+    main.main._inner
+        section.section._small-padding
+            .container
+                ul.breadcrumbs.list-reset.text-gray(data-aos="fade-up")
+                    li.breadcrumbs__item
+                        a.breadcrumbs__link(href="#") Главная
+                    li.breadcrumbs__item
+                        a.breadcrumbs__link(href="#") О компании
+                    li.breadcrumbs__item Карьера
+
+        section
+            .container
+                h1.h2.section__title(data-aos="fade-up") Карьера
+                .text.section._pt0(data-aos="fade-up")
+                    p Если вы читаете этот текст, значит:
+                    ul
+                        li Интересуетесь работой в сфере IT;
+                        li Живете или планируете жить в Самаре;
+                        li Тщательно выбираете работодателя, и это здорово!
+                    p Мы занимаемся интернет-маркетингом с 2013 года — разрабатываем комплексные стратегии, создаём и продвигаем сайты, запускаем рекламные кампании. Работаем с проектами любого уровня сложности — в нашем портфолио клиенты из самых различных отраслей и регионов России.
+                    p Если вы хотите развиваться в сфере интернет-маркетинга, отправьте нам своё резюме.
+
+                section.section._black._radius(data-aos="fade-up")
+                    .container
+                        h2.section__title Расскажите о себе
+
+                        form.form
+                            .form__fields._cols3
+                                fieldset.form__fieldset
+                                    label.form__label.text-small.text-gray(for="career-name") Имя
+                                    input.form__input(type="text" name="name" placeholder="Ваше имя" id="career-name" data-input)
+
+                                fieldset.form__fieldset
+                                    label.form__label.text-small.text-gray(for="career-phone") Телефон
+                                    input.form__input(type="tel" name="phone" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" id="career-phone" data-tel data-input)
+
+                                fieldset.form__fieldset
+                                    label.form__label.text-small.text-gray(for="career-email") Почта
+                                    input.form__input(type="email" name="email" placeholder="info@example.ru" id="career-email" data-input)
+
+                                fieldset.form__fieldset._full
+                                    label.form__label.text-small.text-gray(for="career-message") Сопроводительное письмо
+                                    input.form__input(type="text" name="text" placeholder="Расскажите о вашем профессиональном пути" id="career-message" data-input)
+
+                            .form__btns
+                                .form__attachment
+                                    input.form__attachment-input(type="file" name="attachment" id="career-attachment" data-attachment)
+                                    label.form__attachment-label.btn.btn-reset._white-bordered(for="career-attachment")
+                                        svg(width="24" height="24")
+                                            use(xlink:href="@img/icons/icons.svg#attachment") 
+                                        span Прикрепить файл
+
+                                button.form__submit.btn.btn-reset._red(type="submit") Отправить заявку
+                                    svg(width="31" height="8")
+                                        use(xlink:href="@img/icons/icons.svg#arrow-right")
+
+                            .form__checkbox
+                                input.form__checkbox-input(type="checkbox" name="policy" id="career-policy" data-policy required)
+                                label.form__checkbox-label(for="career-policy")
+                                    span.form__checkbox-check
+                                    span Оставляя заявку, вы даёте согласие на <a href="#" target="_blank">обработку ваших персональных данных</a>, а также подтверждаете, что вам исполнилось 18 лет
+
+                        svg.career__wave(width="291" height="196")
+                            use(xlink:href="@img/icons/icons.svg#career-form-wave")

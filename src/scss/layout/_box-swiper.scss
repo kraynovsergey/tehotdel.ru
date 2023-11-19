@@ -1,0 +1,29 @@
+.box-swiper {
+    @media (min-width: 992px) {
+        & .swiper-wrapper {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: clamp(30px, 2.08vw, 40px);
+
+            @media (max-width: 1199px) {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            &._cols2 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            &._cols3 {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            &._cols1 {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        & .swiper-slide {
+            width: unset !important;
+        }
+    }
+}

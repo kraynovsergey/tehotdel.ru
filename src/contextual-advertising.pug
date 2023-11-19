@@ -1,0 +1,420 @@
+extends base
+
+block color
+    - var body_classes = '_black'
+
+block meta
+    - var seotitle = 'Контекстная реклама'
+    - var seodescription = ''
+    - var seokeywords = ''
+
+block main
+    main.main
+        section.section._pt0._pb0._black._radius._radius-bottom
+            section.section._small-padding._pb0
+                .container
+                    ul.breadcrumbs.list-reset.text-gray(data-aos="fade-up")
+                        li.breadcrumbs__item
+                            a.breadcrumbs__link(href="#") Главная
+                        li.breadcrumbs__item
+                            a.breadcrumbs__link(href="#") Услуги
+                        li.breadcrumbs__item Контекстная реклама
+
+            section.section.service-intro._pt0._no-ovh
+                .container.service-intro__container
+                    .service-intro__content(data-aos="fade-up")
+                        h1.service-intro__title Контекстная реклама
+                        .service-intro__subtitle.text
+                            p Наша задача — приумножать каждый рубль, вложенный в контекстную рекламу, и уменьшать стоимость заявки.
+                        button.service-intro__btn.btn.btn-reset._yellow(type="button" data-modal="#modal-order") Обсудить проект
+                            svg(width="31" height="8")
+                                use(xlink:href="@img/icons/icons.svg#arrow-right")
+
+                    .service-intro__waves-wrap
+                        .service-intro__waves
+                            img.service-intro__wave(src="@img/contextual-wave.svg" alt="" width="790" height="532")
+                            img.service-intro__wave._gradient(src="@img/contextual-wave-gradient.svg" alt="" width="790" height="532")
+
+                img.service-intro__circle._left(src="@img/intro-circle-yellow-left.svg" alt="" width="578" height="1115")
+                img.service-intro__circle._right(src="@img/intro-circle-yellow-right.svg" alt="" width="691" height="1115")
+
+            section.section.service-steps._yellow._pt0
+                .container.service-steps__container
+                    .service-steps__left
+                        h2.section__title._yellow(data-aos="fade-up") Результат за <span>3 шага</span>
+
+                    .service-steps__items(data-aos="fade-up")
+                        .service-steps__line(data-steps-line)
+                            .service-steps__line-wrap(data-steps-animation)
+                                .service-steps__line(data-steps-animation-target)
+
+                        article.service-steps__item
+                            .service-steps__circle(data-steps-line-first) 01
+                                .service-steps__circle-wrap(data-steps-animation)
+                                    .service-steps__circle(data-steps-animation-target) 01
+                            .service-steps__box.box._dark-blue
+                                h3.service-steps__title Новые клиенты
+                                .service-steps__text.text-small
+                                    p Приведём целевую аудиторию, расположенную к покупке. 
+                                    p Проанализируем уровень заинтересованности вашим продуктом или услугой.
+                                .service-steps__box-wrap(data-steps-animation)
+                                    .service-steps__box.box._dark-blue(data-steps-animation-target)
+                                        h3.service-steps__title Новые клиенты
+                                        .service-steps__text.text-small
+                                            p Приведём целевую аудиторию, расположенную к покупке. 
+                                            p Проанализируем уровень заинтересованности вашим продуктом или услугой.
+
+                        article.service-steps__item
+                            .service-steps__circle 02
+                                .service-steps__circle-wrap(data-steps-animation)
+                                    .service-steps__circle(data-steps-animation-target) 02
+                            .service-steps__box.box._dark-blue
+                                h3.service-steps__title Снижение стоимости заявки
+                                .service-steps__text.text-small
+                                    p Регулярная оптимизация рекламных кампаний сокращает расходы на рекламу. Вы сможете получать больше клиентов за те же деньги.
+                                .service-steps__box-wrap(data-steps-animation)
+                                    .service-steps__box.box._dark-blue(data-steps-animation-target)
+                                        h3.service-steps__title Снижение стоимости заявки
+                                        .service-steps__text.text-small
+                                            p Регулярная оптимизация рекламных кампаний сокращает расходы на рекламу. Вы сможете получать больше клиентов за те же деньги.
+
+                        article.service-steps__item
+                            .service-steps__circle(data-steps-line-last) 03
+                                .service-steps__circle-wrap(data-steps-animation)
+                                    .service-steps__circle(data-steps-animation-target) 03
+                            .service-steps__box.box._dark-blue
+                                h3.service-steps__title Узнаваемость бренда
+                                .service-steps__text.text-small
+                                    p Привлечем клиентов, которые не знакомы с вашей компанией. Они вас запомнят и будут заранее предрасположены к покупке.
+                                .service-steps__box-wrap(data-steps-animation)
+                                    .service-steps__box.box._dark-blue(data-steps-animation-target)
+                                        h3.service-steps__title Узнаваемость бренда
+                                        .service-steps__text.text-small
+                                            p Привлечем клиентов, которые не знакомы с вашей компанией. Они вас запомнят и будут заранее предрасположены к покупке.
+
+                    .swiper.service-steps__swiper._full-tablet(data-swiper-boxes data-aos="fade-up")
+                        .swiper-wrapper
+                            .swiper-slide
+                                .service-steps__box.box._dark-blue._active
+                                    .service-steps__circle 01
+                                    h3.service-steps__title Новые клиенты
+                                    .service-steps__text.text-small
+                                        p Приведём целевую аудиторию, расположенную к покупке. 
+                                        p Проанализируем уровень заинтересованности вашим продуктом или услугой.
+                            .swiper-slide
+                                .service-steps__box.box._dark-blue._active
+                                    .service-steps__circle 02
+                                    h3.service-steps__title Снижение стоимости заявки
+                                    .service-steps__text.text-small
+                                        p Регулярная оптимизация рекламных кампаний сокращает расходы на рекламу. Вы сможете получать больше клиентов за те же деньги.
+                            .swiper-slide 
+                                .service-steps__box.box._dark-blue._active
+                                    .service-steps__circle 03
+                                    h3.service-steps__title Узнаваемость бренда
+                                    .service-steps__text.text-small
+                                        p Привлечем клиентов, которые не знакомы с вашей компанией. Они вас запомнят и будут заранее предрасположены к покупке.
+
+            section.section._pt0
+                .container
+                    h2.section__title._yellow(data-aos="fade-up") Что мы делаем?
+                    
+                    .section._small-padding._pt0.text(data-aos="fade-up")
+                        p Наша задача — приумножать каждый рубль, вложенный в контекстную рекламу, и уменьшать стоимость заявки.
+
+                    .range__wrap(data-aos="fade-up")
+                        .range__init(data-range data-range-max="6")
+
+                        .range__line(data-range-line="2" style="left: calc(20% - 2px)")
+                        .range__line(data-range-line="3" style="left: calc(40% - 2px)")
+                        .range__line(data-range-line="4" style="left: calc(60% - 2px)")
+                        .range__line(data-range-line="5" style="left: calc(80% - 2px)")
+
+                        .range._cols6.text-small
+                            .range__step._active(data-range-item="1")
+                                .range__text Изучение вашего бизнеса
+
+                            .range__step(data-range-item="2")
+                                .range__text Семантическое ядро
+
+                            .range__step(data-range-item="3")
+                                .range__text Стратегия контекстной рекламы
+                        
+                            .range__step(data-range-item="4")
+                                .range__text Объявления
+
+                            .range__step(data-range-item="5")
+                                .range__text А\Б тестирование
+
+                            .range__step(data-range-item="6")
+                                .range__text Корректировки
+
+                    section.section.range__box-wrap._pb0(data-aos="fade-up")
+                        .range__box._cols3._active(data-range-box="1")
+                            .box._dark-blue
+                                h3.box__title._big._yellow Бриф
+                                .box__text.text-small.text
+                                    p Узнаем про продукт, позиционирование, целевую аудиторию, про взаимодействие компании с клиентом, особенности сферы.
+                            .box._dark-blue
+                                h3.box__title._big._yellow Исследование
+                                .box__text.text-small.text
+                                    p Гуглим информацию о вашем бизнесе, изучаем тематические статьи и составляем список фактов.
+                            .box._dark-blue
+                                h3.box__title._big._yellow Аналитика конкурентов
+                                .box__text.text-small.text
+                                    p Смотрим, как рекламируется конкурент, что хорошо сделано и работает, что плохо.
+
+                        .range__box._cols3(data-range-box="2")
+                            .box._dark-blue
+                                h3.box__title._big._yellow Ключевые слова
+                                .box__text.text-small.text
+                                    p Подбираем список фраз, по которым пользователи найдут вас.
+                            .box._dark-blue
+                                h3.box__title._big._yellow Сегментация
+                                .box__text.text-small.text
+                                    p Разбиваем подготовленный список на группы по направлениям.
+                            .box._dark-blue
+                                h3.box__title._big._yellow Фильтрация
+                                .box__text.text-small.text
+                                    p Отсекаем слова, которые привлекут нецелевой трафик на сайт.
+
+                        .range__box._cols3(data-range-box="3")
+                            .box._dark-blue
+                                h3.box__title._big._yellow УТП
+                                .box__text.text-small.text
+                                    p Сформулируем привлекательное для вашей аудитории уникальное торговое предложение с учетом ваших преимуществ.
+                            .box._dark-blue
+                                h3.box__title._big._yellow Стратегия
+                                .box__text.text-small.text
+                                    p Подберём наиболее эффективные рекламные площадки, которые приведут целевой трафик на сайт.
+                            .box._dark-blue
+                                h3.box__title._big._yellow Структура
+                                .box__text.text-small.text
+                                    p Разобьём выбранные площадки на рекламные кампании и определим для них группы ключевых слов.
+
+                        .range__box._cols3(data-range-box="4")
+                            .box._dark-blue
+                                h3.box__title._big._yellow Заголовки
+                                .box__text.text-small.text
+                                    p Для каждой площадки генерируем эффективные заголовки с учетом интересов ЦА.
+                            .box._dark-blue
+                                h3.box__title._big._yellow Тексты
+                                .box__text.text-small.text
+                                    p Используем полученное УТП и информацию о ЦА, напишем нетривиальные короткие привлекательные тексты.
+                            .box._dark-blue
+                                h3.box__title._big._yellow Креативы
+                                .box__text.text-small.text
+                                    p Создаём вирусные привлекательные изображения для объявлений в медийных сетях.
+
+                        .range__box._cols3(data-range-box="5")
+                            .box._dark-blue
+                                h3.box__title._big._yellow Подготовка
+                                .box__text.text-small.text
+                                    p Разработаем несколько вариантов объявлений для каждой группы с целью выявить лучшие.
+                            .box._dark-blue
+                                h3.box__title._big._yellow Тестирование
+                                .box__text.text-small.text
+                                    p Запустим тестовый период для каждого варианта и собирём статистику по эффективности объявлений.
+                            .box._dark-blue
+                                h3.box__title._big._yellow Результат
+                                .box__text.text-small.text
+                                    p Выберем более эффективное объявление по соотношению цена/качсетво и запустим с ним новый тест.
+
+                        .range__box._cols3(data-range-box="6")
+                            .box._dark-blue
+                                h3.box__title._big._yellow Аналитика
+                                .box__text.text-small.text
+                                    p Анализируем эффективность объявлений, семантического ядра и аудитории по нескольким параметрам: конверсия в заявки, количество переходов, заинтересованность пользователя, количество заявок.
+                            .box._dark-blue
+                                h3.box__title._big._yellow Гипотезы
+                                .box__text.text-small.text
+                                    p Выдвигаем новые гипотезы по улучшению параметров рекламной кампании.
+                            .box._dark-blue
+                                h3.box__title._big._yellow Корректировка
+                                .box__text.text-small.text
+                                    p Вносим изменения в рекламную кампанию согласно выдвинутым гипотезам.
+
+                    section.range__swiper(data-aos="fade-up")
+                        .swiper.box-swiper._full-tablet(data-swiper-boxes)
+                            .swiper-wrapper
+                                .swiper-slide
+                                    .service-steps__box.range__mobile-slide.box._dark-blue._active
+                                        h2.range__mobile-title._yellow Изучение вашего бизнеса
+
+                                        .range__mobile-box
+                                            h3.service-steps__title.box__title._yellow Бриф
+                                            .service-steps__text.text-small
+                                                p Узнаем про продукт, позиционирование, целевую аудиторию, про взаимодействие компании с клиентом, особенности сферы.
+
+                                        .range__mobile-box
+                                            h3.service-steps__title.box__title._yellow Исследование
+                                            .service-steps__text.text-small
+                                                p Гуглим информацию о вашем бизнесе, изучаем тематические статьи и составляем список фактов.
+
+                                        .range__mobile-box
+                                            h3.service-steps__title.box__title._yellow Аналитика конкурентов
+                                            .service-steps__text.text-small
+                                                p Смотрим, как рекламируется конкурент, что хорошо сделано и работает, что плохо.
+
+                                .swiper-slide
+                                    .service-steps__box.range__mobile-slide.box._dark-blue._active
+                                        h2.range__mobile-title._yellow Семантическое ядро
+
+                                        .range__mobile-box
+                                            h3.service-steps__title.box__title._yellow Ключевые слова
+                                            .service-steps__text.text-small
+                                                p Подбираем список фраз, по которым пользователи найдут вас.
+
+                                        .range__mobile-box
+                                            h3.service-steps__title.box__title._yellow Сегментация
+                                            .service-steps__text.text-small
+                                                p Разбиваем подготовленный список на группы по направлениям.
+
+                                        .range__mobile-box
+                                            h3.service-steps__title.box__title._yellow Фильтрация
+                                            .service-steps__text.text-small
+                                                p Отсекаем слова, которые привлекут нецелевой трафик на сайт.
+
+                                .swiper-slide
+                                    .service-steps__box.range__mobile-slide.box._dark-blue._active
+                                        h2.range__mobile-title._yellow Стратегия контекстной рекламы
+
+                                        .range__mobile-box
+                                            h3.service-steps__title.box__title._yellow УТП
+                                            .service-steps__text.text-small
+                                                p Сформулируем привлекательное для вашей аудитории уникальное торговое предложение с учетом ваших преимуществ.
+
+                                        .range__mobile-box
+                                            h3.service-steps__title.box__title._yellow Стратегия
+                                            .service-steps__text.text-small
+                                                p Подберём наиболее эффективные рекламные площадки, которые приведут целевой трафик на сайт.
+
+                                        .range__mobile-box
+                                            h3.service-steps__title.box__title._yellow Структура
+                                            .service-steps__text.text-small
+                                                p Разобьём выбранные площадки на рекламные кампании и определим для них группы ключевых слов.
+
+                                .swiper-slide
+                                    .service-steps__box.range__mobile-slide.box._dark-blue._active
+                                        h2.range__mobile-title._yellow Объявления
+
+                                        .range__mobile-box
+                                            h3.service-steps__title.box__title._yellow Заголовки
+                                            .service-steps__text.text-small
+                                                p Для каждой площадки генерируем эффективные заголовки с учетом интересов ЦА.
+
+                                        .range__mobile-box
+                                            h3.service-steps__title.box__title._yellow Тексты
+                                            .service-steps__text.text-small
+                                                p Используем полученное УТП и информацию о ЦА, напишем нетривиальные короткие привлекательные тексты.
+
+                                        .range__mobile-box
+                                            h3.service-steps__title.box__title._yellow Креативы
+                                            .service-steps__text.text-small
+                                                p Создаём вирусные привлекательные изображения для объявлений в медийных сетях.
+
+                                .swiper-slide
+                                    .service-steps__box.range__mobile-slide.box._dark-blue._active
+                                        h2.range__mobile-title._yellow А\Б тестирование
+
+                                        .range__mobile-box
+                                            h3.service-steps__title.box__title._yellow Подготовка
+                                            .service-steps__text.text-small
+                                                p Разработаем несколько вариантов объявлений для каждой группы с целью выявить лучшие.
+
+                                        .range__mobile-box
+                                            h3.service-steps__title.box__title._yellow Тестирование
+                                            .service-steps__text.text-small
+                                                p Запустим тестовый период для каждого варианта и собирём статистику по эффективности объявлений.
+
+                                        .range__mobile-box
+                                            h3.service-steps__title.box__title._yellow Результат
+                                            .service-steps__text.text-small
+                                                p Выберем более эффективное объявление по соотношению цена/качсетво и запустим с ним новый тест.
+
+                                .swiper-slide
+                                    .service-steps__box.range__mobile-slide.box._dark-blue._active
+                                        h2.range__mobile-title._yellow Корректировки
+
+                                        .range__mobile-box
+                                            h3.service-steps__title.box__title._yellow Аналитика
+                                            .service-steps__text.text-small
+                                                p Анализируем эффективность объявлений, семантического ядра и аудитории по нескольким параметрам: конверсия в заявки, количество переходов, заинтересованность пользователя, количество заявок.
+
+                                        .range__mobile-box
+                                            h3.service-steps__title.box__title._yellow Гипотезы
+                                            .service-steps__text.text-small
+                                                p Выдвигаем новые гипотезы по улучшению параметров рекламной кампании.
+
+                                        .range__mobile-box
+                                            h3.service-steps__title.box__title._yellow Корректировка
+                                            .service-steps__text.text-small
+                                                p Вносим изменения в рекламную кампанию согласно выдвинутым гипотезам.
+               
+        section.section
+            .container
+                .section__header
+                    h2.section__title(data-aos="fade-up") Преимущества контекстной рекламы
+                    .swiper__navigations.reviews__navigations(data-aos="fade-up" data-aos-delay="100")
+                        button.swiper__navigation._prev.btn-reset(type="button" data-swiper-boxes-full-prev)
+                            svg(width="111" height="16")
+                                use(xlink:href="@img/icons/icons.svg#swiper-arrow-left")
+                        button.swiper__navigation._next.btn-reset(type="button" data-swiper-boxes-full-next)
+                            svg(width="111" height="16")
+                                use(xlink:href="@img/icons/icons.svg#swiper-arrow-left")
+
+                .swiper._full-tablet(data-swiper-boxes-full)
+                    .swiper-wrapper
+                        .swiper-slide(data-aos="fade-up" data-aos-delay="50")
+                            +seo-pluses('seo-pluses-1', 
+                                'Быстрый результат',
+                                'Контекстная реклама привлекает клиентов уже в день запуска кампании.',
+                                '_red')
+                        .swiper-slide(data-aos="fade-up" data-aos-delay="100")
+                            +seo-pluses('seo-pluses-2', 
+                                'Масштабирование бизнеса',
+                                'Возможность рекламироваться в любом регионе РФ.',
+                                '_black')
+                        .swiper-slide(data-aos="fade-up" data-aos-delay="150")
+                            +seo-pluses('seo-pluses-3', 
+                                'Расширение целевой аудитории',
+                                'Кроме выделенной ЦА, цепляем новую в смежных тематиках.',
+                                '_red')
+                        .swiper-slide(data-aos="fade-up" data-aos-delay="200")
+                            +seo-pluses('seo-pluses-4', 
+                                'Возврат посетителей',
+                                'Ремаркетинг возвращает клиентов, которые уже посещали сайт. Это повышает процент конверсии в продажи.',
+                                '_black')
+                        .swiper-slide(data-aos="fade-up" data-aos-delay="200")
+                            +seo-pluses('seo-pluses-5', 
+                                'Прозрачность результата',
+                                'Благодаря системам аналитики можно увидеть эффективность рекламной кампании в цифрах.',
+                                '_red')
+
+        section.section.price-block._black._radius
+            .container.price-block__container
+                .price-block__box
+                    h2.price-block__title.section__title._yellow Цены на контекстную рекламу
+                    
+                    p.price-block__price._yellow от 35 000 ₽ в мес.
+                    
+                    p.price-block__text Бюджет на продвижение зависит от объёма необходимых работ, а также количества направлений и регионов.
+                    
+                    button.btn.btn-reset._yellow(type="button" data-modal="#modal-order") Обсудить проект
+                        svg(width="31" height="8")
+                            use(xlink:href="@img/icons/icons.svg#arrow-right")
+
+                    img.price-block__wave(src="@img/price-block-wave-yellow.svg" alt="" width="755" height="274")
+
+                .price-block__content
+                    h3.price-block__subtitle Дополнительно вы получите:
+
+                    .swiper.box-swiper._full-tablet(data-swiper-boxes)
+                        .swiper-wrapper._cols2
+                            .swiper-slide
+                                +price-param('price-param-1', '_yellow', 'Персонального аккаунт-менеджера, который будет курировать ваш проект')
+                            .swiper-slide
+                                +price-param('price-param-2', '_red', 'Консультации специалиста по контекстной рекламе')
+                            .swiper-slide
+                                +price-param('price-param-3', '_red', 'Команду специалистов в Самаре и Москве: контекстолога, дизайнера, программиста и интернет-маркетолога')
+                            .swiper-slide
+                                +price-param('price-param-4', '_yellow', 'Подробный отчёт о проделанной работе и результатах каждый месяц')

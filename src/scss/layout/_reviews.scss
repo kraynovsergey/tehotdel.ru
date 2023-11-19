@@ -1,0 +1,15 @@
+.reviews {
+    &__navigations {
+        @media (max-width: 991px) {
+            display: none;
+        }
+    }
+
+    &__picture {
+        margin-top: 5px;
+
+        & img {
+            border: 1px solid #ADBBD7;
+        }
+    }
+}

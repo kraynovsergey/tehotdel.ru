@@ -1,0 +1,97 @@
+extends base
+
+block color
+    - var body_classes = '_black _full-black'
+
+block meta
+    - var seotitle = 'Контакты'
+    - var seodescription = ''
+    - var seokeywords = ''
+
+block main
+    main.main._inner
+        section.section._small-padding._black
+            .container
+                ul.breadcrumbs.list-reset.text-gray(data-aos="fade-up")
+                    li.breadcrumbs__item
+                        a.breadcrumbs__link(href="#") Главная
+                    li.breadcrumbs__item
+                        a.breadcrumbs__link(href="#") О компании
+                    li.breadcrumbs__item Контакты
+
+        section.section._black._pt0._pb0
+            .container
+                h1.h2.section__title(data-aos="fade-up") Контакты
+
+                .contacts__header(data-aos="fade-up")
+                    .tabs__btns.contacts__tabs.scroll._hidden
+                        button.btn.btn-reset.tabs__btn._red._active(type="button" data-tab="1") Самара
+                        button.btn.btn-reset.tabs__btn._red(type="button" data-tab="2") Москва
+
+                    button.contacts__order.btn.btn-reset._red(type="button" data-modal="#modal-order") Обсудить проект
+                        svg(width="31" height="8")
+                            use(xlink:href="@img/icons/icons.svg#arrow-right")
+
+                .tabs__content._active(data-tab-content="1" data-aos="fade-up")
+                    .contacts__grid
+                        .contacts__box
+                            address.contacts__item
+                                p.contacts__item-title.text-small Телефон
+                                a.contacts__item-link.contacts__item-value(href="tel:+78463796226") +7 846 379-62-26
+
+                            address.contacts__item
+                                p.contacts__item-title.text-small Почта
+                                p.contacts__item-value <a class="contacts__item-link" href="mailto:info@tehotdel.ru">info@tehotdel.ru</a> — предложения по партнёрству
+                                p.contacts__item-value <a class="contacts__item-link" href="mailto:sale@tehotdel.ru">sale@tehotdel.ru</a> — отдел продаж
+
+                            address.contacts__item
+                                p.contacts__item-title.text-small Адрес
+                                p.contacts__item-value г. Самара, 5-я просека, 110Е / оф. 309
+
+                            address.contacts__item
+                                p.contacts__item-title.text-small Соц. сети
+                                a.contacts__item-value.contacts__item-link(href="#" target="_blank" rel="nofollow") VK
+
+                        .contacts__map(id="samara-map")
+
+                .tabs__content(data-tab-content="2")
+                    .contacts__grid
+                        .contacts__box
+                            address.contacts__item
+                                p.contacts__item-title.text-small Телефон
+                                a.contacts__item-link.contacts__item-value(href="tel:+78463796226") +7 846 379-62-26
+
+                            address.contacts__item
+                                p.contacts__item-title.text-small Почта
+                                p.contacts__item-value <a class="contacts__item-link" href="mailto:info@tehotdel.ru">info@tehotdel.ru</a> — предложения по партнёрству
+                                p.contacts__item-value <a class="contacts__item-link" href="mailto:sale@tehotdel.ru">sale@tehotdel.ru</a> — отдел продаж
+
+                            address.contacts__item
+                                p.contacts__item-title.text-small Адрес
+                                p.contacts__item-value г. Москва, Нижний Сусальный пер., 5с19
+
+                            address.contacts__item
+                                p.contacts__item-title.text-small Соц. сети
+                                a.contacts__item-value.contacts__item-link(href="#" target="_blank" rel="nofollow") VK
+
+                        .contacts__map(id="moscow-map")
+
+                .contacts__grid.contacts__requisites(data-aos="fade-up")
+                    .contacts__box
+                        h2.section__title.contacts__box-title Реквизиты компании
+                        .contacts__item-value.text
+                            p ИНН: 6319173633<br>КПП: 631601001<br>ОГРН: 1136319007593<br>Р/С: 40702810229390000104
+                            p Директор: Лобина Клара Александровна
+                        
+
+                    .contacts__box(data-aos="fade-up")
+                        h2.section__title.contacts__box-title Реквизиты банка
+                        .contacts__item-value.text
+                            p Филиал "Нижегородский"<br>ОАО "АЛЬФА-БАНК"<br>К/С: 30101810200000000824<br>БИК: 042202824<br>ИНН: 7728168971<br>ОГРН 1027700067328
+
+                img.contacts__circle(src="@img/contacts-circle.svg" alt="" width="702" height="1062")
+
+block footer
+
+block scripts
+    script(src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript")

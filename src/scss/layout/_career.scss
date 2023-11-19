@@ -1,0 +1,38 @@
+.career {
+    &__items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: clamp(30px, 2.08vw, 40px);
+
+        @media (max-width: 991px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__item {
+        position: relative;
+    }
+
+    &__title {
+        font-size: clamp(18px, 2.6vw, 50px);
+    }
+
+    &__wave {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 16%;
+        height: auto;
+
+        @media (max-width: 991px) {
+            top: 0;
+            bottom: unset;
+            transform: rotate(-90deg);
+            right: -3%;
+        }
+
+        @media (max-width: 575px) {
+            display: none;
+        }
+    }
+}

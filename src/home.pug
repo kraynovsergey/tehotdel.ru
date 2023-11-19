@@ -1,0 +1,114 @@
+extends base
+
+block color
+    - var body_classes = '_black'
+
+block meta
+    - var seotitle = 'Главная страница'
+    - var seodescription = ''
+    - var seokeywords = ''
+
+block main
+    main.main
+        section.section.intro._radius._black
+            .container
+                .intro__content
+                    h1.intro__title.text-red(data-aos="fade-up") Создаём <span>новую</span> IT-жизнь вашему бизнесу
+                    .intro__btns(data-aos="fade-up" data-aos-delay="100")
+                        button.intro__btn.btn.btn-reset._red(type="button" data-modal="#modal-order") Обсудить проект
+                            svg(width="31" height="8")
+                                use(xlink:href="@img/icons/icons.svg#arrow-right")
+                        a.intro__btn.btn.btn-reset._white-bordered(href="#") Посмотреть кейсы
+
+            .intro__wave-wrapper(data-aos="fade-left" data-aos-delay="200")
+                img.intro__wave(src="@img/intro-wave.svg" width="1127" height="619")
+                img.intro__wave._gradient(src="@img/intro-wave-gradient.svg" width="1127" height="619")
+
+
+        section.section._pb0
+            .container
+                h2.section__title(data-aos="fade-up") Мы занимаемся
+                include pug/layout/_services
+
+        section.section._pb0
+            .container
+                .section.home-pluses._small-radius._black._full-mobile
+                    .container
+                        .home-pluses__text.text-red(data-aos="fade-up") У вас будет <span>команда</span> лучших специалистов из Самары, Москвы и других регионов вместо одного маркетолога, а также отчёты о достигнутых результатах, возможность получения консультаций и помощь по всем вопросам продвижения в интернете.
+                        .home-pluses__items
+                            article.home-pluses__item(data-aos="fade-up" data-aos-delay="50")
+                                h3.home-pluses__title.h2 10 лет
+                                .home-pluses__subtitle опыта и развития
+                            article.home-pluses__item(data-aos="fade-up" data-aos-delay="150")
+                                h3.home-pluses__title.h2 400+
+                                .home-pluses__subtitle проектов
+                            article.home-pluses__item(data-aos="fade-up" data-aos-delay="250")
+                                h3.home-pluses__title.h2 300+
+                                .home-pluses__subtitle клиентов
+
+                    svg.home-pluses__wave(width="297" height="382")(data-aos="fade-left")
+                        use(xlink:href="@img/icons/icons.svg#home-pluses-bg")
+
+        include pug/layout/_clients
+
+        section.section._pb0
+            section.section._black._radius
+                .container
+                    h2.section__title(data-aos="fade-up") Награды
+
+                    mixin awards-item(icon, title, text)
+                        article.box._dark-blue
+                            svg.box__icon(width="60" height="60")
+                                use(xlink:href="@img/icons/icons.svg#"+icon)
+                            h3.box__title._big=title
+                            p.box__text.text-small=text
+                            .box__grow
+                                a.box__link.text-small(href="#" data-fancybox) Открыть сертификат
+
+                    .swiper.box-swiper._full-tablet(data-swiper-boxes)
+                        .swiper-wrapper
+                            .swiper-slide(data-aos="fade-up" data-aos-delay="50")
+                                +awards-item('award', '1 место', 'Cреди SEO-компаний Самары по версии «Рейтинг Рунета 2020»')    
+                            .swiper-slide(data-aos="fade-up" data-aos-delay="100")
+                                +awards-item('award', '1 место', 'В продвижении мед. тематики в нижнем ценовом сегменте')
+                            .swiper-slide(data-aos="fade-up" data-aos-delay="150")
+                                +awards-item('award', '3 место', 'Cреди разработчиков интернет-магазинов')
+                            .swiper-slide(data-aos="fade-up" data-aos-delay="200")
+                                +awards-item('award', '3 место', 'В продвижении медицинской тематики по России')
+                            .swiper-slide(data-aos="fade-up" data-aos-delay="250")
+                                +awards-item('red-star', 'Топ 5', 'SEO компаний, продвигающих сайты в сфере «хостинг, провайдеры»')
+                            .swiper-slide(data-aos="fade-up" data-aos-delay="300")
+                                +awards-item('red-star', 'Топ 10', 'Среди веб-студий Поволжья')
+                            .swiper-slide.awards__all-wrap(data-aos="fade-up" data-aos-delay="350")
+                                article.box.awards__all._dark-blue
+                                    .awards__all-number.text-red <span>30+</span> наград 
+                                    .awards__all-text за предыдущие годы
+                                    .box__grow
+                                        a.awards__all-btn.btn.btn-reset._red(href="#") Посмотреть все
+
+                    article.box.awards__all._tablet._dark-blue(data-aos="fade-up" data-aos-delay="100")
+                        .awards__all-number.text-red <span>30+</span> наград 
+                        .awards__all-text за предыдущие годы
+                        .box__grow
+                            a.awards__all-btn.btn.btn-reset._red(href="#") Посмотреть все
+
+        include pug/layout/_reviews
+
+        section.section._pb0
+            .container
+                include pug/layout/_cases
+
+
+
+
+                
+
+
+
+
+                    
+
+                            
+
+
+            

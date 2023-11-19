@@ -1,0 +1,209 @@
+extends base
+
+block color
+    - var body_classes = '_black'
+
+block meta
+    - var seotitle = 'Разработка сайтов'
+    - var seodescription = ''
+    - var seokeywords = ''
+
+block main
+    main.main
+        section.section._pt0._pb0._black._radius._radius-bottom
+            section.section._small-padding._pb0
+                .container
+                    ul.breadcrumbs.list-reset.text-gray(data-aos="fade-up")
+                        li.breadcrumbs__item
+                            a.breadcrumbs__link(href="#") Главная
+                        li.breadcrumbs__item
+                            a.breadcrumbs__link(href="#") Услуги
+                        li.breadcrumbs__item Разработка сайтов
+
+            section.section.service-intro._pt0._no-ovh
+                .container.service-intro__container
+                    .service-intro__content(data-aos="fade-up")
+                        h1.service-intro__title Разработка сайтов
+                        .service-intro__subtitle.text
+                            p Умеем и любим делать хорошие сайты. Сгенерируем качественное решение под конкретный бюджет.
+                        button.service-intro__btn.btn.btn-reset._green(type="button" data-modal="#modal-order") Обсудить проект
+                            svg(width="31" height="8")
+                                use(xlink:href="@img/icons/icons.svg#arrow-right")
+
+                    .service-intro__waves-wrap
+                        .service-intro__waves
+                            img.service-intro__wave(src="@img/site-development-wave.svg" alt="" width="790" height="532")
+                            img.service-intro__wave._gradient(src="@img/site-development-wave-gradient.svg" alt="" width="790" height="532")
+
+                img.service-intro__circle._left(src="@img/intro-circle-green-left.svg" alt="" width="578" height="1115")
+                img.service-intro__circle._right(src="@img/intro-circle-green-right.svg" alt="" width="691" height="1115")
+
+            section.section.service-steps._green._pt0
+                .container.service-steps__container
+                    .service-steps__left
+                        h2.section__title._green(data-aos="fade-up") Разработаем ваш сайт за <span>4 шага</span>
+
+                    .service-steps__items(data-aos="fade-up")
+                        .service-steps__line(data-steps-line)
+                            .service-steps__line-wrap(data-steps-animation)
+                                .service-steps__line(data-steps-animation-target)
+
+                        article.service-steps__item
+                            .service-steps__circle(data-steps-line-first) 01
+                                .service-steps__circle-wrap(data-steps-animation)
+                                    .service-steps__circle(data-steps-animation-target) 01
+                            .service-steps__box.box._dark-blue
+                                h3.service-steps__title Исследование
+                                .service-steps__text.text-small
+                                    p — Изучаем ваш бизнес и целевую аудиторию.<br>— Помогаем сформулировать преимущества и УТП.<br>— Проводим анализ спроса и сайтов конкурентов. Учитываем их ошибки, внедряем полезные находки.
+                                .service-steps__box-wrap(data-steps-animation)
+                                    .service-steps__box.box._dark-blue(data-steps-animation-target)
+                                        h3.service-steps__title Исследование
+                                        .service-steps__text.text-small
+                                            p — Изучаем ваш бизнес и целевую аудиторию.<br>— Помогаем сформулировать преимущества и УТП.<br>— Проводим анализ спроса и сайтов конкурентов. Учитываем их ошибки, внедряем полезные находки.
+
+                        article.service-steps__item
+                            .service-steps__circle 02
+                                .service-steps__circle-wrap(data-steps-animation)
+                                    .service-steps__circle(data-steps-animation-target) 02
+                            .service-steps__box.box._dark-blue
+                                h3.service-steps__title Прототип
+                                .service-steps__text.text-small
+                                    p — Создаём черно-белый эскиз сайта, где показано расположение блоков, разделов и кнопок. <br>— Планируем структуру и логику сайта.<br>— Проектируем путь вашего клиента до покупки. Закладываем потенциал роста и расширения сайта.
+                                .service-steps__box-wrap(data-steps-animation)
+                                    .service-steps__box.box._dark-blue(data-steps-animation-target)
+                                        h3.service-steps__title Прототип
+                                        .service-steps__text.text-small
+                                            p — Создаём черно-белый эскиз сайта, где показано расположение блоков, разделов и кнопок. <br>— Планируем структуру и логику сайта.<br>— Проектируем путь вашего клиента до покупки. Закладываем потенциал роста и расширения сайта.
+
+                        article.service-steps__item
+                            .service-steps__circle 03
+                                .service-steps__circle-wrap(data-steps-animation)
+                                    .service-steps__circle(data-steps-animation-target) 03
+                            .service-steps__box.box._dark-blue
+                                h3.service-steps__title Дизайн-макет
+                                .service-steps__text.text-small
+                                    p — Создаём макет главной и внутренних страниц сайта. <br>— Визуализируем концепцию с учётом заранее спроектированной структуры. <br>— Делаем анимацию и правки.
+                                .service-steps__box-wrap(data-steps-animation)
+                                    .service-steps__box.box._dark-blue(data-steps-animation-target)
+                                        h3.service-steps__title Дизайн-макет
+                                        .service-steps__text.text-small
+                                            p — Создаём макет главной и внутренних страниц сайта. <br>— Визуализируем концепцию с учётом заранее спроектированной структуры. <br>— Делаем анимацию и правки.
+
+                        article.service-steps__item
+                            .service-steps__circle(data-steps-line-last) 04
+                                .service-steps__circle-wrap(data-steps-animation)
+                                    .service-steps__circle(data-steps-animation-target) 04
+                            .service-steps__box.box._dark-blue
+                                h3.service-steps__title Вёрстка и программирование
+                                .service-steps__text.text-small
+                                    p — Создаём кроссбраузерную адаптивную вёрстку, автоматизируем функционал, используем последние стеки технологий в веб-разработке.<br>— Внедряем CMS. Интегрируем проект с внешними сервисами. Оптимизируем и тестируем сайт, наполняем его по желанию. <br>— Делаем перенос и релиз.
+                                .service-steps__box-wrap(data-steps-animation)
+                                    .service-steps__box.box._dark-blue(data-steps-animation-target)
+                                        h3.service-steps__title Вёрстка и программирование
+                                        .service-steps__text.text-small
+                                            p — Создаём кроссбраузерную адаптивную вёрстку, автоматизируем функционал, используем последние стеки технологий в веб-разработке.<br>— Внедряем CMS. Интегрируем проект с внешними сервисами. Оптимизируем и тестируем сайт, наполняем его по желанию. <br>— Делаем перенос и релиз.
+
+                    .swiper.service-steps__swiper._full-tablet(data-swiper-boxes data-aos="fade-up")
+                        .swiper-wrapper
+                            .swiper-slide
+                                .service-steps__box.box._dark-blue._active
+                                    .service-steps__circle 01
+                                    h3.service-steps__title Исследование
+                                    .service-steps__text.text-small
+                                        p — Изучаем ваш бизнес и целевую аудиторию.<br>— Помогаем сформулировать преимущества и УТП.<br>— Проводим анализ спроса и сайтов конкурентов. Учитываем их ошибки, внедряем полезные находки.
+                            .swiper-slide
+                                .service-steps__box.box._dark-blue._active
+                                    .service-steps__circle 02
+                                    h3.service-steps__title Прототип
+                                    .service-steps__text.text-small
+                                        p — Создаём черно-белый эскиз сайта, где показано расположение блоков, разделов и кнопок. <br>— Планируем структуру и логику сайта.<br>— Проектируем путь вашего клиента до покупки. Закладываем потенциал роста и расширения сайта.
+                            .swiper-slide 
+                                .service-steps__box.box._dark-blue._active
+                                    .service-steps__circle 03
+                                    h3.service-steps__title Дизайн-макет
+                                    .service-steps__text.text-small
+                                        p — Создаём макет главной и внутренних страниц сайта. <br>— Визуализируем концепцию с учётом заранее спроектированной структуры. <br>— Делаем анимацию и правки.
+                            .swiper-slide 
+                                .service-steps__box.box._dark-blue._active
+                                    .service-steps__circle 04
+                                    h3.service-steps__title Вёрстка и программирование
+                                    .service-steps__text.text-small
+                                        p — Создаём кроссбраузерную адаптивную вёрстку, автоматизируем функционал, используем последние стеки технологий в веб-разработке.<br>— Внедряем CMS. Интегрируем проект с внешними сервисами. Оптимизируем и тестируем сайт, наполняем его по желанию. <br>— Делаем перенос и релиз.
+
+        section.section
+            .container
+                h2.section__title(data-aos="fade-up") Портфолио
+
+                .portfolio__items
+                    +portfolio-item('Экспресс-тесты производства SD BIOSENSOR', 'portfolio-item-1')
+                    +portfolio-item('Спортивный клуб художественной гимнастики «Без границ»', 'portfolio-item-2')
+                    +portfolio-item('ТАНИТ: студия искусственного камня', 'portfolio-item-3')
+                    +portfolio-item('ТАНИТ: студия искусственного камня', 'portfolio-item-3')
+                    +portfolio-item('Спортивный клуб художественной гимнастики «Без границ»', 'portfolio-item-2')
+                    +portfolio-item('Экспресс-тесты производства SD BIOSENSOR', 'portfolio-item-1')
+                    +portfolio-item('Экспресс-тесты производства SD BIOSENSOR', 'portfolio-item-1')
+                    +portfolio-item('Спортивный клуб художественной гимнастики «Без границ»', 'portfolio-item-2')
+                    +portfolio-item('ТАНИТ: студия искусственного камня', 'portfolio-item-3')
+                    +portfolio-item('ТАНИТ: студия искусственного камня', 'portfolio-item-3')
+                    +portfolio-item('Спортивный клуб художественной гимнастики «Без границ»', 'portfolio-item-2')
+                    +portfolio-item('Экспресс-тесты производства SD BIOSENSOR', 'portfolio-item-1')
+                    +portfolio-item('Экспресс-тесты производства SD BIOSENSOR', 'portfolio-item-1')
+                    +portfolio-item('Спортивный клуб художественной гимнастики «Без границ»', 'portfolio-item-2')
+                    +portfolio-item('ТАНИТ: студия искусственного камня', 'portfolio-item-3')
+                    +portfolio-item('ТАНИТ: студия искусственного камня', 'portfolio-item-3')
+                    +portfolio-item('Спортивный клуб художественной гимнастики «Без границ»', 'portfolio-item-2')
+                    +portfolio-item('Экспресс-тесты производства SD BIOSENSOR', 'portfolio-item-1')
+                    +portfolio-item('Экспресс-тесты производства SD BIOSENSOR', 'portfolio-item-1')
+                    +portfolio-item('Спортивный клуб художественной гимнастики «Без границ»', 'portfolio-item-2')
+                    +portfolio-item('ТАНИТ: студия искусственного камня', 'portfolio-item-3')
+
+        section.section.price-block._black._radius
+            .container.price-block__container
+                .price-block__box
+                    h2.price-block__title.section__title._green Цены на разработку сайтов
+                    
+                    p.price-block__price._green от 75 000 ₽
+                    
+                    p.price-block__text Находим эстетично-технологичное решение под ваш бюджет. Мы не привязываемся к тарифам и делаем проекты любой сложности для клиентов из Самары, Москвы и других городов. 
+                    
+                    button.btn.btn-reset._green(type="button" data-modal="#modal-order") Обсудить проект
+                        svg(width="31" height="8")
+                            use(xlink:href="@img/icons/icons.svg#arrow-right")
+
+                    img.price-block__wave(src="@img/price-block-wave-green.svg" alt="" width="755" height="274")
+
+                .price-block__content
+                    h3.price-block__subtitle Дополнительно вы получите:
+
+                    .swiper.box-swiper._full-tablet(data-swiper-boxes)
+                        .swiper-wrapper._cols2
+                            .swiper-slide
+                                +price-param('price-param-1', '_green', 'Персонального аккаунт-менеджера, который будет курировать ваш проект')
+                            .swiper-slide
+                                +price-param('price-param-2', '_red', 'Консультации по работе с вашей CMS и рекомендации специалистов')
+                            .swiper-slide
+                                +price-param('price-param-3', '_red', 'Команду специалистов в Самаре и Москве: seo-специалиста, дизайнера, программиста и интернет-маркетолога')
+                            .swiper-slide
+                                +price-param('price-param-4', '_green', 'Подробный отчёт о проделанной работе и результатах каждый месяц')
+
+        section.section._pb0
+            .container
+                h2.section__title(data-aos="fade-up") Что потом?
+
+                .section._small-padding._pt0.text(data-aos="fade-up")
+                    p Своих не бросаем! После завершения разработки мы поможем с продвижением и обслуживанием:
+
+                .swiper.box-swiper._full-tablet._hover(data-swiper-boxes)
+                    .swiper-wrapper
+                        .swiper-slide(data-aos="fade-up" data-aos-delay="50")
+                            +service-item('service-1', 'Комплексный маркетинг', 'Используем принцип омниканальности. Погружаемся в ваш бизнес на всех уровнях маркетинговой воронки')
+                        .swiper-slide(data-aos="fade-up" data-aos-delay="150")
+                            +service-item('service-3', 'SEO-продвижение', 'Привлекаем максимум органического трафика. Параллельно работаем над юзабилити сайта')
+                        .swiper-slide(data-aos="fade-up" data-aos-delay="250")
+                            +service-item('service-5', 'Контекстная реклама', 'Добываем качественный рекламный трафик. Увеличиваем количество заявок')
+                        .swiper-slide(data-aos="fade-up" data-aos-delay="300")
+                            +service-item('service-6', 'Продвижение в соц. сетях', 'Продвигаем сообщества и запускаем таргетированную рекламу. Утепляем холодную аудиторию социальных сетей')
+
+        
+                    

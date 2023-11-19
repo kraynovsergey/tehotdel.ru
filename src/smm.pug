@@ -1,0 +1,254 @@
+extends base
+
+block color
+    - var body_classes = '_black'
+
+block meta
+    - var seotitle = 'Социальные сети (SMM)'
+    - var seodescription = ''
+    - var seokeywords = ''
+
+block main
+    main.main
+        section.section._pt0._pb0._black._radius._radius-bottom
+            section.section._small-padding._pb0
+                .container
+                    ul.breadcrumbs.list-reset.text-gray(data-aos="fade-up")
+                        li.breadcrumbs__item
+                            a.breadcrumbs__link(href="#") Главная
+                        li.breadcrumbs__item
+                            a.breadcrumbs__link(href="#") Услуги
+                        li.breadcrumbs__item Социальные сети (SMM)
+
+            section.section.service-intro._pt0._no-ovh
+                .container.service-intro__container
+                    .service-intro__content(data-aos="fade-up")
+                        h1.service-intro__title Социальные сети (SMM)
+                        .service-intro__subtitle.text
+                            p Продвигаем в социальных сетях ВКонтакте, Одноклассники и др. Мы создадим для вас специальную бренд-платформу с уникальным дизайном и контентом, которая сразу заинтересует вашу целевую аудиторию.
+                        button.service-intro__btn.btn.btn-reset._green(type="button" data-modal="#modal-order") Обсудить проект
+                            svg(width="31" height="8")
+                                use(xlink:href="@img/icons/icons.svg#arrow-right")
+
+                    .service-intro__waves-wrap
+                        .service-intro__waves
+                            img.service-intro__wave(src="@img/smm-wave.svg" alt="" width="790" height="532")
+                            img.service-intro__wave._gradient(src="@img/smm-wave-gradient.svg" alt="" width="790" height="532")
+
+                img.service-intro__circle._left(src="@img/intro-circle-pink-left.svg" alt="" width="578" height="1115")
+                img.service-intro__circle._right(src="@img/intro-circle-pink-right.svg" alt="" width="691" height="1115")
+
+            section.section.service-steps._green._pt0
+                .container.service-steps__container
+                    .service-steps__left
+                        h2.section__title._green(data-aos="fade-up") Развитие вашего аккаунта в <span>3 шага</span>
+
+                    .service-steps__items(data-aos="fade-up")
+                        .service-steps__line(data-steps-line)
+                            .service-steps__line-wrap(data-steps-animation)
+                                .service-steps__line(data-steps-animation-target)
+
+                        article.service-steps__item
+                            .service-steps__circle(data-steps-line-first) 01
+                                .service-steps__circle-wrap(data-steps-animation)
+                                    .service-steps__circle(data-steps-animation-target) 01
+                            .service-steps__box.box._dark-blue
+                                h3.service-steps__title Стратегия
+                                .service-steps__text.text-small
+                                    p — Анализ целевой аудитории.<br>— Разработка концепции сообщества.<br>— Анализ площадок и методов для продвижения.<br>— Определение KPI (прогнозируемые показатели: количество людей на площадке и количество совершаемых ими действий.
+                                .service-steps__box-wrap(data-steps-animation)
+                                    .service-steps__box.box._dark-blue(data-steps-animation-target)
+                                        h3.service-steps__title Стратегия
+                                        .service-steps__text.text-small
+                                            p — Анализ целевой аудитории.<br>— Разработка концепции сообщества.<br>— Анализ площадок и методов для продвижения.<br>— Определение KPI (прогнозируемые показатели: количество людей на площадке и количество совершаемых ими действий.
+
+                        article.service-steps__item
+                            .service-steps__circle 02
+                                .service-steps__circle-wrap(data-steps-animation)
+                                    .service-steps__circle(data-steps-animation-target) 02
+                            .service-steps__box.box._dark-blue
+                                h3.service-steps__title Создание и оптимизация сообщества
+                                .service-steps__text.text-small
+                                    p — Дизайн аватара группы.<br>— Оформление группы.<br>— Копирайтинг описания группы.<br>— Создание тем обсуждений в сообществе и страниц с полезной информацией для пользователей.<br>— Создание технических аккаунтов.<br>— 2 баннера для акций или новостей.
+                                .service-steps__box-wrap(data-steps-animation)
+                                    .service-steps__box.box._dark-blue(data-steps-animation-target)
+                                        h3.service-steps__title Создание и оптимизация сообщества
+                                        .service-steps__text.text-small
+                                            p — Дизайн аватара группы.<br>— Оформление группы.<br>— Копирайтинг описания группы.<br>— Создание тем обсуждений в сообществе и страниц с полезной информацией для пользователей.<br>— Создание технических аккаунтов.<br>— 2 баннера для акций или новостей.
+
+                        article.service-steps__item
+                            .service-steps__circle(data-steps-line-last) 03
+                                .service-steps__circle-wrap(data-steps-animation)
+                                    .service-steps__circle(data-steps-animation-target) 03
+                            .service-steps__box.box._dark-blue
+                                h3.service-steps__title Развитие и сопровождение
+                                .service-steps__text.text-small
+                                    p — Разработка, проведение конкурсов и акций, поиск и активная работа с дружескими сообществами.<br>— Размещение информации о группе в похожих тематических группах, создание уникального контента.<br>— Вовлечение пользователей в обсуждения, приглашение в сообщество новых участников<br>— Развитие технических аккаунтов, индивидуальная работа с активными участниками.
+                                .service-steps__box-wrap(data-steps-animation)
+                                    .service-steps__box.box._dark-blue(data-steps-animation-target)
+                                        h3.service-steps__title Развитие и сопровождение
+                                        .service-steps__text.text-small
+                                            p — Разработка, проведение конкурсов и акций, поиск и активная работа с дружескими сообществами.<br>— Размещение информации о группе в похожих тематических группах, создание уникального контента.<br>— Вовлечение пользователей в обсуждения, приглашение в сообщество новых участников<br>— Развитие технических аккаунтов, индивидуальная работа с активными участниками.
+
+                    .swiper.service-steps__swiper._full-tablet(data-swiper-boxes data-aos="fade-up")
+                        .swiper-wrapper
+                            .swiper-slide
+                                .service-steps__box.box._dark-blue._active
+                                    .service-steps__circle 01
+                                    h3.service-steps__title Стратегия
+                                    .service-steps__text.text-small
+                                        p — Анализ целевой аудитории.<br>— Разработка концепции сообщества.<br>— Анализ площадок и методов для продвижения.<br>— Определение KPI (прогнозируемые показатели: количество людей на площадке и количество совершаемых ими действий.
+                            .swiper-slide
+                                .service-steps__box.box._dark-blue._active
+                                    .service-steps__circle 02
+                                    h3.service-steps__title Создание и оптимизация сообщества
+                                    .service-steps__text.text-small
+                                        p — Дизайн аватара группы.<br>— Оформление группы.<br>— Копирайтинг описания группы.<br>— Создание тем обсуждений в сообществе и страниц с полезной информацией для пользователей.<br>— Создание технических аккаунтов.<br>— 2 баннера для акций или новостей.
+                            .swiper-slide 
+                                .service-steps__box.box._dark-blue._active
+                                    .service-steps__circle 03
+                                    h3.service-steps__title Развитие и сопровождение
+                                    .service-steps__text.text-small
+                                        p — Разработка, проведение конкурсов и акций, поиск и активная работа с дружескими сообществами.<br>— Размещение информации о группе в похожих тематических группах, создание уникального контента.<br>— Вовлечение пользователей в обсуждения, приглашение в сообщество новых участников<br>— Развитие технических аккаунтов, индивидуальная работа с активными участниками.
+
+            section.section._pt0
+                .container
+                    .section__header
+                        h2.section__title._violet(data-aos="fade-up") Что вы получите:
+                        .swiper__navigations.reviews__navigations(data-aos="fade-up" data-aos-delay="100")
+                            button.swiper__navigation._prev.btn-reset._green(type="button" data-swiper-boxes-full-prev)
+                                svg(width="111" height="16")
+                                    use(xlink:href="@img/icons/icons.svg#swiper-arrow-left")
+                            button.swiper__navigation._next.btn-reset._green(type="button" data-swiper-boxes-full-next)
+                                svg(width="111" height="16")
+                                    use(xlink:href="@img/icons/icons.svg#swiper-arrow-left")
+
+                    .swiper._full-tablet(data-swiper-boxes-full)
+                        .swiper-wrapper
+                            .swiper-slide(data-aos="fade-up" data-aos-delay="50")
+                                article.box._violet-bordered
+                                    svg.box__icon._green(width="60" height="60")
+                                        use(xlink:href="@img/icons/icons.svg#seo-pluses-1")
+                                    h3.box__title._big Лояльность к бренду
+                                    p.box__text.text-small Компания может значительно повысить свою узнаваемость и лояльность со стороны потенциальных клиентов. Социальные сети позволяют компаниям быть ближе к своей аудитории, оперативно реагировать на отзывы и предложения, что в свою очередь способствует формированию положительного имиджа компании и ее продуктов или услуг.
+                            .swiper-slide(data-aos="fade-up" data-aos-delay="100")
+                                article.box._violet-bordered
+                                    svg.box__icon._violet(width="60" height="60")
+                                        use(xlink:href="@img/icons/icons.svg#seo-pluses-2")
+                                    h3.box__title._big Постоянную аудиторию
+                                    p.box__text.text-small Продвижение бренда в социальных сетях формировать постоянную аудиторию, которая следит за обновлениями и активно пользуется продуктами или услугами компании.
+                            .swiper-slide(data-aos="fade-up" data-aos-delay="150")
+                                article.box._violet-bordered
+                                    svg.box__icon._green(width="60" height="60")
+                                        use(xlink:href="@img/icons/icons.svg#seo-pluses-3")
+                                    h3.box__title._big Повышение посещаемости сайта
+                                    p.box__text.text-small Продвижение в социальных сетях может значительно увеличить посещаемость вашего сайта, так как потенциальные клиенты могут перейти на ваш сайт из социальных сетей.
+                            .swiper-slide(data-aos="fade-up" data-aos-delay="200")
+                                article.box._violet-bordered
+                                    svg.box__icon._violet(width="60" height="60")
+                                        use(xlink:href="@img/icons/icons.svg#seo-pluses-4")
+                                    h3.box__title._big Обратную связь от клиентов
+                                    p.box__text.text-small Продвижение в социальных сетях позволяет получить обратную связь от клиентов, которая может быть использована для улучшения качества продуктов или услуг, а также для решения возникающих проблем.
+                            .swiper-slide(data-aos="fade-up" data-aos-delay="200")
+                                article.box._violet-bordered
+                                    svg.box__icon._green(width="60" height="60")
+                                        use(xlink:href="@img/icons/icons.svg#seo-pluses-5")
+                                    h3.box__title._big Вирусный эффект
+                                    p.box__text.text-small Нет текст
+
+            section.section._pt0
+                .container
+                    h2.section__title._violet(data-aos="fade-up") Тарифы
+
+                    .swiper.box-swiper._full-tablet._hover(data-swiper-boxes)
+                        .swiper-wrapper._cols3
+                            .swiper-slide(data-aos="fade-up" data-aos-delay="50")
+                                article.box._green-bordered._hover
+                                    h3.box__title._big Таргетированная реклама в ВК и Одноклассниках
+                                    p.box__title._big._green от 25 000 ₽
+                                    ul.box__list.text-small.list-reset
+                                        <li>Определение целей и задач бизнеса для планирования маркетинговой стратегии.
+                                        <li>Создание майнд-карт для определения целевой аудитории и тестирования гипотез.
+                                        <li>Сегментирование целевой аудитории и составление рекламных креативов.
+                                        <li>Тестирование рекламных связок и сбор статистики для корректировки ставок и расходов.
+                                        <li>Ежемесячная аналитика результатов и корректировка маркетинговой стратегии на основе рекомендаций.
+                                    .box__grow
+                                        button.btn.btn-reset._green-bordered._hidden-svg-mobile(type="button" data-modal="#modal-order" data-form-field="Таргетированная реклама в ВК и Одноклассниках") Оставить заявку
+                                            svg(width="31" height="8")
+                                                use(xlink:href="@img/icons/icons.svg#arrow-right")
+
+                            .swiper-slide(data-aos="fade-up" data-aos-delay="100")
+                                article.box._green-bordered._hover
+                                    h3.box__title._big Реклама в телеграм-каналах
+                                    p.box__title._big._green от 100 000 ₽
+                                    ul.box__list.text-small.list-reset
+                                        li Определение целей и задач рекламной кампании в Телеграм.
+                                        li Анализ и выбор подходящих Телеграм-каналов для размещения рекламы.
+                                        li Определение оптимального формата и содержания рекламного сообщения.
+                                        li Тестирование различных рекламных сообщений и оптимизация бюджета.
+                                        li Оценка результатов рекламной кампании и корректировка стратегии при необходимости.
+                                    .box__grow
+                                        button.btn.btn-reset._green-bordered._hidden-svg-mobile(type="button" data-modal="#modal-order" data-form-field="Реклама в телеграм-каналах") Оставить заявку
+                                            svg(width="31" height="8")
+                                                use(xlink:href="@img/icons/icons.svg#arrow-right")
+
+                            .swiper-slide(data-aos="fade-up" data-aos-delay="150")
+                                article.box._green-bordered._hover
+                                    h3.box__title._big Оформление сообществ в социальных сетях
+                                    p.box__title._big._green от 25 000 ₽
+                                    ul.box__list.text-small.list-reset
+                                        li Определение целей и задач бизнеса.
+                                        li Создание сообщества/аккаунта в социальной сети.
+                                        li Формирование фирменного стиля.
+                                        li Упаковка сообщества:
+                                        li Подключение виджетов и приложений.
+                                    .box__grow
+                                        button.btn.btn-reset._green-bordered._hidden-svg-mobile(type="button" data-modal="#modal-order" data-form-field="Оформление сообществ в социальных сетях") Оставить заявку
+                                            svg(width="31" height="8")
+                                                use(xlink:href="@img/icons/icons.svg#arrow-right")
+
+        section.section._pb0
+            .container
+                h2.section__title(data-aos="fade-up") Подробнее о продвижении в социальных сетях
+
+                .section._small-padding._pt0.text(data-aos="fade-up")
+                    p Продвижение в социальных сетях (Social Media Marketing, SMM) — это один из современных способов продвижения ресурсов в сети Интернет, который продвигает сайты, товары или услуги с помощью различных социальных проектов: сетей, форумов, блогосферы, сетевых конференций, сервисов мгновенных сообщений и т. д.
+                    p SMM точечно воздействует на целевую аудиторию, выбирает площадки, где в наибольшей степени данная аудитория представлена, и подходящие способы взаимодействия с ней.
+
+                .swiper.box-swiper._full-tablet(data-swiper-boxes)
+                    .swiper-wrapper
+                        .swiper-slide.smm__slide-statistic(data-aos="fade-up" data-aos-delay="50")
+                            .box._middle-blue
+                                .box__title.h2 64%
+                                p.box__text.text-small потребителей были бы рады после покупки поддерживать контакт с брендом
+                        
+                        .swiper-slide.smm__slide-statistic(data-aos="fade-up" data-aos-delay="100")
+                            .box._middle-blue
+                                .box__title.h2 49%
+                                p.box__text.text-small опрошенных считают, что коммуникация с брендом в социальных медиа приведет к покупке
+
+                        .swiper-slide.smm__slide-statistic(data-aos="fade-up" data-aos-delay="150")
+                            .box._middle-blue
+                                .box__title.h2 90%
+                                p.box__text.text-small людей, родившихся в 21 веке, имеют аккаунты в различных социальных сетях
+
+                        .swiper-slide.smm__slide-statistic(data-aos="fade-up" data-aos-delay="200")
+                            .box._middle-blue
+                                .box__title.h2 80%
+                                p.box__text.text-small пользователей доверяют онлайн-друзьям больше, чем своим реальным знакомым
+
+        section.section._pb0
+            .container
+                h2.section__title(data-aos="fade-up") Создание групп в социальной сети — важная часть продвижения
+
+                .swiper.box-swiper._full-tablet(data-swiper-boxes data-aos="fade-up")
+                    .swiper-wrapper._cols2
+                        .swiper-slide
+                            .box._transparent
+                                .box__num 1
+                                p.box__text.text-small Сообщество позволяет информировать клиента в удобной для него форме. Подписчики первыми узнают о свежих рекламных акциях.
+
+                        .swiper-slide
+                            .box._transparent
+                                .box__num 2
+                                p.box__text.text-small Благодаря группам, пользователь получает информацию о предлагаемой услуге или товаре и проявляет интерес, участвуя в развитии сообщества в соцсети.

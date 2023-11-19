@@ -1,0 +1,148 @@
+.service-intro {
+    &__container {
+        display: grid;
+        grid-template-columns: .59fr .41fr;
+        gap: clamp(30px, 2.08vw, 40px);
+        align-items: center;
+        position: relative;
+        z-index: 2;
+
+        @media (max-width: 767px) {
+            grid-template-columns: 1fr;
+            gap: 0;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: clamp(30px, 2.08vw, 40px);
+        padding-top: 30px;
+        position: relative;
+        z-index: 2;
+    }
+
+    &__title {
+        padding: 0;
+        margin: 0;
+        font-weight: 500;
+        font-size: clamp(30px, 3.64vw, 70px);
+
+        @media (min-width: 991px) {
+            max-width: 90%;
+        }
+    }
+
+    &__subtitle {
+        margin: 0;
+
+        @media (min-width: 991px) {
+            max-width: 90%;
+        }
+    }
+
+    &__waves-wrap {
+        position: relative;
+        z-index: 1;
+
+        &._hidden767 {
+            @media (max-width: 767px) {
+                display: none;
+            }
+        }
+
+        &._leads {
+            @media (max-width: 767px) {
+                position: absolute;
+                right: -25%;
+                top: 40%;
+                width: 30vw;
+            }
+
+            @media (max-width: 575px) {
+                width: 15vw;
+                right: -5vw;
+                top: 85%
+            }
+        }
+    }
+
+    &__waves {
+        margin-right: calc(clamp(16px, 4.17vw, 80px) * -1);
+        position: relative;
+
+        @media (max-width: 767px) {
+            margin-left: calc(clamp(46px, 4.17vw, 80px) * -1);
+            margin-top: -10vw;
+        }
+
+        &._leads {
+            margin-right: 0;
+        }
+    }
+
+    &__wave {
+        width: 100%;
+        height: auto;
+
+        &._gradient {
+            position: absolute;
+            width: 100%;
+            top: 0;
+            right: 0;
+            z-index: 2;
+            animation: wave_gradient 5s ease-in-out infinite;
+        }
+    }
+
+    &__circle {
+        height: 58vw;
+        width: auto;
+        position: absolute;
+        bottom: -90%;
+        z-index: 1;
+
+        &._left {
+            left: 0;
+
+            @media (max-width: 767px) {
+                top: 0;
+                bottom: unset;
+                width: 50vw;
+                height: auto;
+            }
+
+            @media (max-width: 575px) {
+                display: none;
+            }
+
+            &._left {
+                bottom: unset;
+                top: 0;
+            }
+        }
+
+        &._right {
+            right: 0;
+
+            @media (max-width: 767px) and (min-width: 576px) {
+                display: none;
+            }
+
+            @media (max-width: 575px) {
+                top: 0;
+                width: 40vw;
+                height: auto;
+            }
+        }
+
+        &._calculator {
+            @media (max-width: 575px) {
+                transform: rotate(-45deg);
+                right: -14%;
+                top: 10%
+            }
+        }
+    }
+}

@@ -1,0 +1,81 @@
+extends base
+
+block color
+    - var body_classes = ''
+
+block meta
+    - var seotitle = 'О нас'
+    - var seodescription = ''
+    - var seokeywords = ''
+
+block main
+    main.main._inner
+        section.section._small-padding
+            .container
+                ul.breadcrumbs.list-reset.text-gray(data-aos="fade-up")
+                    li.breadcrumbs__item
+                        a.breadcrumbs__link(href="#") Главная
+                    li.breadcrumbs__item
+                        a.breadcrumbs__link(href="#") О компании
+                    li.breadcrumbs__item О нас
+
+        section
+            .container
+                h1.h2.section__title(data-aos="fade-up") О нас
+
+                .text(data-aos="fade-up")
+                    p Разрабатываем и внедряем комплексные стратегии по продвижению бизнеса в интернете. Подключаемся на всех этапах воронки продаж.
+                    p Работаем в тесном контакте с заказчиками, поскольку, по нашему глубочайшему убеждению, только так можно достичь ощутимого результата.
+                    p Мы внедряемся во все процессы компаний — собираем информацию по текущему положению дел, помогаем с отстройкой отделов продаж и маркетинга, контролируем внедренные изменения и делаем аналитику.
+                    p Исходя из разработанной стратегии, подключаем инструменты интернет-маркетинга — поисковое продвижение, контекстную, медийную и таргетированную рекламу. Создаем сайты любой сложности.
+                    p Работаем с таким подходом более 10 лет и совершенно точно движемся в правильном направлении. Об этом говорят места нашей компании в рейтингах и отзывы наших счастливых клиентов.
+
+        section.section._pb0
+            .container
+                .section__header(data-aos="fade-up")
+                    h2.section__title Награды
+                    a.btn.btn-reset.awards__rating._black-bordered(href="#" target="_blank") Открыть Рейтинг Рунета
+
+                mixin awards-item(icon, title, text)
+                    article.box._transparent
+                        svg.box__icon(width="60" height="60")
+                            use(xlink:href="@img/icons/icons.svg#"+icon)
+                        h3.box__title._big=title
+                        p.box__text.text-small=text
+                        .box__grow
+                            a.box__link.text-small(href="#" data-fancybox) Открыть сертификат
+
+                .swiper.box-swiper._full-tablet(data-swiper-boxes)
+                    .swiper-wrapper
+                        .swiper-slide(data-aos="fade-up" data-aos-delay="50")
+                            +awards-item('award', '1 место', 'Cреди SEO-компаний Самары по версии «Рейтинг Рунета 2020»')    
+                        .swiper-slide(data-aos="fade-up" data-aos-delay="100")
+                            +awards-item('award', '1 место', 'В продвижении мед. тематики в нижнем ценовом сегменте')
+                        .swiper-slide(data-aos="fade-up" data-aos-delay="150")
+                            +awards-item('award', '3 место', 'Cреди разработчиков интернет-магазинов')
+                        .swiper-slide(data-aos="fade-up" data-aos-delay="200")
+                            +awards-item('award', '3 место', 'В продвижении медицинской тематики по России')
+                        .swiper-slide(data-aos="fade-up" data-aos-delay="250")
+                            +awards-item('red-star', 'Топ 5', 'SEO компаний, продвигающих сайты в сфере «хостинг, провайдеры»')
+                        .swiper-slide(data-aos="fade-up" data-aos-delay="300")
+                            +awards-item('red-star', 'Топ 10', 'Среди веб-студий Поволжья')
+                        .swiper-slide.awards__all-wrap(data-aos="fade-up" data-aos-delay="350")
+                            article.box.awards__all._transparent
+                                .awards__all-number.text-red <span>30+</span> наград 
+                                .awards__all-text за предыдущие годы
+                                .box__grow
+                                    a.awards__all-btn.btn.btn-reset._red(href="#") Посмотреть все
+
+                article.box.awards__all._tablet._transparent(data-aos="fade-up" data-aos-delay="100")
+                    .awards__all-number.text-red <span>30+</span> наград 
+                    .awards__all-text за предыдущие годы
+                    .box__grow
+                        a.awards__all-btn.btn.btn-reset._red(href="#") Посмотреть все
+
+        include pug/layout/_clients
+
+        include pug/layout/_reviews
+
+        section.section._pb0
+            .container
+                include pug/layout/_cases

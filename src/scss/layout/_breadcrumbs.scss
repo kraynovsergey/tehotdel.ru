@@ -1,0 +1,24 @@
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    font-size: clamp(14px, 1.04vw, 20px);
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    
+        &:not(:last-child) {
+            &::after {
+                content: '/';
+            }
+        }
+    }
+
+    &__link {
+        color: currentColor;
+        text-decoration: none;
+    }
+}

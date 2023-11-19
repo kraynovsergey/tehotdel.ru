@@ -1,0 +1,542 @@
+extends base
+
+block color
+    - var body_classes = '_black'
+
+block meta
+    - var seotitle = 'Аудит сайта'
+    - var seodescription = ''
+    - var seokeywords = ''
+
+block main
+    main.main
+        section.section._pt0._pb0._black._radius._radius-bottom
+            section.section._small-padding._pb0
+                .container
+                    ul.breadcrumbs.list-reset.text-gray(data-aos="fade-up")
+                        li.breadcrumbs__item
+                            a.breadcrumbs__link(href="#") Главная
+                        li.breadcrumbs__item
+                            a.breadcrumbs__link(href="#") Услуги
+                        li.breadcrumbs__item Аудит сайта
+
+            section.section.service-intro._pt0._no-ovh
+                .container.service-intro__container
+                    .service-intro__content(data-aos="fade-up")
+                        h1.service-intro__title Аудит сайта
+                        .service-intro__subtitle.text
+                            p Исследуем сайт, расскажем, почему он не конвертит. Покажем способы достижения желаемых показателей. Первичный анализ — бесплатно.
+                        button.service-intro__btn.btn.btn-reset._green(type="button" data-modal="#modal-order") Обсудить проект
+                            svg(width="31" height="8")
+                                use(xlink:href="@img/icons/icons.svg#arrow-right")
+
+                    .service-intro__waves-wrap
+                        .service-intro__waves
+                            img.service-intro__wave(src="@img/audit-wave.svg" alt="" width="790" height="532")
+                            img.service-intro__wave._gradient(src="@img/audit-wave-gradient.svg" alt="" width="790" height="532")
+
+                img.service-intro__circle._left(src="@img/intro-circle-pink-left.svg" alt="" width="578" height="1115")
+                img.service-intro__circle._right(src="@img/intro-circle-pink-right.svg" alt="" width="691" height="1115")
+
+            section.section.service-steps._pt0
+                .container
+                    h2.section__title._pink(data-aos="fade-up") Сравнение тарифов
+
+                    .price-table__tabs.tabs__btns.scroll._hidden(data-aos="fade-up")
+                        button.btn.btn-reset.tabs__btn._pink._active(type="button" data-tab="1") Базовый
+                        button.btn.btn-reset.tabs__btn._pink(type="button" data-tab="2") Полный
+
+                    .price-table__table(data-aos="fade-up")
+                        .price-table__row
+                            .price-table__col._header
+                                h3.price-table__title Тарифы
+                                p.price-table__text.text-small Стоимость рассчитывается индивидуально для каждого проекта
+
+                            .price-table__col._header
+                                h3.price-table__title Базовый
+                                p.price-table__price от 15 000 ₽
+                                button.btn.btn-reset._green._hidden-svg-mobile(type="button" data-modal="#modal-order" data-form-field="Базовый тариф") Оставить заявку
+                                    svg(width="31" height="8")
+                                        use(xlink:href="@img/icons/icons.svg#arrow-right")
+
+                            .price-table__col._header
+                                h3.price-table__title Полный
+                                p.price-table__price от 30 000 ₽
+                                button.btn.btn-reset._green._hidden-svg-mobile(type="button" data-modal="#modal-order" data-form-field="Полный тариф") Оставить заявку
+                                    svg(width="31" height="8")
+                                        use(xlink:href="@img/icons/icons.svg#arrow-right")
+
+                        .price-table__row._subtitle
+                            .price-table__col Анализ эффективности сайта (юзабилити-аудит)
+                            .price-table__col
+                            .price-table__col
+
+                        .price-table__row
+                            .price-table__col.text-small
+                                p Анализ структуры сайта
+                            .price-table__col
+                                svg.price-table__icon._true(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#true")
+                            .price-table__col
+                                svg.price-table__icon._true(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#true")
+
+                        .price-table__row
+                            .price-table__col.text-small
+                                p Анализ главной страницы
+                            .price-table__col
+                                svg.price-table__icon._true(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#true")
+                            .price-table__col
+                                svg.price-table__icon._true(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#true")
+
+                        .price-table__row
+                            .price-table__col.text-small
+                                p Информации о товарах / услугах на сайте:
+                                ul 
+                                li Анализ представления товаров / услуг
+                                li Наличие информативных страниц с описанием
+                                li Проверка каталога
+                                li Стоимость товара / услуг
+                            .price-table__col
+                                svg.price-table__icon._true(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#true")
+                            .price-table__col
+                                svg.price-table__icon._true(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#true")
+
+                        .price-table__row
+                            .price-table__col.text-small
+                                p Навигация по сайту:
+                                ul
+                                    li Анализ меню
+                                    li Анализ содержания разделов
+                                    li Анализ дизайна
+                            .price-table__col
+                                svg.price-table__icon._true(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#true")
+                            .price-table__col
+                                svg.price-table__icon._true(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#true")
+
+                        .price-table__row
+                            .price-table__col.text-small
+                                p Анализ изображений и фотографий, портфолио, галереи на сайте
+                            .price-table__col
+                                svg.price-table__icon._true(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#true")
+                            .price-table__col
+                                svg.price-table__icon._true(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#true")
+
+                        .price-table__row
+                            .price-table__col.text-small
+                                p Наличие контактной информации. Анализ расположения контактных данных, их корректность
+                            .price-table__col
+                                svg.price-table__icon._true(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#true")
+                            .price-table__col
+                                svg.price-table__icon._true(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#true")
+
+                        .price-table__row
+                            .price-table__col.text-small
+                                p Составление рекомендаций по доработке сайта на основе юзабилити-аудита
+                            .price-table__col
+                                svg.price-table__icon._true(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#true")
+                            .price-table__col
+                                svg.price-table__icon._true(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#true")
+
+                        .price-table__row._subtitle
+                            .price-table__col Аудит конверсии сайта
+                            .price-table__col
+                            .price-table__col
+
+                        .price-table__row
+                            .price-table__col.text-small
+                                p Анализ тепловой карты главной страницы и функционала главной страницы сайта
+                            .price-table__col
+                                svg.price-table__icon._false(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#false")
+                            .price-table__col
+                                svg.price-table__icon._true(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#true")
+
+                        .price-table__row
+                            .price-table__col.text-small
+                                p Анализ размещения текстовой информации на сайте (для сайтов, где много текста)
+                            .price-table__col
+                                svg.price-table__icon._false(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#false")
+                            .price-table__col
+                                svg.price-table__icon._true(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#true")
+
+                        .price-table__row
+                            .price-table__col.text-small
+                                p Наличие контактной информации. Анализ расположения контактных данных, их корректность
+                            .price-table__col
+                                svg.price-table__icon._false(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#false")
+                            .price-table__col
+                                svg.price-table__icon._true(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#true")
+
+                        .price-table__row
+                            .price-table__col.text-small
+                                p Анализ заполнения форм на сайте. Рекомендации по составлению форм
+                            .price-table__col
+                                svg.price-table__icon._false(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#false")
+                            .price-table__col
+                                svg.price-table__icon._true(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#true")
+
+                        .price-table__row
+                            .price-table__col.text-small
+                                p Анализ посещаемости сайта за выбранный период
+                            .price-table__col
+                                svg.price-table__icon._false(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#false")
+                            .price-table__col
+                                svg.price-table__icon._true(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#true")
+
+                        .price-table__row
+                            .price-table__col.text-small
+                                p Сводка по источникам посещений (из социальных сетей, из поисковых систем, реклама, переход по ссылкам на сайте)
+                            .price-table__col
+                                svg.price-table__icon._false(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#false")
+                            .price-table__col
+                                svg.price-table__icon._true(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#true")
+
+                        .price-table__row
+                            .price-table__col.text-small
+                                p Анализ карты кликов
+                            .price-table__col
+                                svg.price-table__icon._false(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#false")
+                            .price-table__col
+                                svg.price-table__icon._true(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#true")
+
+                        .price-table__row
+                            .price-table__col.text-small
+                                p Анализ посетителей сайта
+                            .price-table__col
+                                svg.price-table__icon._false(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#false")
+                            .price-table__col
+                                svg.price-table__icon._true(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#true")
+
+                        .price-table__row
+                            .price-table__col.text-small
+                                p Анализ маршрутов пользователей на сайте
+                            .price-table__col
+                                svg.price-table__icon._false(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#false")
+                            .price-table__col
+                                svg.price-table__icon._true(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#true")
+
+                        .price-table__row
+                            .price-table__col.text-small
+                                p Подготовка общих рекомендаций по сайту на базе аудита конверсии
+                            .price-table__col
+                                svg.price-table__icon._false(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#false")
+                            .price-table__col
+                                svg.price-table__icon._true(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#true")
+
+                    .price-table__content._active(data-tab-content="1")
+                        .price-table__row
+                            .price-table__col._header
+                                h3.price-table__title Базовый
+                                p.price-table__price от 15 000 ₽
+                                button.btn.btn-reset._green._hidden-svg-mobile(type="button" data-modal="#modal-order" data-form-field="Базовый тариф") Оставить заявку
+                                    svg(width="31" height="8")
+                                        use(xlink:href="@img/icons/icons.svg#arrow-right")
+
+                        .price-table__row._subtitle
+                            .price-table__col Анализ эффективности сайта (юзабилити-аудит)
+
+                        .price-table__row
+                            .price-table__col
+                                .text-small
+                                    p Анализ структуры сайта
+                                svg.price-table__icon._true(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#true")
+
+                        .price-table__row
+                            .price-table__col
+                                .text-small
+                                    p Анализ главной страницы
+                                svg.price-table__icon._true(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#true")
+
+                        .price-table__row
+                            .price-table__col
+                                .text-small
+                                    p Навигация по сайту:
+                                    ul
+                                        li Анализ меню
+                                        li Анализ содержания разделов
+                                        li Анализ дизайна
+                                svg.price-table__icon._true(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#true")
+                            
+                        .price-table__row
+                            .price-table__col
+                                .text-small
+                                    p Информации о товарах / услугах на сайте:
+                                    ul 
+                                        li Анализ представления товаров / услуг
+                                        li Наличие информативных страниц с описанием
+                                        li Проверка каталога
+                                        li Стоимость товара / услуг
+                                svg.price-table__icon._true(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#true")
+
+                        .price-table__row
+                            .price-table__col
+                                .text-small
+                                    p Анализ изображений и фотографий, портфолио, галереи на сайте
+                                svg.price-table__icon._true(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#true")
+
+                        .price-table__row
+                            .price-table__col
+                                .text-small
+                                    p Наличие контактной информации. Анализ расположения контактных данных, их корректность
+                                svg.price-table__icon._true(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#true")
+
+                        .price-table__row
+                            .price-table__col
+                                .text-small
+                                    p Составление рекомендаций по доработке сайта на основе юзабилити-аудита
+                                svg.price-table__icon._true(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#true")
+
+                        .price-table__row._subtitle
+                            .price-table__col Аудит конверсии сайта
+
+                        .price-table__row
+                            .price-table__col
+                                .text-small
+                                    p Анализ тепловой карты главной страницы и функционала главной страницы сайта
+                                svg.price-table__icon._false(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#false")
+
+                        .price-table__row
+                            .price-table__col
+                                .text-small
+                                    p Анализ размещения текстовой информации на сайте (для сайтов, где много текста)
+                                svg.price-table__icon._false(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#false")
+
+                        .price-table__row
+                            .price-table__col
+                                .text-small
+                                    p Наличие контактной информации. Анализ расположения контактных данных, их корректность
+                                svg.price-table__icon._false(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#false")
+
+                        .price-table__row
+                            .price-table__col
+                                .text-small
+                                    p Анализ заполнения форм на сайте. Рекомендации по составлению форм
+                                svg.price-table__icon._false(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#false")
+
+                        .price-table__row
+                            .price-table__col
+                                .text-small
+                                    p Анализ посещаемости сайта за выбранный период
+                                svg.price-table__icon._false(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#false")
+
+                        .price-table__row
+                            .price-table__col
+                                .text-small
+                                    p Сводка по источникам посещений (из социальных сетей, из поисковых систем, реклама, переход по ссылкам на сайте)
+                                svg.price-table__icon._false(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#false")
+
+                        .price-table__row
+                            .price-table__col
+                                .text-small
+                                    p Анализ карты кликов
+                                svg.price-table__icon._false(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#false")
+
+                        .price-table__row
+                            .price-table__col
+                                .text-small
+                                    p Анализ посетителей сайта
+                                svg.price-table__icon._false(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#false")
+
+                        .price-table__row
+                            .price-table__col
+                                .text-small
+                                    p Анализ маршрутов пользователей на сайте
+                                svg.price-table__icon._false(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#false")
+
+                        .price-table__row
+                            .price-table__col
+                                .text-small
+                                    p Подготовка общих рекомендаций по сайту на базе аудита конверсии
+                                svg.price-table__icon._false(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#false")
+
+                    .price-table__content(data-tab-content="2")
+                        .price-table__row
+                            .price-table__col._header
+                                h3.price-table__title Полный
+                                p.price-table__price от 30 000 ₽
+                                button.btn.btn-reset._green._hidden-svg-mobile(type="button" data-modal="#modal-order" data-form-field="Полный тариф") Оставить заявку
+                                    svg(width="31" height="8")
+                                        use(xlink:href="@img/icons/icons.svg#arrow-right")
+
+                        .price-table__row._subtitle
+                            .price-table__col Анализ эффективности сайта (юзабилити-аудит)
+
+                        .price-table__row
+                            .price-table__col
+                                .text-small
+                                    p Анализ структуры сайта
+                                svg.price-table__icon._true(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#true")
+
+                        .price-table__row
+                            .price-table__col
+                                .text-small
+                                    p Анализ главной страницы
+                                svg.price-table__icon._true(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#true")
+
+                        .price-table__row
+                            .price-table__col
+                                .text-small
+                                    p Навигация по сайту:
+                                    ul
+                                        li Анализ меню
+                                        li Анализ содержания разделов
+                                        li Анализ дизайна
+                                svg.price-table__icon._true(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#true")
+                            
+                        .price-table__row
+                            .price-table__col
+                                .text-small
+                                    p Информации о товарах / услугах на сайте:
+                                    ul 
+                                        li Анализ представления товаров / услуг
+                                        li Наличие информативных страниц с описанием
+                                        li Проверка каталога
+                                        li Стоимость товара / услуг
+                                svg.price-table__icon._true(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#true")
+
+                        .price-table__row
+                            .price-table__col
+                                .text-small
+                                    p Анализ изображений и фотографий, портфолио, галереи на сайте
+                                svg.price-table__icon._true(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#true")
+
+                        .price-table__row
+                            .price-table__col
+                                .text-small
+                                    p Наличие контактной информации. Анализ расположения контактных данных, их корректность
+                                svg.price-table__icon._true(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#true")
+
+                        .price-table__row
+                            .price-table__col
+                                .text-small
+                                    p Составление рекомендаций по доработке сайта на основе юзабилити-аудита
+                                svg.price-table__icon._true(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#true")
+
+                        .price-table__row._subtitle
+                            .price-table__col Аудит конверсии сайта
+
+                        .price-table__row
+                            .price-table__col
+                                .text-small
+                                    p Анализ тепловой карты главной страницы и функционала главной страницы сайта
+                                svg.price-table__icon._true(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#true")
+
+                        .price-table__row
+                            .price-table__col
+                                .text-small
+                                    p Анализ размещения текстовой информации на сайте (для сайтов, где много текста)
+                                svg.price-table__icon._true(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#true")
+
+                        .price-table__row
+                            .price-table__col
+                                .text-small
+                                    p Наличие контактной информации. Анализ расположения контактных данных, их корректность
+                                svg.price-table__icon._true(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#true")
+
+                        .price-table__row
+                            .price-table__col
+                                .text-small
+                                    p Анализ заполнения форм на сайте. Рекомендации по составлению форм
+                                svg.price-table__icon._true(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#true")
+
+                        .price-table__row
+                            .price-table__col
+                                .text-small
+                                    p Анализ посещаемости сайта за выбранный период
+                                svg.price-table__icon._true(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#true")
+
+                        .price-table__row
+                            .price-table__col
+                                .text-small
+                                    p Сводка по источникам посещений (из социальных сетей, из поисковых систем, реклама, переход по ссылкам на сайте)
+                                svg.price-table__icon._true(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#true")
+
+                        .price-table__row
+                            .price-table__col
+                                .text-small
+                                    p Анализ карты кликов
+                                svg.price-table__icon._true(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#true")
+
+                        .price-table__row
+                            .price-table__col
+                                .text-small
+                                    p Анализ посетителей сайта
+                                svg.price-table__icon._true(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#true")
+
+                        .price-table__row
+                            .price-table__col
+                                .text-small
+                                    p Анализ маршрутов пользователей на сайте
+                                svg.price-table__icon._true(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#true")
+
+                        .price-table__row
+                            .price-table__col
+                                .text-small
+                                    p Подготовка общих рекомендаций по сайту на базе аудита конверсии
+                                svg.price-table__icon._true(width="50" height="50")
+                                    use(xlink:href="@img/icons/icons.svg#true")

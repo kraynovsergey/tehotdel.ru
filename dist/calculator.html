@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>Калькулятор продвижения</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="150x150" href="img/favicon/mstile-150x150.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="img/favicon/android-chrome-512x512.png">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico">
+  </head>
+  <body class="_black">
+    <header class="header" data-header>
+      <div class="container header__container"><a class="header__logo" href="#">
+          <svg class="header__logo-icon" width="160" height="20">
+            <use xlink:href="img/icons/icons.svg#logo"></use>
+          </svg><span class="header__logo-slogan" data-typed><span>{samara}</span></span></a>
+        <nav class="header__nav">
+          <ul class="header__list list-reset">
+            <li class="header__list-item"><a class="header__list-link" href="#" data-modal="#modal-services">Услуги
+                <svg class="header__list-arrow" width="22" height="23">
+                  <use xlink:href="img/icons/icons.svg#arrow-down"></use>
+                </svg></a></li>
+            <li class="header__list-item"><a class="header__list-link _active" href="#">Портфолио</a></li>
+            <li class="header__list-item"><a class="header__list-link" href="#">Калькулятор продвижения</a></li>
+            <li class="header__list-item"><a class="header__list-link" href="#">Кейсы</a></li>
+            <li class="header__list-item"><a class="header__list-link" href="#" data-modal="#modal-about">О компании
+                <svg class="header__list-arrow" width="22" height="23">
+                  <use xlink:href="img/icons/icons.svg#arrow-down"></use>
+                </svg></a></li>
+          </ul>
+        </nav>
+        <div class="header__btns">
+          <button class="btn _black-bordered btn-reset _small header__btn" type="button" data-modal="#modal-order">Обсудить проект</button><a class="btn _black-bordered btn-reset _small header__btn" href="tel:+78463796226">+7 846 379-62-26</a>
+        </div>
+        <button class="header__burger btn-reset" type="button" data-burger><span></span><span> </span><span></span></button>
+      </div>
+    </header>
+    <main class="main">
+      <section class="section calculator _pt0 _pb0 _black _radius _radius-bottom">
+        <section class="section _small-padding">
+          <div class="container">
+            <ul class="breadcrumbs list-reset text-gray" data-aos="fade-up">
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
+              <li class="breadcrumbs__item">Калькулятор продвижения</li>
+            </ul>
+          </div>
+        </section>
+        <section class="section _pt0 _no-ovh">
+          <div class="container calculator__container">
+            <div class="calculator__content">
+              <h1 class="h2 calculator__h1" data-aos="fade-up">Калькулятор <br>продвижения</h1>
+              <form class="form" data-aos="fade-up">
+                <div class="form__fields">
+                  <fieldset class="form__fieldset">
+                    <label class="form__label text-small _orange" for="calculator-website">Ссылка на ваш сайт</label>
+                    <input class="form__input" type="text" name="website" placeholder="Например, tehotdel.ru" id="calculator-website" data-input>
+                  </fieldset>
+                  <fieldset class="form__fieldset">
+                    <label class="form__label text-small _orange" for="calculator-region">Регион продвижения</label>
+                    <input class="form__input" type="text" name="region" placeholder="Например, Москва" id="calculator-region" data-input>
+                  </fieldset>
+                  <fieldset class="form__fieldset">
+                    <label class="form__label text-small _orange" for="calculator-phone">Телефон</label>
+                    <input class="form__input" type="tel" name="phone" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" id="calculator-phone" data-tel data-input>
+                  </fieldset>
+                  <fieldset class="form__fieldset">
+                    <label class="form__label text-small _orange" for="calculator-where">Где продвигаем</label>
+                    <input class="form__input" type="text" name="where" placeholder="Например, Яндекс" id="calculator-where" data-input>
+                  </fieldset>
+                </div>
+                <button class="form__submit btn btn-reset _ultra-violet" type="submit">Отправить заявку
+                  <svg width="31" height="8">
+                    <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                  </svg>
+                </button>
+                <div class="form__checkbox">
+                  <input class="form__checkbox-input" type="checkbox" name="policy" id="career-policy" data-policy required>
+                  <label class="form__checkbox-label" for="career-policy"><span class="form__checkbox-check"></span><span>Оставляя заявку, вы даёте согласие на <a href="#" target="_blank">обработку ваших персональных данных</a>, а также подтверждаете, что вам исполнилось 18 лет</span></label>
+                </div>
+              </form>
+            </div>
+            <div class="calculator__waves-wrap">
+              <div class="calculator__waves"><img class="calculator__wave" src="img/calculator-wave.svg" alt="" width="854" height="697"><img class="calculator__wave _gradient" src="img/calculator-wave-gradient.svg" alt="" width="854" height="697"></div>
+            </div>
+          </div><img class="calculator__circle" src="img/calculator-circle.svg" width="303" height="807"><img class="service-intro__circle _right _calculator" src="img/calculator-circle-right.svg" alt="" width="691" height="1115">
+        </section>
+        <section class="section service-steps _pt0">
+          <div class="container">
+            <h2 class="section__title _orange" data-aos="fade-up">Вы получите</h2>
+            <div class="swiper box-swiper _full-tablet" data-swiper-boxes>
+              <div class="swiper-wrapper _cols3">
+                <div class="swiper-slide" data-aos="fade-up" data-aos-delay="50">
+                  <article class="box _calculator">
+                    <svg class="box__icon _ultra-violet" width="60" height="60">
+                      <use xlink:href="img/icons/icons.svg#seo-pluses-1"></use>
+                    </svg>
+                    <h3 class="box__title _big">Персонального менеджера</h3>
+                  </article>
+                </div>
+                <div class="swiper-slide" data-aos="fade-up" data-aos-delay="50">
+                  <article class="box _calculator">
+                    <svg class="box__icon _orange" width="60" height="60">
+                      <use xlink:href="img/icons/icons.svg#seo-pluses-2"></use>
+                    </svg>
+                    <h3 class="box__title _big">Бесплатный первичный аудит сайта</h3>
+                  </article>
+                </div>
+                <div class="swiper-slide" data-aos="fade-up" data-aos-delay="50">
+                  <article class="box _calculator">
+                    <svg class="box__icon _ultra-violet" width="60" height="60">
+                      <use xlink:href="img/icons/icons.svg#seo-pluses-3"></use>
+                    </svg>
+                    <h3 class="box__title _big">Быстрый расчет стоимости продвижения сайта</h3>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section class="section _pb0">
+        <div class="container">
+          <h2 class="section__title" data-aos="fade-up">Услуги</h2>
+          <div class="swiper box-swiper _full-tablet _hover" data-swiper-boxes>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" data-aos="fade-up" data-aos-delay="50">
+                    <article class="box _white _hover">
+                      <svg class="box__icon" width="60" height="60">
+                        <use xlink:href="img/icons/icons.svg#service-2"></use>
+                      </svg>
+                      <h3 class="box__title">Разработка сайтов</h3>
+                      <p class="box__text text-small">Создаём сайты под любые задачи. От быстрых лендингов до сложного e-commerce</p>
+                      <div class="box__grow"><a class="box__btn btn btn-reset _black-bordered" href="#">Подробнее</a></div>
+                    </article>
+              </div>
+              <div class="swiper-slide" data-aos="fade-up" data-aos-delay="100">
+                    <article class="box _white _hover">
+                      <svg class="box__icon" width="60" height="60">
+                        <use xlink:href="img/icons/icons.svg#service-5"></use>
+                      </svg>
+                      <h3 class="box__title">Контекстная реклама</h3>
+                      <p class="box__text text-small">Добываем качественный рекламный трафик. Увеличиваем количество заявок</p>
+                      <div class="box__grow"><a class="box__btn btn btn-reset _black-bordered" href="#">Подробнее</a></div>
+                    </article>
+              </div>
+              <div class="swiper-slide" data-aos="fade-up" data-aos-delay="150">
+                    <article class="box _white _hover">
+                      <svg class="box__icon" width="60" height="60">
+                        <use xlink:href="img/icons/icons.svg#service-3"></use>
+                      </svg>
+                      <h3 class="box__title">SEO-продвижение</h3>
+                      <p class="box__text text-small">Привлекаем максимум органического трафика. Параллельно работаем над юзабилити сайта</p>
+                      <div class="box__grow"><a class="box__btn btn btn-reset _black-bordered" href="#">Подробнее</a></div>
+                    </article>
+              </div>
+              <div class="swiper-slide" data-aos="fade-up" data-aos-delay="200">
+                    <article class="box _white _hover">
+                      <svg class="box__icon" width="60" height="60">
+                        <use xlink:href="img/icons/icons.svg#service-1"></use>
+                      </svg>
+                      <h3 class="box__title">Комплексный маркетинг</h3>
+                      <p class="box__text text-small">Используем принцип омниканальности. Погружаемся в ваш бизнес на всех уровнях маркетинговой воронки</p>
+                      <div class="box__grow"><a class="box__btn btn btn-reset _black-bordered" href="#">Подробнее</a></div>
+                    </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section _pb0">
+        <div class="container">
+          <h2 class="section__title" data-aos="fade-up">Сферы продвижения</h2>
+          <section class="section seo-categories _small-radius _black _full-mobile" data-aos="fade-up">
+            <div class="container">
+              <ul class="seo-categories__list list-reset">
+                <li><a href="#">Cтроительство</a></li>
+                <li><a href="#">Промышленность</a></li>
+                <li><a href="#">Порталы</a></li>
+                <li><a href="#">Интернет-магазины</a></li>
+              </ul>
+            </div><img class="seo-categories__wave" src="img/seo-wave-categories.svg" alt="" width="797" height="645">
+          </section>
+        </div>
+      </section>
+    </main>
+    <footer class="footer section _black _radius _pt0 _pb0">
+      <div class="footer__top" data-aos="fade-up">
+        <div class="container">
+          <h2 class="section__title">Контакты</h2>
+          <div class="footer__contacts">
+            <address class="footer__contact">
+              <p class="footer__contact-title text-small">Телефон</p><a class="footer__contact-value footer__contact-link" href="tel:+78463796226">+7 846 379-62-26</a>
+            </address>
+            <address class="footer__contact">
+              <p class="footer__contact-title text-small">Почта</p><a class="footer__contact-value footer__contact-link" href="mailto:info@tehotdel.ru">info@tehotdel.ru</a>
+            </address>
+            <address class="footer__contact">
+              <p class="footer__contact-title text-small">Соц. сети</p><a class="footer__contact-value footer__contact-link" href="https://vk.com/" target="_blank" rel="nofollow">VK</a>
+            </address>
+            <address class="footer__contact _full">
+              <p class="footer__contact-title text-small">Адрес</p>
+              <p class="footer__contact-value">г. Самара, 5-я просека, 110Е / оф. 309</p>
+            </address>
+          </div>
+          <div class="footer__wrap-btn">
+            <button class="footer__btn btn btn-reset _white-bordered" type="button" data-modal="#modal-order">Обсудить проект
+              <svg width="31" height="8">
+                <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <svg class="footer__wave" width="887" height="678">
+          <use xlink:href="img/icons/icons.svg#footer-wave"></use>
+        </svg>
+      </div>
+      <div class="footer__middle" data-aos="fade-up">
+        <div class="container footer__navs">
+          <nav class="footer__nav">
+            <h3 class="footer__nav-title">Услуги</h3>
+            <ul class="footer__list list-reset">
+              <li><a class="_active" href="#">Комплексный маркетинг</a></li>
+              <li><a href="#">Разработка сайтов</a></li>
+              <li><a href="#">SEO-продвижение</a></li>
+              <li><a href="#">Аудит сайтов</a></li>
+              <li><a href="#">Контекстная реклама</a></li>
+              <li><a href="#">Продвижение в соц. сетях</a></li>
+            </ul>
+          </nav>
+          <nav class="footer__nav">
+            <h3 class="footer__nav-title">О компании</h3>
+            <ul class="footer__list list-reset">
+              <li><a href="#">Портфолио</a></li>
+              <li><a href="#">Кейсы</a></li>
+              <li><a href="#" target="_blank">Презентация PDF</a></li>
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">Награды</a></li>
+              <li><a href="#">Отзывы</a></li>
+              <li><a href="#">Вакансии</a></li>
+              <li><a href="#">Политика конфиденциальности</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="text-small">© 2023 Tehotdel</div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal scroll _hidden" id="modal-order" data-lenis-prevent>
+      <div class="container modal__container">
+        <div class="section__header">
+          <h2 class="section__title">Давайте работать вместе</h2>
+          <button class="modal__close btn-reset" type="button" data-modal-close></button>
+        </div>
+        <form class="form modal__form">
+          <input type="hidden" name="target" data-form-field-target>
+          <div class="form__fields">
+            <fieldset class="form__fieldset">
+              <label class="form__label text-small text-gray" for="order-name">Имя</label>
+              <input class="form__input" type="text" name="name" placeholder="Ваше имя" id="order-name" data-input>
+            </fieldset>
+            <fieldset class="form__fieldset">
+              <label class="form__label text-small text-gray" for="order-phone">Телефон</label>
+              <input class="form__input" type="tel" name="phone" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" id="order-phone" data-tel data-input>
+            </fieldset>
+            <fieldset class="form__fieldset _full">
+              <label class="form__label text-small text-gray" for="order-message">Проект</label>
+              <input class="form__input" type="text" name="text" placeholder="Опишите ваш проект (необязательно)" id="order-message" data-input>
+            </fieldset>
+          </div>
+          <button class="form__submit btn btn-reset _red" type="submit">Отправить заявку
+            <svg width="31" height="8">
+              <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+            </svg>
+          </button>
+          <div class="form__checkbox">
+            <input class="form__checkbox-input" type="checkbox" name="policy" id="order-policy" data-policy required>
+            <label class="form__checkbox-label" for="order-policy"><span class="form__checkbox-check"></span><span>Оставляя заявку, вы даёте согласие на <a href="#" target="_blank">обработку ваших персональных данных</a>, а также подтверждаете, что вам исполнилось 18 лет</span></label>
+          </div>
+        </form>
+        <svg class="order__wave" width="834" height="726">
+          <use xlink:href="img/icons/icons.svg#order-wave"></use>
+        </svg><img class="modal__circle" src="img/modal-circle.svg" width="540" height="406">
+      </div>
+    </div>
+    <div class="modal scroll _hidden" id="modal-thankyou" data-lenis-prevent>
+      <div class="container modal__container">
+        <div class="section__header">
+          <h2 class="section__title">Спасибо!</h2>
+          <button class="modal__close btn-reset" type="button" data-modal-close></button>
+        </div>
+        <p class="h3">Ваша заявка была успешно отправлена. В ближайшее время мы с вами свяжемся</p>
+        <svg class="order__wave" width="834" height="726">
+          <use xlink:href="img/icons/icons.svg#order-wave"></use>
+        </svg><img class="modal__circle" src="img/modal-circle.svg" width="540" height="406">
+      </div>
+    </div>
+    <div class="modal scroll _hidden" id="modal-services" data-lenis-prevent>
+      <div class="container modal__container">
+        <div class="section__header">
+          <h2 class="section__title">Услуги</h2>
+          <button class="modal__close btn-reset" type="button" data-modal-close></button>
+        </div>
+        <ul class="modal__list list-reset">
+          <li><a class="_active" href="#">Комплексный маркетинг</a></li>
+          <li><a href="#">Контекстная реклама</a></li>
+          <li><a href="#">Разработка сайтов</a></li>
+          <li><a href="#">Продвижение в соц. сетях</a></li>
+          <li><a href="#">SEO-продвижение</a></li>
+          <li><a href="#">Разработка логотипов</a></li>
+          <li><a href="#">Аудит сайтов</a></li>
+          <li><a href="#">Работа с оплатой за лиды</a></li>
+        </ul><img class="modal__circle" src="img/modal-circle.svg" width="540" height="406">
+      </div>
+    </div>
+    <div class="modal scroll _hidden" id="modal-about" data-lenis-prevent>
+      <div class="container modal__container">
+        <div class="section__header">
+          <h2 class="section__title">О компании</h2>
+          <button class="modal__close btn-reset" type="button" data-modal-close></button>
+        </div>
+        <ul class="modal__list list-reset">
+          <li><a href="#" target="_blank">Презентация PDF</a></li>
+          <li><a class="_active" href="#">Карьера</a></li>
+          <li><a href="#">О нас</a></li>
+          <li><a href="#">Контакты</a></li>
+          <li><a href="#">Награды</a></li>
+          <li><a href="#">Отзывы</a></li>
+        </ul>
+        <svg class="modal__about-wave" width="446" height="296">
+          <use xlink:href="img/icons/icons.svg#about-wave"></use>
+        </svg><img class="modal__circle" src="img/modal-circle.svg" width="540" height="406">
+      </div>
+    </div>
+    <div class="modal mobile-nav scroll _hidden" id="modal-nav" data-lenis-prevent>
+      <div class="container modal__container mobile-nav__container">
+        <ul class="mobile-nav__list list-reset">
+          <li class="mobile-nav__list-item"><a class="mobile-nav__list-link" href="#" data-mobile-nav-link>Услуги
+              <svg class="mobile-nav__list-arrow" width="22" height="23">
+                <use xlink:href="img/icons/icons.svg#arrow-down"></use>
+              </svg></a>
+            <ul class="mobile-nav__sublist list-reset">
+              <li class="mobile-nav__sublist-item"><a class="mobile-nav__sublist-link" href="#">Комплексный маркетинг</a></li>
+              <li class="mobile-nav__sublist-item"><a class="mobile-nav__sublist-link" href="#">Разработка сайтов</a></li>
+              <li class="mobile-nav__sublist-item"><a class="mobile-nav__sublist-link" href="#">SEO-продвижение</a></li>
+              <li class="mobile-nav__sublist-item"><a class="mobile-nav__sublist-link" href="#">Аудит сайтов</a></li>
+              <li class="mobile-nav__sublist-item"><a class="mobile-nav__sublist-link" href="#">Контекстная реклама</a></li>
+              <li class="mobile-nav__sublist-item"><a class="mobile-nav__sublist-link" href="#">Продвижение в соц. сетях</a></li>
+              <li class="mobile-nav__sublist-item"><a class="mobile-nav__sublist-link" href="#">Разработка логотипов</a></li>
+              <li class="mobile-nav__sublist-item"><a class="mobile-nav__sublist-link" href="#">Работа с оплатой за лиды</a></li>
+            </ul>
+          </li>
+          <li class="mobile-nav__list-item"><a class="mobile-nav__list-link" href="#">Портфолио</a></li>
+          <li class="mobile-nav__list-item"><a class="mobile-nav__list-link" href="#">Калькулятор продвижения</a></li>
+          <li class="mobile-nav__list-item"><a class="mobile-nav__list-link" href="#">Кейсы</a></li>
+          <li class="mobile-nav__list-item"><a class="mobile-nav__list-link" href="#" data-mobile-nav-link>О компании
+              <svg class="mobile-nav__list-arrow" width="22" height="23">
+                <use xlink:href="img/icons/icons.svg#arrow-down"></use>
+              </svg></a>
+            <ul class="mobile-nav__sublist list-reset">
+              <li class="mobile-nav__sublist-item"><a class="mobile-nav__sublist-link" href="#" target="_blank">Презентация PDF</a></li>
+              <li class="mobile-nav__sublist-item"><a class="mobile-nav__sublist-link" href="#">О нас</a></li>
+              <li class="mobile-nav__sublist-item"><a class="mobile-nav__sublist-link" href="#">Награды</a></li>
+              <li class="mobile-nav__sublist-item"><a class="mobile-nav__sublist-link" href="#">Отзывы</a></li>
+              <li class="mobile-nav__sublist-item"><a class="mobile-nav__sublist-link" href="#">Карьера</a></li>
+              <li class="mobile-nav__sublist-item"><a class="mobile-nav__sublist-link" href="#">Контакты</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="mobile-nav__btns">
+          <button class="btn _red-bordered btn-reset" type="button" data-modal="#modal-order">Обсудить проект</button><a class="btn _red-bordered btn-reset" href="tel:+78463796226">+7 846 379-62-26</a>
+        </div>
+      </div>
+    </div>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+doctype html
+block html
+html(lang="ru")
+    head
+        block meta
+            - var seotitle = 'Список страниц'
+            - var seodescription = ''
+            - var seokeywords = ''
+
+        include pug/core/_meta
+
+    style(type="text/css").
+        .wrap {
+            width: 100vw;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 0;
+        }
+
+        .wrap__list {
+            font-size: 1.2rem;
+        }
+
+        .wrap__list li:not(:last-child) {
+            margin-bottom: .8rem;
+        }
+
+        .wrap__list a {
+            color: currentColor;
+            text-decoration: none;
+        }
+
+    body
+        .wrap
+            ol.wrap__list
+                li
+                    a(href="home.html" target="_blank") Главная страница
+                li
+                    a(href="services.html" target="_blank") Услуги
+                li
+                    a(href="seo.html" target="_blank") SEO-продвижение
+                li
+                    a(href="seo-portals.html" target="_blank") SEO-продвижение интернет-порталов
+                li
+                    a(href="seo-industry.html" target="_blank") SEO-продвижение сайтов в промышленной сфере
+                li
+                    a(href="seo-construction.html" target="_blank") SEO-продвижение сайтов в сфере строительства
+                li
+                    a(href="seo-online-store.html" target="_blank") SEO-продвижение интернет-магазинов
+                li
+                    a(href="contextual-advertising.html" target="_blank") Контекстная реклама
+                li
+                    a(href="site-development.html" target="_blank") Разработка сайтов
+                li
+                    a(href="logo-development.html" target="_blank") Разработка логотипов
+                li
+                    a(href="smm.html" target="_blank") Социальные сети (SMM)
+                li
+                    a(href="audit.html" target="_blank") Аудит сайта
+                li
+                    a(href="marketing.html" target="_blank") Комплексный маркетинг
+                li
+                    a(href="portfolio.html" target="_blank") Портфолио
+                li
+                    a(href="portfolio-page.html" target="_blank") Работа в портфолио
+                li
+                    a(href="cases.html" target="_blank") Кейсы
+                li
+                    a(href="case.html" target="_blank") Конкретный кейс
+                li
+                    a(href="awards.html" target="_blank") Награды
+                li
+                    a(href="career.html" target="_blank") Карьера (есть вакансии)
+                li
+                    a(href="vacancy.html" target="_blank") Карьера (нет вакансий)
+                li
+                    a(href="contacts.html" target="_blank") Контакты
+                li
+                    a(href="reviews.html" target="_blank") Отзывы
+                li
+                    a(href="calculator.html" target="_blank") Калькулятор продвижения
+                li
+                    a(href="leads.html" target="_blank") Работа с оплатой за лиды
+                li
+                    a(href="about.html" target="_blank") О нас
+                li
+                    a(href="privacy-policy.html" target="_blank") Политика конфиденциальности
+                li
+                    a(href="personal-data.html" target="_blank") Согласие на обработку персональных данных
+

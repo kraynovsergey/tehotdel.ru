@@ -1,0 +1,56 @@
+.service-banners {
+    &__container {
+        display: grid;
+        grid-template-columns: .6fr .4fr;
+        gap: clamp(25px, 8.33vw, 160px);
+        align-items: flex-start;
+
+        @media (max-width: 991px) {
+            grid-template-columns: 1fr;
+            gap: clamp(25px, 3.12vw, 60px);
+        }
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: clamp(24px, 2.08vw, 40px);
+        position: sticky;
+        top: calc(clamp(60px, 5.72vw, 110px) + 20px);
+    }
+
+    &__item {
+        position: relative;
+    }
+
+    &__title {
+        font-size: clamp(24px, 1.56vw, 30px);
+        margin: 0;
+    }
+
+    &__text {
+        margin: 0;
+    }
+
+    &__price {
+        color: $color_blue;
+        font-weight: 500;
+    }
+
+    &__wave {
+        color: $color_red;
+        width: 30%;
+        height: auto;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+
+        @media (max-width: 991px) {
+            width: 25%;
+        }
+
+        @media (max-width: 767px) {
+            width: 20%;
+        }
+    }
+}

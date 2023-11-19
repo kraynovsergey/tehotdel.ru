@@ -1,0 +1,33 @@
+section.section._pb0
+    section.section._radius._white
+        .container
+            .clients__header
+                h2.section__title.clients__title(data-aos="fade-up") Нам доверяют
+                p.clients__text.text-red(data-aos="fade-up" data-aos-delay="100") Мы <span>сделали счастливыми огромное количество клиентов</span> из разных областей — начиная от детских школ и заканчивая медицинскими предприятиями
+
+            mixin clients-item(img, img_filter)
+                .clients__item
+                    .clients__picture
+                        img(src="@img/tmp/"+img+"" alt="")
+                        img._filter(src="@img/tmp/"+img_filter+"" alt="")
+
+            .swiper._full-tablet(data-aos="fade-up" data-swiper-clients)
+                .swiper-wrapper
+                    .swiper-slide
+                        +clients-item('client-1.svg', 'client-filter-1.svg')
+                    .swiper-slide
+                        +clients-item('client-2.svg', 'client-filter-2.svg')
+                    .swiper-slide
+                        +clients-item('client-3.svg', 'client-filter-3.svg')
+                    .swiper-slide
+                        +clients-item('client-4.svg', 'client-filter-4.svg')
+                    .swiper-slide
+                        +clients-item('client-5.svg', 'client-filter-5.svg')
+                    .swiper-slide
+                        +clients-item('client-6.svg', 'client-filter-6.svg')
+                    .swiper-slide
+                        +clients-item('client-7.svg', 'client-filter-7.svg')
+                    .swiper-slide
+                        +clients-item('client-8.svg', 'client-filter-8.svg')
+                    .swiper-slide
+                        +clients-item('client-9.svg', 'client-filter-9.svg')

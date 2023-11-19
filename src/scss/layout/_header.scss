@@ -1,0 +1,178 @@
+.header {
+    background: $color_light_blue;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 4px 20px 0px rgba(160, 180, 233, 0.25);
+    border-bottom: 1px solid transparent;
+    color: $color_black;
+    transition: .5s ease-in-out background;
+    height: clamp(60px, 5.72vw, 110px);
+    display: flex;
+    align-items: center;
+    z-index: 20;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: clamp(15px, 1.56vw, 30px);
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        gap: clamp(15px, 1.25vw, 25px);
+        font-size: 20px;
+        color: $color_red;
+        text-decoration: none;
+        font-size: clamp(16px, 1.04vw, 20px);
+
+        & svg {
+            color: $color_black;
+            transition: .5s ease-in-out color;
+            height: clamp(14px, 1.04vw, 20px);
+            width: auto;
+        }
+
+        &-slogan {
+            & span {
+                opacity: 0;
+            }
+        }
+    }
+
+    &__nav {
+        display: flex;
+
+        @media (max-width: 1280px) {
+            display: none;
+        }
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: clamp(20px, 1.56vw, 30px);
+
+        @media (max-width: 1366px) {
+            gap: 10px;
+        }
+
+        &-link {
+            font-size: clamp(16px, .93vw, 18px);
+            text-decoration: none;
+            letter-spacing: clamp(1.4px, .07vw, 1.8px);
+            color: inherit;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            @media (max-width: 1440px) {
+                font-size: 14px;
+            }
+
+            &:hover,
+            &._active {
+                color: $color_red;
+            }
+        }
+    }
+
+    &__btns {
+        display: flex;
+        align-items: center;
+        gap: clamp(20px, 1.56vw, 30px);
+
+        @media (max-width: 1600px) {
+            gap: 10px;
+        }
+
+        @media (max-width: 1280px) {
+            display: none;
+        }
+    }
+
+    &__btn {
+        @media (max-width: 1600px) and (min-width: 1367px) {
+            padding: 0 20px !important;
+            font-size: 14px !important;
+        }
+
+        @media (max-width: 1366px) {
+            padding: 0 10px !important;
+            font-size: 14px !important;
+        }
+    }
+
+    &__burger {
+        display: none;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        position: relative;
+        gap: clamp(4px, .7vw, 9px);
+        min-width: clamp(25px, 3.9vw, 40px);
+        max-width: clamp(25px, 3.9vw, 40px);
+        height: clamp(25px, 3.9vw, 40px);
+
+        @media (max-width: 1280px) {
+            display: flex;
+        }
+
+        & span {
+            width: 100%;
+            height: clamp(1.5px, .1vw, 2px);
+            background: $color_black;
+            border-radius: 1px;
+            transition: .5s ease-in-out;
+        }
+
+        &._active {
+            & span {
+                position: absolute;
+                
+                &:last-child {
+                    display: none;
+                }
+
+                &:first-child {
+                    transform: rotate(45deg);
+                }
+
+                &:nth-child(2) {
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
+}
+
+body {
+    &._black {
+        & .header {
+            background: $color_black;
+            color: $color_white;
+            box-shadow: none;
+            border-bottom: 1px solid $color_dark_gray;
+    
+            & .header {
+                &__logo {
+                    & svg {
+                        color: $color_white;
+                    }
+                }
+    
+                &__btn {
+                    color: $color_white;
+                    border-color: $color_red;
+                }
+    
+                &__burger {
+                    & span {
+                        background: $color_red;
+                    }
+                }
+            }
+        }
+    }
+}

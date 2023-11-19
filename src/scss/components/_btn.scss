@@ -1,0 +1,173 @@
+.btn-reset {
+    padding: 0;
+    margin: 0;
+    background: none;
+    border: 0;
+    border-radius: 0;
+    appearance: none;
+    -webkit-appearance: none;
+    font-weight: normal;
+}
+
+.btn {
+    font-size: clamp(16px, 1.04vw, 20px);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    transition: .5s ease-in-out;
+    height: clamp(52px, 3.43vw, 66px);
+    border-radius: 1000px;
+    padding: 0 clamp(30px, 1.82vw, 35px);
+    letter-spacing: clamp(.5px, .05vw, 1px);
+    gap: 15px;
+
+    &._black-bordered {
+        border: 1px solid $color_black;
+        color: $color_black;
+    }
+
+    &._white-bordered {
+        border: 1px solid $color_white;
+        color: $color_white;
+
+        &:hover {
+            background: $color_white;
+            color: $color_black;
+            border-color: $color_white !important;
+        }
+    }
+
+    &._red-bordered {
+        border: 1px solid $color_red;
+        color: $color_red;
+    }
+
+    &._blue {
+        background: $color_blue;
+        color: $color_black;
+        border: 1px solid $color_blue !important;
+
+        &:hover {
+            @media (min-width: 992px) {
+                background: transparent;
+                color: $color_blue;
+                border: 1px solid $color_blue !important;
+            }
+        }
+    }
+
+    &._yellow {
+        background: $color_yellow;
+        color: $color_black;
+        border: 1px solid $color_yellow !important;
+
+        &:hover {
+            @media (min-width: 992px) {
+                background: transparent;
+                color: $color_yellow;
+                border: 1px solid $color_yellow !important;
+            }
+        }
+    }
+
+    &._green,
+    &._green-bordered {
+        background: $color_green;
+        color: $color_black;
+        border: 1px solid $color_green !important;
+
+        &:hover {
+            @media (min-width: 992px) {
+                background: transparent;
+                color: $color_green;
+                border: 1px solid $color_green !important;
+            }
+        }
+    }
+
+    &._violet,
+    &._violet-bordered {
+        background: $color_violet;
+        color: $color_white;
+        border: 1px solid $color_violet;
+
+        &:hover {
+            @media (min-width: 992px) {
+                background: transparent;
+                color: $color_violet;
+                border: 1px solid $color_violet !important;
+            }
+        }
+    }
+
+    &._ultra-violet {
+        background: $color_ultra_violet;
+        color: $color_white;
+        border: 1px solid $color_ultra_violet;
+
+        &:hover {
+            @media (min-width: 992px) {
+                background: transparent;
+                color: $color_ultra_violet;
+                border: 1px solid $color_ultra_violet !important;
+            }
+        }
+    }
+
+    &._lime {
+        background: $color_lime;
+        color: $color_black;
+        border: 1px solid $color_lime;
+
+        &:hover {
+            @media (min-width: 992px) {
+                background: transparent;
+                color: $color_lime;
+                border: 1px solid $color_lime !important;
+            }
+        }
+    }
+
+    &._small {
+        font-size: 16px;
+        height: clamp(52px, 2.81vw, 54px);
+    }
+
+    &._red {
+        background: $color_red;
+        color: $color_white;
+        border: 1px solid $color_red;
+
+        &:hover {
+            @media (min-width: 992px) {
+                background: transparent;
+                color: $color_red;
+            }
+        }
+    }
+
+    &._hidden-svg-mobile {
+        & svg {
+            @media (max-width: 575px) {
+                display: none;
+            }   
+        }
+    }
+
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &:hover {
+        @media (min-width: 992px) {
+            border-color: $color_red !important;
+            background: $color_red;
+            color: $color_white;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.smm {
+    &__slide-statistic {
+        & .box__title {
+            color: $color_red;
+        }
+
+        &:nth-child(2n) {
+            & .box__title {
+                color: $color_black;
+            }
+        }
+    }
+}

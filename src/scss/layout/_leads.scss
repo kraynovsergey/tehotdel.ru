@@ -1,0 +1,25 @@
+.leads {
+    &__box {
+        border: 1px solid $color_gray_blue;
+        border-radius: 30px;
+        padding: clamp(25px, 3.85vw, 74px) clamp(25px, 4.16vw, 80px);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: clamp(30px, 2.08vw, 40px);
+
+        & .text {
+            font-size: clamp(18px, 3.64vw, 70px);
+            font-weight: 500;
+            line-height: 120%;
+
+            & p { 
+                margin: 0;
+            }
+
+            & span {
+                color: $color_red;
+            }
+        }
+    }
+}

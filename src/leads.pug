@@ -1,0 +1,244 @@
+extends base
+
+block color
+    - var body_classes = '_black'
+
+block meta
+    - var seotitle = 'Работа с оплатой за лиды'
+    - var seodescription = ''
+    - var seokeywords = ''
+
+block main
+    main.main
+        section.section._pt0._pb0._black._radius._radius-bottom
+            section.section._small-padding._pb0
+                .container
+                    ul.breadcrumbs.list-reset.text-gray(data-aos="fade-up")
+                        li.breadcrumbs__item
+                            a.breadcrumbs__link(href="#") Главная
+                        li.breadcrumbs__item
+                            a.breadcrumbs__link(href="#") Услуги
+                        li.breadcrumbs__item Работа с оплатой за лиды
+
+            section.section.service-intro._pt0._no-ovh
+                .container.service-intro__container
+                    .service-intro__content(data-aos="fade-up")
+                        h1.service-intro__title Работа с оплатой за лиды
+                        .service-intro__subtitle.text
+                            p Вы платите только за результат, без процентов и скрытых комиссий
+                        button.service-intro__btn.btn.btn-reset._ultra-violet(type="button" data-modal="#modal-order") Обсудить проект
+                            svg(width="31" height="8")
+                                use(xlink:href="@img/icons/icons.svg#arrow-right")
+
+                    .service-intro__waves-wrap._leads
+                        .service-intro__waves._leads
+                            img.service-intro__wave(src="@img/leads-wave.svg" alt="" width="790" height="532")
+                            img.service-intro__wave._gradient(src="@img/leads-wave-gradient.svg" alt="" width="790" height="532")
+
+                img.service-intro__circle._left._leads(src="@img/intro-circle-leads-left.svg" alt="" width="578" height="1115")
+                img.service-intro__circle._right(src="@img/intro-circle-leads-right.svg" alt="" width="691" height="1115")
+
+            section.section.service-steps._ultra-violet._pt0
+                .container.service-steps__container
+                    .service-steps__left
+                        h2.section__title._ultra-violet(data-aos="fade-up") Как мы работаем
+
+                    .service-steps__items(data-aos="fade-up")
+                        .service-steps__line._leads(data-steps-line)
+                            .service-steps__line-wrap(data-steps-animation)
+                                .service-steps__line(data-steps-animation-target)
+
+                        article.service-steps__item
+                            .service-steps__circle(data-steps-line-first) 01
+                                .service-steps__circle-wrap(data-steps-animation)
+                                    .service-steps__circle(data-steps-animation-target) 01
+                            .service-steps__box.box._dark-blue
+                                h3.service-steps__title Проводим аудит ваших рекламных кампаний, составляем план работ
+                                .service-steps__text.text-small
+                                    p Наши специалисты оценивают ситуацию по кампаниям и трафику и предлагают план работ по оптимизации действующих кампаний и созданию новых. Зафиксируем ваши пожелания по срокам, ценам и KPI
+                                .service-steps__box-wrap(data-steps-animation)
+                                    .service-steps__box.box._dark-blue(data-steps-animation-target)
+                                        h3.service-steps__title Проводим аудит ваших рекламных кампаний, составляем план работ
+                                        .service-steps__text.text-small
+                                            p Наши специалисты оценивают ситуацию по кампаниям и трафику и предлагают план работ по оптимизации действующих кампаний и созданию новых. Зафиксируем ваши пожелания по срокам, ценам и KPI
+
+                        article.service-steps__item
+                            .service-steps__circle 02
+                                .service-steps__circle-wrap(data-steps-animation)
+                                    .service-steps__circle(data-steps-animation-target) 02
+                            .service-steps__box.box._dark-blue
+                                h3.service-steps__title Резюмируем этапы и сроки работ. Подписываем договор
+                                .service-steps__text.text-small
+                                    p Каждое направление разбиваем на этапы, на каждом этапе утверждаем точки контроля. Подписываем договор и представляем вам менеджера проекта.
+                                .service-steps__box-wrap(data-steps-animation)
+                                    .service-steps__box.box._dark-blue(data-steps-animation-target)
+                                        h3.service-steps__title Резюмируем этапы и сроки работ. Подписываем договор
+                                        .service-steps__text.text-small
+                                            p Каждое направление разбиваем на этапы, на каждом этапе утверждаем точки контроля. Подписываем договор и представляем вам менеджера проекта.
+
+                        article.service-steps__item
+                            .service-steps__circle 03
+                                .service-steps__circle-wrap(data-steps-animation)
+                                    .service-steps__circle(data-steps-animation-target) 03
+                            .service-steps__box.box._dark-blue
+                                h3.service-steps__title Знакомим с ответственным за проект
+                                .service-steps__text.text-small
+                                    p Менеджер или тимлид — человек, который уже имел опыт работы с вашей тематикой. В первой беседе вы обсуждаете и фиксируете: приоритеты в работе, направления и географию продвижения, рекламный бюджет. Специалист задаст все уточняющие вопросы по проекту, расскажет дальнейшие шаги по взаимодействию. У вас будет возможность спросить обо всем, что вас волнует.
+                                .service-steps__box-wrap(data-steps-animation)
+                                    .service-steps__box.box._dark-blue(data-steps-animation-target)
+                                        h3.service-steps__title Знакомим с ответственным за проект
+                                        .service-steps__text.text-small
+                                            p Менеджер или тимлид — человек, который уже имел опыт работы с вашей тематикой. В первой беседе вы обсуждаете и фиксируете: приоритеты в работе, направления и географию продвижения, рекламный бюджет. Специалист задаст все уточняющие вопросы по проекту, расскажет дальнейшие шаги по взаимодействию. У вас будет возможность спросить обо всем, что вас волнует.
+
+                        article.service-steps__item
+                            .service-steps__circle 04
+                                .service-steps__circle-wrap(data-steps-animation)
+                                    .service-steps__circle(data-steps-animation-target) 04
+                            .service-steps__box.box._dark-blue
+                                h3.service-steps__title Запускаем рекламу
+                                .service-steps__text.text-small
+                                    p Опираемся на опыт в вашей тематике, начинаем со стратегий и инструментов, в эффективности которых мы уверены. Если работаем с уже запущенными кампаниями — структурируем и приступаем к оптимизации
+                                .service-steps__box-wrap(data-steps-animation)
+                                    .service-steps__box.box._dark-blue(data-steps-animation-target)
+                                        h3.service-steps__title Запускаем рекламу
+                                        .service-steps__text.text-small
+                                            p Опираемся на опыт в вашей тематике, начинаем со стратегий и инструментов, в эффективности которых мы уверены. Если работаем с уже запущенными кампаниями — структурируем и приступаем к оптимизации
+
+                        article.service-steps__item
+                            .service-steps__circle 05
+                                .service-steps__circle-wrap(data-steps-animation)
+                                    .service-steps__circle(data-steps-animation-target) 05
+                            .service-steps__box.box._dark-blue
+                                h3.service-steps__title Ежедневно мониторим динамику и баланс
+                                .service-steps__text.text-small
+                                    p Проверяем статус модерации; своевременно принимаем решения по корректировке настроек
+                                .service-steps__box-wrap(data-steps-animation)
+                                    .service-steps__box.box._dark-blue(data-steps-animation-target)
+                                        h3.service-steps__title Ежедневно мониторим динамику и баланс
+                                        .service-steps__text.text-small
+                                            p Проверяем статус модерации; своевременно принимаем решения по корректировке настроек
+
+                        article.service-steps__item
+                            .service-steps__circle 06
+                                .service-steps__circle-wrap(data-steps-animation)
+                                    .service-steps__circle(data-steps-animation-target) 06
+                            .service-steps__box.box._dark-blue
+                                h3.service-steps__title Регулярно делаем кастомные отчеты
+                                .service-steps__text.text-small
+                                    p Обсуждаем динамику и показатели, выстраиваем план работ с учетом результатов прошедшего периода и задач вашего бизнеса
+                                .service-steps__box-wrap(data-steps-animation)
+                                    .service-steps__box.box._dark-blue(data-steps-animation-target)
+                                        h3.service-steps__title Регулярно делаем кастомные отчеты
+                                        .service-steps__text.text-small
+                                            p Обсуждаем динамику и показатели, выстраиваем план работ с учетом результатов прошедшего периода и задач вашего бизнеса
+
+                        article.service-steps__item
+                            .service-steps__circle(data-steps-line-last) 07
+                                .service-steps__circle-wrap(data-steps-animation)
+                                    .service-steps__circle(data-steps-animation-target) 07
+                            .service-steps__box.box._dark-blue
+                                h3.service-steps__title Автоматизируем за вас маркировку рекламы согласно 347-ФЗ о поправках в Федеральный законе «О рекламе»
+                                .service-steps__text.text-small
+                                    p Передаём все данные в единый реестр интернет-рекламы (ЕРИР). Помогаем учесть обязательную передачу расходов на рекламу и избежать иные потенциальные риски, связанные с отсутствием «маркировки»
+                                .service-steps__box-wrap(data-steps-animation)
+                                    .service-steps__box.box._dark-blue(data-steps-animation-target)
+                                        h3.service-steps__title Автоматизируем за вас маркировку рекламы согласно 347-ФЗ о поправках в Федеральный законе «О рекламе»
+                                        .service-steps__text.text-small
+                                            p Передаём все данные в единый реестр интернет-рекламы (ЕРИР). Помогаем учесть обязательную передачу расходов на рекламу и избежать иные потенциальные риски, связанные с отсутствием «маркировки»
+
+                    .swiper.service-steps__swiper._full-tablet(data-swiper-boxes data-aos="fade-up")
+                        .swiper-wrapper
+                            .swiper-slide
+                                .service-steps__box.box._dark-blue._active
+                                    .service-steps__circle 01
+                                    h3.service-steps__title Проводим аудит ваших рекламных кампаний, составляем план работ
+                                    .service-steps__text.text-small
+                                        p Наши специалисты оценивают ситуацию по кампаниям и трафику и предлагают план работ по оптимизации действующих кампаний и созданию новых. Зафиксируем ваши пожелания по срокам, ценам и KPI
+                            .swiper-slide
+                                .service-steps__box.box._dark-blue._active
+                                    .service-steps__circle 02
+                                    h3.service-steps__title Резюмируем этапы и сроки работ. Подписываем договор
+                                    .service-steps__text.text-small
+                                        p Каждое направление разбиваем на этапы, на каждом этапе утверждаем точки контроля. Подписываем договор и представляем вам менеджера проекта.
+                            .swiper-slide 
+                                .service-steps__box.box._dark-blue._active
+                                    .service-steps__circle 03
+                                    h3.service-steps__title Знакомим с ответственным за проект
+                                    .service-steps__text.text-small
+                                        p Менеджер или тимлид — человек, который уже имел опыт работы с вашей тематикой. В первой беседе вы обсуждаете и фиксируете: приоритеты в работе, направления и географию продвижения, рекламный бюджет. Специалист задаст все уточняющие вопросы по проекту, расскажет дальнейшие шаги по взаимодействию. У вас будет возможность спросить обо всем, что вас волнует.
+                            .swiper-slide 
+                                .service-steps__box.box._dark-blue._active
+                                    .service-steps__circle 04
+                                    h3.service-steps__title Запускаем рекламу
+                                    .service-steps__text.text-small
+                                        p Опираемся на опыт в вашей тематике, начинаем со стратегий и инструментов, в эффективности которых мы уверены. Если работаем с уже запущенными кампаниями — структурируем и приступаем к оптимизации
+
+                            .swiper-slide 
+                                .service-steps__box.box._dark-blue._active
+                                    .service-steps__circle 05
+                                    h3.service-steps__title Ежедневно мониторим динамику и баланс
+                                    .service-steps__text.text-small
+                                        p Проверяем статус модерации; своевременно принимаем решения по корректировке настроек
+
+                            .swiper-slide 
+                                .service-steps__box.box._dark-blue._active
+                                    .service-steps__circle 06
+                                    h3.service-steps__title Регулярно делаем кастомные отчеты
+                                    .service-steps__text.text-small
+                                        p Обсуждаем динамику и показатели, выстраиваем план работ с учетом результатов прошедшего периода и задач вашего бизнеса
+
+                            .swiper-slide 
+                                .service-steps__box.box._dark-blue._active
+                                    .service-steps__circle 07
+                                    h3.service-steps__title Автоматизируем за вас маркировку рекламы согласно 347-ФЗ о поправках в Федеральный законе «О рекламе»
+                                    .service-steps__text.text-small
+                                        p Передаём все данные в единый реестр интернет-рекламы (ЕРИР). Помогаем учесть обязательную передачу расходов на рекламу и избежать иные потенциальные риски, связанные с отсутствием «маркировки»
+
+            section.section._black._pt0
+                .container
+                    h2.section__title._ultra-violet(data-aos="fade-up") Награды
+
+                    mixin awards-item(icon, title, text)
+                        article.box._dark-blue
+                            svg.box__icon(width="60" height="60")
+                                use(xlink:href="@img/icons/icons.svg#"+icon)
+                            h3.box__title._big=title
+                            p.box__text.text-small=text
+                            .box__grow
+                                a.box__link.text-small._ultra-violet(href="#" data-fancybox) Открыть сертификат
+
+                    .swiper.box-swiper._full-tablet(data-swiper-boxes)
+                        .swiper-wrapper
+                            .swiper-slide(data-aos="fade-up" data-aos-delay="50")
+                                +awards-item('award', '1 место', 'Cреди SEO-компаний Самары по версии «Рейтинг Рунета 2020»')    
+                            .swiper-slide(data-aos="fade-up" data-aos-delay="100")
+                                +awards-item('award', '1 место', 'В продвижении мед. тематики в нижнем ценовом сегменте')
+                            .swiper-slide(data-aos="fade-up" data-aos-delay="150")
+                                +awards-item('award', '3 место', 'Cреди разработчиков интернет-магазинов')
+                            .swiper-slide(data-aos="fade-up" data-aos-delay="200")
+                                +awards-item('award', '3 место', 'В продвижении медицинской тематики по России')
+                            .swiper-slide(data-aos="fade-up" data-aos-delay="250")
+                                +awards-item('red-star', 'Топ 5', 'SEO компаний, продвигающих сайты в сфере «хостинг, провайдеры»')
+                            .swiper-slide(data-aos="fade-up" data-aos-delay="300")
+                                +awards-item('red-star', 'Топ 10', 'Среди веб-студий Поволжья')
+                            .swiper-slide.awards__all-wrap(data-aos="fade-up" data-aos-delay="350")
+                                article.box.awards__all._dark-blue
+                                    .awards__all-number.text-red <span>30+</span> наград 
+                                    .awards__all-text за предыдущие годы
+                                    .box__grow
+                                        a.awards__all-btn.btn.btn-reset._ultra-violet(href="#") Посмотреть все
+
+                    article.box.awards__all._tablet._dark-blue(data-aos="fade-up" data-aos-delay="100")
+                        .awards__all-number.text-red <span>30+</span> наград 
+                        .awards__all-text за предыдущие годы
+                        .box__grow
+                            a.awards__all-btn.btn.btn-reset._ultra-violet(href="#") Посмотреть все
+
+        section.section._pb0
+            .container
+                .leads__box
+                    .text Стоимость продвижения бизнеса по модели «Оплата за лиды» начинается <span>от 300 000 руб.</span> Хотите обсудить ваш проект?
+
+                    button.intro__btn.btn.btn-reset._red._hidden-svg-mobile(type="button" data-modal="#modal-order") Обсудить проект
+                            svg(width="31" height="8")
+                                use(xlink:href="@img/icons/icons.svg#arrow-right")

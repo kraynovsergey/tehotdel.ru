@@ -9,7 +9,7 @@
                 <h1 class="h2 section__title" data-aos="fade-up">{$_modx->resource.pagetitle}</h1>
 
                 <div class="tabs__btns scroll _hidden" data-aos="fade-up">
-                    <button class="btn btn-reset tabs__btn _red _active" type="button" data-tab="9999">Все кейсы</button>
+                    <button class="btn btn-reset tabs__btn _red _active" type="button" data-tab="9999">Все</button>
                     {'tagLister' | snippet : [
                         'tv' => 'tags',
                         'tpl' => 'tags_item.tpl'

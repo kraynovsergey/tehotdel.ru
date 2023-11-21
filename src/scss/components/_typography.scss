@@ -73,4 +73,9 @@ h3,
         font-size: clamp(18px, 1.25vw, 24px);
         font-weight: 500;
     }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 }

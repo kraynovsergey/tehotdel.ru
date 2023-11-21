@@ -1,6 +1,6 @@
 <section class="section _pb0">
     <div class="container">
-        <h2 class="section__title" data-aos="fade-up">Сферы продвижения</h2>
+        <h2 class="section__title" data-aos="fade-up">{14 | resource : 'industry_title'}</h2>
 
         <section class="section seo-categories _small-radius _black _full-mobile" data-aos="fade-up">
             <div class="container">

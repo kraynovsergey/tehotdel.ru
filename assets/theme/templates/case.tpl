@@ -8,6 +8,7 @@
             <div class="container case-page__container">
                 <div class="case-page__content text" data-aos="fade-up">
                     <h1 class="h2 section__title" data-aos="fade-up">{$_modx->resource.pagetitle}</h1>
+                    <p class="text-gray">{$_modx->resource.publishedon | date : 'd.m.Y'}</p>
                     {$_modx->resource.content}
                 </div>
 

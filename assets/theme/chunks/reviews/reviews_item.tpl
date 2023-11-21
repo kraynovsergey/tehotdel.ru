@@ -26,16 +26,18 @@
 <div class="swiper-slide" data-aos="fade-up">
     <article class="box _white">
         <h3 class="box__title">{$value.company}</h3>
+        
         <p class="box__text text-small text-gray">{$value.fullname}</p>
-        <p class="box__text text-small">{$value.text}</p>
-
-        <div class="box__grow">
-            <a href="{$image_popup}" data-fancybox>
-                <picture class="picture reviews__picture">
-                    <source type="image/webp" srcset="{$image_webp_2x} 2x, {$image_webp} 1x">
-                    <img srcset="{$image_2x} 2x, {$image} 1x" alt="{$value.company | escape} - {$value.fullname | escape}" width="134" height="187">
-                </picture>
-            </a>
+        
+        <div class="box__text text-small text">
+            {$value.text}
         </div>
+        
+        <a href="{$image_popup}" data-fancybox>
+            <picture class="picture reviews__picture">
+                <source type="image/webp" srcset="{$image_webp_2x} 2x, {$image_webp} 1x">
+                <img srcset="{$image_2x} 2x, {$image} 1x" alt="{$value.company | escape} - {$value.fullname | escape}" width="134" height="187">
+            </picture>
+        </a>
     </article>
 </div>

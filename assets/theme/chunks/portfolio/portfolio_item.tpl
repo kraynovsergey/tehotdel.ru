@@ -24,5 +24,9 @@
         <img srcset="{$img_2x} 2x, {$img} 1x" alt="{$pagetitle | escape}" width="560" height="510" loading="lazy">
     </picture>
     
-    <a class="portfolio__title link _full" href="{$id | url}">{$menutitle ?: $pagetitle}</a>
+    {if $template == 24}
+        <h3 class="portfolio__title">{$menutitle ?: $pagetitle}</h3>
+    {else}
+        <a class="portfolio__title link _full" href="{$id | url}">{$menutitle ?: $pagetitle}</a>
+    {/if}
 </article>

@@ -46,8 +46,11 @@
         {* Портфолио *}
         <section class="section">
             <div class="container">
-                <h2 class="section__title" data-aos="fade-up">Портфолио</h2>
-                {include 'file:chunks/portfolio/portfolio_items.tpl' filter=1}
+                <div class="section__header" data-aos="fade-up">
+                    <h2 class="section__title">Портфолио</h2>
+                    <a class="cases__all btn btn-reset _black-bordered" href="{4 | url}">Все проекты</a>
+                </div>
+                {include 'file:chunks/portfolio/portfolio_items.tpl' $template=14 $limit=9}
             </div>
         </section>
 

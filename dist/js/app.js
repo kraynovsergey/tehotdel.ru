@@ -9451,23 +9451,23 @@ if (document.querySelector('main').classList.contains('no-lenis')) { } else {
 
     const step_animation = document.querySelectorAll('[data-steps-animation]');
     if (step_animation.length > 0) {
-        if (document.documentElement.clientWidth > 991) {
+        window.addEventListener('load', () => {
             set_step_animation();
-        }
+        });    
 
         window.addEventListener('resize', () => {
-            if (document.documentElement.clientWidth > 991) {
-                set_step_animation();
-            }
+            set_step_animation();
         });
 
         function set_step_animation() {
-            window.addEventListener('load', () => {
+            if (document.documentElement.clientWidth > 991) {
                 const steps_line = document.querySelector('[data-steps-line]');
                 if (steps_line) {
                     let coords_top = document.querySelector('[data-steps-line-first]').getBoundingClientRect();
                     let coords_bottom = document.querySelector('[data-steps-line-last]').getBoundingClientRect();
+                    let coords_first_item = document.querySelector('[data-steps-line-first]').closest('.service-steps__item').getBoundingClientRect();
                     steps_line.style.height = `${coords_bottom.top - coords_top.top}px`;
+                    steps_line.style.top = `${coords_top.bottom - coords_first_item.top}px`;
                     steps_line.querySelector('[data-steps-animation-target]').style.height = `${coords_bottom.top - coords_top.top}px`;
                 }
 
@@ -9486,7 +9486,7 @@ if (document.querySelector('main').classList.contains('no-lenis')) { } else {
                         if (scroll_position > coords.bottom) item.style.height = `${110}%`;
                     });
                 });
-            });
+            }
         }
     }
 }

@@ -42,6 +42,27 @@
                 <img class="service-intro__circle _right" src="assets/theme/img/intro-circle-leads-right.svg" alt="" width="691" height="1115" loading="lazy">
             </section>
 
+            {* Преимущества *}
+            {set $leads_pluses = json_decode($_modx->resource.leads_pluses, true)}
+            {if $leads_pluses | length > 0}
+                <section class="section _pt0">
+                    <div class="container">
+                        <div class="swiper box-swiper _full-tablet" data-swiper-boxes>
+                            <div class="swiper-wrapper _cols3">
+                                {foreach $leads_pluses as $value}
+                                    <div class="swiper-slide" data-aos="fade-up" data-aos-delay="{$value@index * 100}">
+                                        <article class="box _dark-blue">
+                                            <h3 class="box__title _big _ultra-violet">{$value.title}</h3>
+                                            <p class="box__text text-small">{$value.text}</p>
+                                        </article>
+                                    </div>
+                                {/foreach}
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            {/if}
+
             {* Шаги *}
             {include 'file:chunks/steps/steps.tpl' $steps_classnames='_ultra-violet'}
 

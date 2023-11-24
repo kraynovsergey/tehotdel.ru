@@ -763,6 +763,10 @@ html.lenis {
   color: #68FFE4;
 }
 
+.box__title._ultra-violet {
+  color: #4A3AFF;
+}
+
 .box__grow {
   flex-grow: 1;
   display: flex;

@@ -2805,14 +2805,13 @@ body._black .mobile-nav__sublist-link {
 .contacts__map {
   border-radius: 30px;
   overflow: hidden;
-}
-
-.contacts__map [class=ymaps-2-1-79-ground-pane] {
-  filter: grayscale(1);
-  -ms-filter: grayscale(1);
-  -webkit-filter: grayscale(1);
-  -moz-filter: grayscale(1);
-  -o-filter: grayscale(1);
+  /*& [class=ymaps-2-1-79-ground-pane] {
+      filter: grayscale(1);
+      -ms-filter: grayscale(1);
+      -webkit-filter: grayscale(1);
+      -moz-filter: grayscale(1);
+      -o-filter: grayscale(1);
+  }*/
 }
 
 .contacts__requisites {

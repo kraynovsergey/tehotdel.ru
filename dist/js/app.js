@@ -9891,14 +9891,14 @@ const tabs = document.querySelectorAll('[data-tab]'),
 if (tabs.length > 0 && tab_content.length > 0) {
     tabs.forEach(item => {
         item.addEventListener('click', () => {
-            let i = +item.getAttribute('data-tab');
+            let i = item.getAttribute('data-tab');
             tabs.forEach(tab => {
-                if (+tab.getAttribute('data-tab') === i) tab.classList.add('_active')
+                if (tab.getAttribute('data-tab') == i) tab.classList.add('_active')
                     else tab.classList.remove('_active');
             });
 
             tab_content.forEach(content => {
-                if (+content.getAttribute('data-tab-content') === i) content.classList.add('_active')
+                if (content.getAttribute('data-tab-content') == i) content.classList.add('_active')
                     else content.classList.remove('_active');
             });
         });
@@ -9936,7 +9936,7 @@ if (samara_map) {
         myMap.geoObjects.add(myGeoObject);
 
         myMap.behaviors.disable('scrollZoom');
-        myMap.controls.remove('default');
+        //myMap.controls.remove('default');
     }
 }
 
@@ -9959,7 +9959,7 @@ if (moscow_map) {
         myMap.geoObjects.add(myGeoObject);
 
         myMap.behaviors.disable('scrollZoom');
-        myMap.controls.remove('default');
+        //myMap.controls.remove('default');
     }
 }
 

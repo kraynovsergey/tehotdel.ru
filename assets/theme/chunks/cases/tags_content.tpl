@@ -1,4 +1,4 @@
-<div class="tabs__content" data-tab-content="{$idx}">
+<div class="tabs__content" data-tab-content="{$tag}">
     <div class="swiper box-swiper _full-tablet _hover" data-swiper-cases>
         <div class="swiper-wrapper">
             {'pdoResources' | snippet : [

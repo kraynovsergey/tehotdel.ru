@@ -149,6 +149,20 @@
         }
     }
 
+    &._pink {
+        background: $color_pink;
+        color: $color_white;
+        border: 1px solid $color_pink;
+
+        &:hover {
+            @media (min-width: 992px) {
+                background: transparent;
+                color: $color_pink;
+                border: 1px solid $color_pink !important;
+            }
+        }
+    }
+
     &._hidden-svg-mobile {
         & svg {
             @media (max-width: 575px) {

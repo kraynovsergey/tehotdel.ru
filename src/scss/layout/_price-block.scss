@@ -50,6 +50,10 @@
         &._green {
             color: $color_green;
         }
+
+        &._pink {
+            color: $color_pink;
+        }
     }
 
     &__text {
@@ -71,6 +75,11 @@
 
         @media (max-width: 991px) {
             display: none;
+        }
+
+        &._pink {
+            right: 10%;
+            width: 14vw;
         }
     }
 

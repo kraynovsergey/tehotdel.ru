@@ -420,6 +420,10 @@ h3,
   color: #777C90;
 }
 
+.text-gray-blue {
+  color: #ADBBD7;
+}
+
 .text-medium {
   font-weight: 500;
 }
@@ -574,6 +578,12 @@ h3,
   border: 1px solid #DA1135;
 }
 
+.btn._pink {
+  background: #FF10E7;
+  color: #fff;
+  border: 1px solid #FF10E7;
+}
+
 .btn__wrap {
   display: flex;
   flex-direction: column;
@@ -704,6 +714,16 @@ html.lenis {
   transition: 0.5s ease-in-out;
 }
 
+.box._quadrate {
+  justify-content: center;
+}
+
+.box._quadrate:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
 .box__icon {
   width: clamp(30px, 3.12vw, 60px);
   height: auto;
@@ -739,6 +759,25 @@ html.lenis {
 
 .box__icon._orange {
   color: #FF7512;
+}
+
+.box__icon._pink {
+  color: #FF10E7;
+}
+
+.box__logo {
+  left: 0;
+  right: 0;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 50%;
+}
+
+.box__logo img {
+  max-width: 70%;
+  max-height: inherit;
 }
 
 .box__title,
@@ -2027,6 +2066,22 @@ body._black .mobile-nav__sublist-link {
   color: #4A3AFF;
 }
 
+.service-steps._pink .service-steps__line-wrap .service-steps__line {
+  background: #FF10E7;
+}
+
+.service-steps._pink .service-steps__circle-wrap .service-steps__circle {
+  color: #FF10E7;
+}
+
+.service-steps._pink .service-steps__box-wrap .service-steps__box .service-steps__title {
+  color: #FF10E7;
+}
+
+.service-steps._pink .service-steps__box._active .service-steps__title {
+  color: #FF10E7;
+}
+
 .service-steps__container {
   display: grid;
   align-items: start;
@@ -2319,6 +2374,10 @@ body._black .mobile-nav__sublist-link {
   color: #68FFE4;
 }
 
+.price-block__price._pink {
+  color: #FF10E7;
+}
+
 .price-block__text {
   margin: 0;
   z-index: 2;
@@ -2335,6 +2394,11 @@ body._black .mobile-nav__sublist-link {
   right: 0;
   bottom: 0;
   z-index: 1;
+}
+
+.price-block__wave._pink {
+  right: 10%;
+  width: 14vw;
 }
 
 .price-block__content {
@@ -2962,6 +3026,12 @@ body._black .mobile-nav__sublist-link {
     color: #DA1135;
   }
 
+  .btn._pink:hover {
+    background: transparent;
+    color: #FF10E7;
+    border: 1px solid #FF10E7 !important;
+  }
+
   .btn:hover {
     border-color: #DA1135 !important;
     background: #DA1135;
@@ -3297,6 +3367,10 @@ body._black .mobile-nav__sublist-link {
 
   .service-steps._ultra-violet .service-steps__circle {
     color: #FF2F2F;
+  }
+
+  .service-steps._pink .service-steps__circle {
+    color: #FF10E7;
   }
 
   .service-steps__container {

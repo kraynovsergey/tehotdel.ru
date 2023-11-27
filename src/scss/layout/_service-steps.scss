@@ -218,6 +218,42 @@
         }
     }
 
+    &._pink {
+        & .service-steps__line-wrap {
+            & .service-steps__line {
+                background: $color_pink;
+            }
+        }
+
+        & .service-steps__circle {
+            @media (max-width: 991px) {
+                color: $color_pink;
+            }
+        }
+
+        & .service-steps__circle-wrap {
+            & .service-steps__circle {
+                color: $color_pink;
+            }
+        }
+
+        & .service-steps__box-wrap {
+            & .service-steps__box {
+                & .service-steps__title {
+                    color: $color_pink;
+                }
+            }
+        }
+
+        & .service-steps__box {
+            &._active {
+                & .service-steps__title {
+                    color: $color_pink;
+                }
+            }
+        }
+    }
+
     &__container {
         display: grid;
         align-items: start;

@@ -10,7 +10,7 @@
                 </svg>
             </button>
             
-            <img class="price-block__wave" src="{$service_prices_wave}" alt="" width="755" height="274" loading="lazy">
+            <img class="price-block__wave {$service_prices_color == '_pink' ? '_pink' : ''}" src="{$service_prices_wave}" alt="" width="755" height="274" loading="lazy">
         </div>
 
         <div class="price-block__content">

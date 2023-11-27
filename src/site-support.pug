@@ -1,0 +1,242 @@
+extends base
+
+block color
+    - var body_classes = '_black'
+
+block meta
+    - var seotitle = 'Обслуживание сайтов'
+    - var seodescription = ''
+    - var seokeywords = ''
+
+block main
+    main.main
+        section.section._pt0._pb0._black._radius._radius-bottom
+            section.section._small-padding._pb0
+                .container
+                    ul.breadcrumbs.list-reset.text-gray(data-aos="fade-up")
+                        li.breadcrumbs__item
+                            a.breadcrumbs__link(href="#") Главная
+                        li.breadcrumbs__item
+                            a.breadcrumbs__link(href="#") Услуги
+                        li.breadcrumbs__item Обслуживание сайтов
+
+            section.section.service-intro._pt0._no-ovh
+                .container.service-intro__container
+                    .service-intro__content(data-aos="fade-up")
+                        h1.service-intro__title Обслуживание сайтов
+                        .service-intro__subtitle.text
+                            p Возьмем на себя обслуживание и сопровождение сайта, оперативное исправление багов и доработку юзабилити.
+                            p.text-small.text-gray-blue * обслуживание сайтов осуществляется только в комплексе с маркетинговыми услугами ООО «ТехОтдел»»
+                        button.service-intro__btn.btn.btn-reset._ultra-violet(type="button" data-modal="#modal-order") Обсудить проект
+                            svg(width="31" height="8")
+                                use(xlink:href="@img/icons/icons.svg#arrow-right")
+
+                    .service-intro__waves-wrap._leads
+                        .service-intro__waves._leads
+                            img.service-intro__wave(src="@img/site-support-wave.svg" alt="" width="790" height="532")
+                            img.service-intro__wave._gradient(src="@img/site-support-wave.svg" alt="" width="790" height="532")
+
+                img.service-intro__circle._left(src="@img/intro-circle-violet-left.svg" alt="" width="578" height="1115")
+                img.service-intro__circle._right(src="@img/intro-circle-violet-right.svg" alt="" width="691" height="1115")
+
+            section.section.service-steps._pink._pt0
+                .container.service-steps__container
+                    .service-steps__left
+                        h2.section__title._pink(data-aos="fade-up") Что будем делать
+
+                    .service-steps__items(data-aos="fade-up")
+                        .service-steps__line(data-steps-line)
+                            .service-steps__line-wrap(data-steps-animation)
+                                .service-steps__line(data-steps-animation-target)
+
+                        article.service-steps__item
+                            .service-steps__circle(data-steps-line-first) 01
+                                .service-steps__circle-wrap(data-steps-animation)
+                                    .service-steps__circle(data-steps-animation-target) 01
+                            .service-steps__box.box._dark-blue
+                                h3.service-steps__title Чистить баги
+                                .service-steps__text.text-small
+                                    p Тестируем и оптимизируем ресурс, оперативно устраняем технические неисправности.
+                                .service-steps__box-wrap(data-steps-animation)
+                                    .service-steps__box.box._dark-blue(data-steps-animation-target)
+                                        h3.service-steps__title Чистить баги
+                                        .service-steps__text.text-small
+                                            p Тестируем и оптимизируем ресурс, оперативно устраняем технические неисправности.
+
+                        article.service-steps__item
+                            .service-steps__circle 02
+                                .service-steps__circle-wrap(data-steps-animation)
+                                    .service-steps__circle(data-steps-animation-target) 02
+                            .service-steps__box.box._dark-blue
+                                h3.service-steps__title Дорабатывать сайт
+                                .service-steps__text.text-small
+                                    p Если что-то может работать лучше — улучшаем это. Изменения положительно сказываются на конверсии и вовлеченности пользователей.
+                                .service-steps__box-wrap(data-steps-animation)
+                                    .service-steps__box.box._dark-blue(data-steps-animation-target)
+                                        h3.service-steps__title Дорабатывать сайт
+                                        .service-steps__text.text-small
+                                            p Если что-то может работать лучше — улучшаем это. Изменения положительно сказываются на конверсии и вовлеченности пользователей.
+
+                        article.service-steps__item
+                            .service-steps__circle 03
+                                .service-steps__circle-wrap(data-steps-animation)
+                                    .service-steps__circle(data-steps-animation-target) 03
+                            .service-steps__box.box._dark-blue
+                                h3.service-steps__title Создавать графический и текстовый контент
+                                .service-steps__text.text-small
+                                    p Дизайнеры нарисуют крутые баннеры и подберут иллюстрации для станиц. Копирайтер напишет полезный текст.
+                                .service-steps__box-wrap(data-steps-animation)
+                                    .service-steps__box.box._dark-blue(data-steps-animation-target)
+                                        h3.service-steps__title Создавать графический и текстовый контент
+                                        .service-steps__text.text-small
+                                            p Дизайнеры нарисуют крутые баннеры и подберут иллюстрации для станиц. Копирайтер напишет полезный текст.
+
+                        article.service-steps__item
+                            .service-steps__circle 04
+                                .service-steps__circle-wrap(data-steps-animation)
+                                    .service-steps__circle(data-steps-animation-target) 04
+                            .service-steps__box.box._dark-blue
+                                h3.service-steps__title Добавлять контент
+                                .service-steps__text.text-small
+                                    p Сайт живет и периодически обновляется. Дополняем необходимые информационные блоки, раскрываем текущие.
+                                .service-steps__box-wrap(data-steps-animation)
+                                    .service-steps__box.box._dark-blue(data-steps-animation-target)
+                                        h3.service-steps__title Добавлять контент
+                                        .service-steps__text.text-small
+                                            p Сайт живет и периодически обновляется. Дополняем необходимые информационные блоки, раскрываем текущие.
+
+                        article.service-steps__item
+                            .service-steps__circle(data-steps-line-last) 05
+                                .service-steps__circle-wrap(data-steps-animation)
+                                    .service-steps__circle(data-steps-animation-target) 05
+                            .service-steps__box.box._dark-blue
+                                h3.service-steps__title Анализировать
+                                .service-steps__text.text-small
+                                    p Постоянно мониторим результаты изменений.
+                                .service-steps__box-wrap(data-steps-animation)
+                                    .service-steps__box.box._dark-blue(data-steps-animation-target)
+                                        h3.service-steps__title Анализировать
+                                        .service-steps__text.text-small
+                                            p Постоянно мониторим результаты изменений.
+
+                    .swiper.service-steps__swiper._full-tablet(data-swiper-boxes data-aos="fade-up")
+                        .swiper-wrapper
+                            .swiper-slide
+                                .service-steps__box.box._dark-blue._active
+                                    .service-steps__circle 01
+                                    h3.service-steps__title Чистить баги
+                                    .service-steps__text.text-small
+                                        p Тестируем и оптимизируем ресурс, оперативно устраняем технические неисправности.
+                            .swiper-slide
+                                .service-steps__box.box._dark-blue._active
+                                    .service-steps__circle 02
+                                    h3.service-steps__title Дорабатывать сайт
+                                    .service-steps__text.text-small
+                                        p РЕсли что-то может работать лучше — улучшаем это. Изменения положительно сказываются на конверсии и вовлеченности пользователей.
+                            .swiper-slide 
+                                .service-steps__box.box._dark-blue._active
+                                    .service-steps__circle 03
+                                    h3.service-steps__title Создавать графический и текстовый контент
+                                    .service-steps__text.text-small
+                                        p Дизайнеры нарисуют крутые баннеры и подберут иллюстрации для станиц. Копирайтер напишет полезный текст.
+                            .swiper-slide 
+                                .service-steps__box.box._dark-blue._active
+                                    .service-steps__circle 04
+                                    h3.service-steps__title Добавлять контент
+                                    .service-steps__text.text-small
+                                        p Сайт живет и периодически обновляется. Дополняем необходимые информационные блоки, раскрываем текущие.
+                            .swiper-slide 
+                                .service-steps__box.box._dark-blue._active
+                                    .service-steps__circle 05
+                                    h3.service-steps__title Анализировать
+                                    .service-steps__text.text-small
+                                        p Постоянно мониторим результаты изменений.
+
+        section.section
+            .container
+                .section__header
+                    h2.section__title(data-aos="fade-up") Работаем с большинством CMS, даже с самописными
+                    .swiper__navigations.reviews__navigations(data-aos="fade-up" data-aos-delay="100")
+                        button.swiper__navigation._prev.btn-reset(type="button" data-swiper-boxes-full-prev)
+                            svg(width="111" height="16")
+                                use(xlink:href="@img/icons/icons.svg#swiper-arrow-left")
+                        button.swiper__navigation._next.btn-reset(type="button" data-swiper-boxes-full-next)
+                            svg(width="111" height="16")
+                                use(xlink:href="@img/icons/icons.svg#swiper-arrow-left")
+
+                .swiper._full-tablet(data-swiper-boxes-full data-aos="fade-up")
+                    .swiper-wrapper
+                        .swiper-slide
+                            article.box._white._quadrate
+                                picture.box__logo
+                                    img(src="@img/tmp/modx.svg" alt="" )
+                        .swiper-slide
+                            article.box._white._quadrate
+                                picture.box__logo
+                                    img(src="@img/tmp/wordpress.svg" alt="" )
+                        .swiper-slide
+                            article.box._white._quadrate
+                                picture.box__logo
+                                    img(src="@img/tmp/bitrix.svg" alt="" )
+                        .swiper-slide
+                            article.box._white._quadrate
+                                picture.box__logo
+                                    img(src="@img/tmp/opencart.svg" alt="" )
+                        .swiper-slide
+                            article.box._white._quadrate
+                                picture.box__logo
+                                    img(src="@img/tmp/drupal.svg" alt="" )
+                        .swiper-slide
+                            article.box._white._quadrate
+                                picture.box__logo
+                                    img(src="@img/tmp/joomla.svg" alt="" ) 
+                        .swiper-slide
+                            article.box._white._quadrate
+                                picture.box__logo
+                                    img(src="@img/tmp/prestashop.svg" alt="" )
+                        .swiper-slide
+                            article.box._white._quadrate
+                                picture.box__logo
+                                    img(src="@img/tmp/netcat.svg" alt="" )
+                        .swiper-slide
+                            article.box._white._quadrate
+                                picture.box__logo
+                                    img(src="@img/tmp/umi.svg" alt="" )
+                        .swiper-slide
+                            article.box._white._quadrate
+                                picture.box__logo
+                                    img(src="@img/tmp/cscart.svg" alt="" )
+
+        section.section.price-block._black._radius
+            .container.price-block__container
+                .price-block__box
+                    h2.price-block__title.section__title._pink Цены на обслуживание сайтов
+                    
+                    p.price-block__price._pink от 75 000 ₽ в мес.
+                    
+                    p.price-block__text Бюджет на обслуживание сайта зависит от объёма необходимых работ
+                    
+                    button.btn.btn-reset._pink(type="button" data-modal="#modal-order") Обсудить проект
+                        svg(width="31" height="8")
+                            use(xlink:href="@img/icons/icons.svg#arrow-right")
+
+                    img.price-block__wave._pink(src="@img/price-block-wave-pink.svg" alt="" width="755" height="274")
+
+                .price-block__content
+                    h3.price-block__subtitle Дополнительно вы получите:
+
+                    .swiper.box-swiper._full-tablet(data-swiper-boxes)
+                        .swiper-wrapper._cols2
+                            .swiper-slide
+                                +price-param('price-param-1', '_ultra-violet', 'Персонального аккаунт-менеджера, который будет курировать ваш проект')
+                            .swiper-slide
+                                +price-param('price-param-2', '_pink', 'Консультации по работе с вашей CMS и рекомендации специалистов')
+                            .swiper-slide
+                                +price-param('price-param-3', '_pink', 'Команду специалистов в Самаре и Москве: seo-специалиста, дизайнера, программиста и интернет-маркетолога')
+                            .swiper-slide
+                                +price-param('price-param-4', '_ultra-violet', 'Подробный отчёт о проделанной работе и результатах каждый месяц')
+
+        section.section._pb0
+            .container
+                include pug/layout/_cases
+                                

@@ -152,6 +152,16 @@
         }
     }
 
+    &._quadrate {
+        justify-content: center;
+
+        &:before{
+            content: '';
+            display: block;
+            padding-top: 100%;
+        }
+    }
+
     &__icon {
         width: clamp(30px, 3.12vw, 60px);
         height: auto;
@@ -186,6 +196,25 @@
 
         &._orange {
             color: $color_orange;
+        }
+
+        &._pink {
+            color: $color_pink;
+        }
+    }
+
+    &__logo {
+        left: 0;
+        right: 0;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-height: 50%;
+
+        & img {
+            max-width: 70%;
+            max-height: inherit;
         }
     }
 

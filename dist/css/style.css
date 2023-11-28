@@ -938,6 +938,30 @@ html.lenis {
   display: block;
 }
 
+.video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.video__picture {
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.video__picture img {
+  width: 100%;
+  height: auto;
+}
+
+.video__play {
+  position: absolute;
+  width: clamp(100px, 10.4vw, 200px);
+  height: auto;
+}
+
 /* LAYOUT */
 
 .header {
@@ -1258,6 +1282,11 @@ body._black .header .header__burger span {
   color: #FF7512;
 }
 
+.section__subtitle {
+  max-width: 1000px;
+  margin-bottom: clamp(30px, 3.12vw, 60px);
+}
+
 .intro {
   padding: 0;
   border-top-left-radius: 0 !important;
@@ -1278,6 +1307,10 @@ body._black .header .header__burger span {
   font-weight: 500;
   margin: 0 0 clamp(30px, 2.08vw, 40px);
   padding: 0;
+}
+
+.intro__subtitle {
+  margin: 0 0 clamp(30px, 2.08vw, 40px);
 }
 
 .intro__btns {
@@ -1605,6 +1638,10 @@ body._black .modal__about-wave {
 
 .form__fields._cols3 {
   grid-template-columns: repeat(3, 1fr);
+}
+
+.form__fields._site {
+  max-width: 900px;
 }
 
 .form__fieldset {
@@ -3117,6 +3154,10 @@ body._black .mobile-nav__sublist-link {
 
   .section__header .section__title {
     margin-bottom: 0;
+  }
+
+  .intro__subtitle {
+    max-width: 85%;
   }
 
   .box-swiper .swiper-wrapper {

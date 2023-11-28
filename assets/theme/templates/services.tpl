@@ -19,7 +19,8 @@
                             'tpl' => '@FILE:chunks/services/service_item.tpl',
                             'includeContent' => 0,
                             'includeTVs' => 'svg_sprite_id',
-                            'tvPrefix' => ''
+                            'tvPrefix' => '',
+                            'showHidden' => 0
                         ]}
                     </div>
                 </div>

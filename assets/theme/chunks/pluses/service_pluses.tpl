@@ -37,7 +37,11 @@
                         <svg class="box__icon {$value.color}" width="60" height="60">
                             <use xlink:href="assets/theme/img/icons/icons.svg#{$value.svg_sprite_id}"></use>
                         </svg>
-                        <h3 class="box__title _big">{$value.title}</h3>
+
+                        {if $value.title}
+                            <h3 class="box__title _big">{$value.title}</h3>
+                        {/if}
+                        
                         <p class="box__text text-small">{$value.text}</p>
                     </article>
                 </div>

@@ -1,0 +1,97 @@
+extends base
+
+block color
+    - var body_classes = '_black'
+
+block meta
+    - var seotitle = 'Сайт за час'
+    - var seodescription = ''
+    - var seokeywords = ''
+
+block main
+    main.main
+        section.section.intro._radius._black
+            .container
+                .intro__content(data-aos="fade-up")
+                    h1.intro__title.text-red Сайт <span>за час</span>
+                    .intro__subtitle.text
+                        p Быстрое решение на полноценной CMS по принципу конструктора и под любой бюджет
+                    .intro__btns
+                        button.intro__btn.btn.btn-reset._red(type="button" data-modal="#modal-order") Обсудить проект
+                            svg(width="31" height="8")
+                                use(xlink:href="@img/icons/icons.svg#arrow-right")
+                        a.intro__btn.btn.btn-reset._white-bordered(href="files/site-for-hour.mp4" data-fancybox) Как это работает?
+
+            .intro__wave-wrapper(data-aos="fade-left" data-aos-delay="200")
+                img.intro__wave(src="@img/intro-wave.svg" width="1127" height="619")
+                img.intro__wave._gradient(src="@img/intro-wave-gradient.svg" width="1127" height="619")
+
+        section.section._pb0
+            .container
+                h2.section__title(data-aos="fade-up") Преимущества
+                .swiper.box-swiper._full-tablet(data-swiper-boxes)
+                    .swiper-wrapper
+                        .swiper-slide(data-aos="fade-up" data-aos-delay="50")
+                            +seo-pluses('seo-pluses-1', 
+                                '',
+                                'Быстро. Наглядно. Вариативно.',
+                                '_red')
+                        .swiper-slide(data-aos="fade-up" data-aos-delay="100")
+                            +seo-pluses('seo-pluses-2', 
+                                '',
+                                'CMS с удобным и понятным интерфейсом — редактировать контент сайта вы сможете самостоятельно.',
+                                '_black')
+                        .swiper-slide(data-aos="fade-up" data-aos-delay="150")
+                            +seo-pluses('seo-pluses-3', 
+                                '',
+                                'Соберём сайт при вас на встрече. Вы увидите, как будет выглядеть ваш будущий ресурс, и на месте сможете выбрать дизайн и расположение блоков прежде, чем мы развернём его на вашем хостинге.',
+                                '_red')
+                        .swiper-slide(data-aos="fade-up" data-aos-delay="200")
+                            +seo-pluses('seo-pluses-4',
+                                '',
+                                'Решение подходит для задач любой сложности - от одностраничных посадочников и визиток до полноценных корпоративных сайтов.',
+                                '_black')
+
+        section.section._pb0
+            .container
+                h2.section__title(data-aos="fade-up") Как это работает
+
+                div(data-aos="fade-up")
+                    a.video(href="files/site-for-hour.mp4" data-fancybox)
+                        picture.video__picture
+                            source(type="image/webp" srcset="@img/tmp/site-for-hour@2x.webp 2x, @img/tmp/site-for-hour.webp 1x")
+                            img(srcset="@img/tmp/site-for-hour@2x.jpg 2x, @img/tmp/site-for-hour.jpg 1x" alt="" width="1760" height="850")
+                        svg.video__play(width="200" height="200")
+                            use(xlink:href="@img/icons/icons.svg#play")
+
+        section.section._pb0
+            .container
+                section.section._black._radius(data-aos="fade-up")
+                    .container
+                        h2.section__title.text-red Стоимость реализации <span>определяется индивидуально</span>
+                        p.section__subtitle Цена зависит от ваших задач и пожеланий. Для расчёта стоимости вашего «Сайта за час» оставьте заявку или обратитесь к нашему менеджеру.
+
+                        form.form
+                            .form__fields._site
+                                fieldset.form__fieldset
+                                    label.form__label.text-small.text-gray(for="career-name") Имя
+                                    input.form__input(type="text" name="name" placeholder="Ваше имя" id="career-name" data-input)
+
+                                fieldset.form__fieldset
+                                    label.form__label.text-small.text-gray(for="career-phone") Телефон
+                                    input.form__input(type="tel" name="phone" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" id="career-phone" data-tel data-input)
+
+                            
+                            button.form__submit.btn.btn-reset._red(type="submit") Отправить заявку
+                                svg(width="31" height="8")
+                                    use(xlink:href="@img/icons/icons.svg#arrow-right")
+
+                            .form__checkbox
+                                input.form__checkbox-input(type="checkbox" name="policy" id="career-policy" data-policy required)
+                                label.form__checkbox-label(for="career-policy")
+                                    span.form__checkbox-check
+                                    span Оставляя заявку, вы даёте согласие на <a href="#" target="_blank">обработку ваших персональных данных</a>, а также подтверждаете, что вам исполнилось 18 лет
+
+                        svg.career__wave(width="291" height="196")
+                            use(xlink:href="@img/icons/icons.svg#career-form-wave")
+

@@ -26,6 +26,10 @@
                 }
             }
         }
+
+        &._site {
+            max-width: 900px;
+        }
     }
 
     &__fieldset {

@@ -77,8 +77,16 @@
         </div>
     </div>
     <div class="footer__bottom">
-        <div class="container">
+        <div class="container footer__bottom-container">
             <div class="text-small">© {'' | date : 'Y'} Tehotdel</div>
+            <a class="text-small footer__bottom-link" 
+                href="https://reestr.digital.gov.ru/reestr/1505873/?sphrase_id=3945884" 
+                target="_blank" rel="nofollow">
+                Мы в реестре Российского программного обеспечения
+                <svg width="30" height="30">
+                    <use xlink:href="assets/theme/img/icons/icons.svg#arrow-angle"></use>
+                </svg>
+            </a>
         </div>
     </div>
 </footer>

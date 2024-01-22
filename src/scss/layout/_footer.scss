@@ -16,6 +16,30 @@
 
     &__bottom {
         padding: 40px 0;
+
+        &-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            @media (width <= 768px) {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 20px;
+            }
+        }
+
+        &-link {
+            color: $color_white;
+            text-decoration: none;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+
+            @media (width <= 768px) {
+                order: -1;
+            }
+        }
     }
 
     &__contacts {

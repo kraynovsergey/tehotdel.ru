@@ -1114,6 +1114,20 @@ body._black .header .header__burger span {
   padding: 40px 0;
 }
 
+.footer__bottom-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__bottom-link {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
 .footer__contacts {
   display: flex;
   align-items: flex-start;
@@ -1242,7 +1256,7 @@ body._black .header .header__burger span {
   gap: clamp(10px, 1.04vw, 20px);
 }
 
-.section__title::before {
+.section__title:not(._no-marker)::before {
   content: "— ";
   color: #DA1135;
 }
@@ -1282,9 +1296,23 @@ body._black .header .header__burger span {
   color: #FF7512;
 }
 
+.section__title a {
+  color: #DA1135;
+  text-decoration: none;
+}
+
+.section__title a:hover {
+  text-decoration: underline;
+}
+
 .section__subtitle {
   max-width: 1000px;
   margin-bottom: clamp(30px, 3.12vw, 60px);
+}
+
+.section__note {
+  margin: 0;
+  font-size: clamp(18px, 1.56vw, 30px);
 }
 
 .intro {
@@ -2998,6 +3026,24 @@ body._black .mobile-nav__sublist-link {
   color: #DA1135;
 }
 
+.stack__title {
+  margin-bottom: clamp(20px, 2.6vw, 50px);
+}
+
+.stack__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: clamp(150px, 10.93vw, 210px);
+  border-radius: clamp(15px, 1.56vw, 30px);
+  border: 1px solid #CAD4E8;
+}
+
+.stack__logo img {
+  max-width: 70%;
+  max-height: 60%;
+}
+
 @media (min-width: 768px) {
   .clients__title {
     white-space: nowrap;
@@ -3789,5 +3835,17 @@ body._black .mobile-nav__sublist-link {
 @media (max-width: 991px) and (min-width: 576px) {
   .calculator .form {
     width: 75%;
+  }
+}
+
+@media (width <= 768px) {
+  .footer__bottom-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .footer__bottom-link {
+    order: -1;
   }
 }

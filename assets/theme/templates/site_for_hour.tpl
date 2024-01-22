@@ -34,6 +34,20 @@
             </div>
         </section>
 
+        {* Скачать документ технологического стека *}
+        <div class="section _pb0" data-aos="fade-up">
+            <div class="container">
+                <section class="section _white _radius">
+                    <div class="container">
+                        <h2 class="section__title _no-marker">
+                            <a href="{$_modx->resource.document}" target="_blank">{$_modx->resource.document_linktext}</a> {$_modx->resource.document_linktext_note}
+                        </h2>
+                        <p class="section__note">{$_modx->resource.document_subtitle}</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+
         {* Преимущества *}
         {include 'file:chunks/pluses/service_pluses.tpl' $service_pluses_box='_middle-blue' $service_pluses_classnames='_pb0'}
 

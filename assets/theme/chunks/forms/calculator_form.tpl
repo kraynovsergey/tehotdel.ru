@@ -6,6 +6,8 @@
     <input type="hidden" name="pageName" value="{$_modx->resource.pagetitle | escape}">
     <input type="hidden" name="target" data-form-field-target>
 
+    {include 'file:chunks/forms/form_utm.tpl'}
+
     <div class="form__fields">
         <fieldset class="form__fieldset">
             <label class="form__label text-small _orange" for="calculator-website">Ссылка на ваш сайт</label>

@@ -1,0 +1,19 @@
+.stack {
+    &__title {
+        margin-bottom: clamp(20px, 2.6vw, 50px);
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: clamp(150px, 10.93vw, 210px);
+        border-radius: clamp(15px, 1.56vw, 30px);
+        border: 1px solid #CAD4E8;
+
+        & img {
+            max-width: 70%;
+            max-height: 60%;
+        }
+    }
+}

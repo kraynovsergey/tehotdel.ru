@@ -43,6 +43,57 @@
             {include 'file:chunks/steps/steps.tpl' $steps_classnames='_green'}
         </section>
 
+        {* Наш технологический стэк *}
+        <section class="section">
+            <div class="container">
+                <h2 class="section__title" data-aos="fade-up">{$_modx->resource.stack_title}</h2>
+            </div>
+
+            <div class="section _white _radius">
+                <div class="container">
+                    <section class="section _pt0 _no-ovh" data-aos="fade-up">
+                        <h3 class="stack__title text-big">{$_modx->resource.stack_language_title}</h3>
+
+                        <div class="swiper _full-tablet" data-swiper-boxes-full>
+                            <div class="swiper-wrapper">
+                                
+                                {set $stack_language = json_decode($_modx->resource.stack_language, true)}
+                                {foreach $stack_language as $value}
+                                    {include 'file:chunks/stack/item.tpl'}    
+                                {/foreach}
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="section _pt0 _no-ovh" data-aos="fade-up">
+                        <h3 class="stack__title text-big">{$_modx->resource.stack_cms_title}</h3>
+                        
+                        <div class="swiper _full-tablet" data-swiper-boxes-full>
+                            <div class="swiper-wrapper">
+                                {set $stack_cms = json_decode($_modx->resource.stack_cms, true)}
+                                {foreach $stack_cms as $value}
+                                    {include 'file:chunks/stack/item.tpl'}    
+                                {/foreach}
+                            </div>
+                        </div>
+                    </section>
+
+                    <section data-aos="fade-up">
+                        <h3 class="stack__title text-big">{$_modx->resource.stack_design_title}</h3>
+
+                        <div class="swiper _full-tablet" data-swiper-boxes-full>
+                            <div class="swiper-wrapper">
+                                {set $stack_design = json_decode($_modx->resource.stack_design, true)}
+                                {foreach $stack_design as $value}
+                                    {include 'file:chunks/stack/item.tpl'}    
+                                {/foreach}
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+
         {* Портфолио *}
         <section class="section">
             <div class="container">

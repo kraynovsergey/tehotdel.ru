@@ -52,9 +52,11 @@
         margin: 0 0 clamp(26px, 2.6vw, 50px);
         gap: clamp(10px, 1.04vw, 20px);
         
-        &::before {
-            content: '— ';
-            color: $color_red;
+        &:not(._no-marker) {
+            &::before {
+                content: '— ';
+                color: $color_red;
+            }
         }
 
         &._blue {
@@ -105,6 +107,15 @@
                 color: $color_orange;
             }
         }
+
+        & a {
+            color: $color_red;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
 
     &__header {
@@ -124,5 +135,10 @@
     &__subtitle {
         max-width: 1000px;
         margin-bottom: clamp(30px, 3.12vw, 60px);
+    }
+
+    &__note {
+        margin: 0;
+        font-size: clamp(18px, 1.56vw, 30px);
     }
 }

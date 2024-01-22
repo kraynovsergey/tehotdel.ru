@@ -200,16 +200,16 @@ if (mobile_nav_link.length > 0) {
 
 const typed_el = document.querySelector('[data-typed]');
 if (typed_el) {
-    new Typed(typed_el, {
-        strings: ['{volga}', '{￢‿￢}', '{samara}'],
-        typeSpeed: 150,
-        backSpeed: 50,
-        loop: true,
-        showCursor: false
-    });
-
     window.addEventListener('load', () => {
         typed_el.style.width = typed_el.clientWidth + 'px';
+
+        new Typed(typed_el, {
+            strings: ['{volga}', '{￢‿￢}', '{samara}'],
+            typeSpeed: 150,
+            backSpeed: 50,
+            loop: true,
+            showCursor: false
+        });
     });
 
     window.addEventListener('resize', () => {

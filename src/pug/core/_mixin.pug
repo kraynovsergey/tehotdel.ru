@@ -1,0 +1,57 @@
+mixin service-item(icon, title, text)
+    article.box._white._hover
+        svg.box__icon(width="60" height="60")
+            use(xlink:href="@img/icons/icons.svg#"+icon)
+        h3.box__title=title
+        p.box__text.text-small=text
+        .box__grow
+            a.box__btn.btn.btn-reset._black-bordered(href="#") Подробнее
+
+mixin seo-pluses(icon, title, text, color)
+    article.box._middle-blue
+        svg.box__icon(class=color width="60" height="60")
+            use(xlink:href="@img/icons/icons.svg#"+icon)
+        if title
+            h3.box__title._big=title
+        p.box__text.text-small=text
+
+mixin intro-seo-industry(title)
+    section.section.service-intro._pt0
+        .container.service-intro__container
+            .service-intro__content(data-aos="fade-up")
+                h1.service-intro__title=title
+                button.service-intro__btn.btn.btn-reset._blue(type="button" data-modal="#modal-order") Обсудить проект
+                    svg(width="31" height="8")
+                        use(xlink:href="@img/icons/icons.svg#arrow-right")
+
+            .service-intro__waves-wrap
+                .service-intro__waves
+                    img.service-intro__wave(src="@img/seo-wave.svg" alt="" width="790" height="532")
+                    img.service-intro__wave._gradient(src="@img/seo-wave-gradient.svg" alt="" width="790" height="532")
+
+        img.service-intro__circle._left(src="@img/intro-circle-blue-left.svg" alt="" width="578" height="1115")
+        img.service-intro__circle._right(src="@img/intro-circle-blue-right.svg" alt="" width="691" height="1115")
+
+mixin price-param(icon, color, text)
+    .box._dark-blue
+        svg.box__icon(class=color width="60" height="60")
+            use(xlink:href="@img/icons/icons.svg#"+icon)
+        p.box__text.text-small=text
+
+mixin portfolio-item(title, img)
+    article.portfolio__item(data-aos="fade-up")
+        picture.portfolio__picture.picture
+            source(type="image/webp" srcset="@img/tmp/"+img+"@2x.webp 2x, @img/tmp/"+img+".webp 1x")
+            img(srcset="@img/tmp/"+img+"@2x.jpg 2x, @img/tmp/"+img+".jpg 1x" alt="" width="560" height="510" loading="lazy")
+        a.portfolio__title.link._full(href="#")=title
+
+mixin reviews-item(company, title, text)
+    article.box._white
+        h3.box__title=company
+        p.box__text.text-small.text-gray=title
+        p.box__text.text-small=text
+        .box__grow
+            a(href="@img/tmp/review@2x.jpg" data-fancybox)
+                picture.picture.reviews__picture
+                    source(type="image/webp" srcset="@img/tmp/review@2x.webp 2x, @img/tmp/review.webp 1x")
+                    img(srcset="@img/tmp/review@2x.jpg 2x, @img/tmp/review.jpg 1x" alt="" width="134" height="187")
